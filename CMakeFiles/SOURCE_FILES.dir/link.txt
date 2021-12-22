@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/SOURCE_FILES.dir/exchange/src/handleClient.c.o CMakeFiles/SOURCE_FILES.dir/exchange/src/initClient.c.o CMakeFiles/SOURCE_FILES.dir/views/src/HomeController.c.o CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.o CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.o  -o SOURCE_FILES 
