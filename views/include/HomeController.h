@@ -8,8 +8,8 @@
 #include "gtk/gtk.h"
 #include "appScreen.h"
 
-void show_home(UserData *userData);
-void add_message(GtkWidget *message, UserData *userData);
+void home_show(UserData *userData);
+void add_message(GtkWidget *message, GtkWidget *addBox,UserData *userData);
 void on_show_clicked(GtkButton *button, UserData *userData);
 
 #endif //NETWORKPROGRAM_HOMECONTROLLER_H

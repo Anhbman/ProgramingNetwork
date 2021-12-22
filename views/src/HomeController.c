@@ -7,87 +7,47 @@
 #include "appScreen.h"
 #include "constant.h"
 #include <sys/socket.h>
-
+#include "hepler.h"
+#include "constant.h"
+#include "ShowController.h"
 
 void on_show_clicked(GtkButton *button, UserData *userData) {
-
+    printf("btn_show");
+    gtk_widget_hide(userData->screenApp->homeContainer.window_home);
+    gtk_widget_show_all(userData->screenApp->showContainer.window_show);
+    show_place(userData);
 }
 
-void add_message(GtkWidget *message, UserData *userData) {
-    GtkWidget *box = userData->screenApp->homeContainer.box_place;
-    gtk_box_pack_start(GTK_BOX(box), message, FALSE, FALSE, 0);
-}
-
-
-char* dataRecv(UserData *userData) {
-
-    int recvSize = 0;
-
-    char* recvData = (char *)malloc(sizeof (char )*MAX_LEN_BUFF);
-
-    recvSize = recv(userData->sockFd, recvData, MAX_LEN_BUFF, 0); /* echo to the client */
-    if (recvSize < 0)
-        perror("\nError ");
-    else if (recvSize == 0)
-        printf("Connection closed.\n");
-   recvData[recvSize] = '\0';
-    printf("recvSize: %d\nrecv1: %s\n",recvSize, recvData);
-
-    return recvData;
-}
-
-void show_home(UserData *userData) {
+void home_show(UserData *userData) {
 
     int recvSize = 0;
 
     char recvData[MAX_LEN_BUFF];
 
-//    Test n = 5
-
-    send(userData->sockFd,"ok",2,0);
-    char *value = (char *) malloc(sizeof (char )*MAX_LEN_BUFF);
-
-    for (int i = 0; i < 5; ++i) {
-        memset(value,0,MAX_LEN_BUFF);
-        value = dataRecv(userData);
-        printf("%s\n",value);
-    }
-
-
-//    recvSize = recv(userData->sockFd, recvData, 100, 0);
-//    if (recvSize < 0)
-//        perror("\nError: ");
-//    else if (recvSize == 0)
-//        printf("Connection closed.\n");
-//    recvData[recvSize] = '\0';
-
-    int n = atoi(recvData);
 
 //    test dung
-//    printf("Show_home: \n");
-//    char* value;
-//    value = dataRecv(userData);
-//    char *token;
-//
-//    token = strtok(value, "|");
-//    GtkWidget *gtkLabel = gtk_label_new(token);
-//    gtk_widget_set_visible(gtkLabel, TRUE);
-//    gtk_label_set_xalign(GTK_LABEL(gtkLabel), 1);
-//    gtk_widget_set_halign(gtkLabel, GTK_ALIGN_START);
-//    gtk_label_set_max_width_chars(GTK_LABEL(gtkLabel), 30);
-//    gtk_label_set_line_wrap(GTK_LABEL(gtkLabel),TRUE);
-//    add_message(gtkLabel,userData);
-//
-//    while (token != NULL) {
-//        token = strtok(NULL, "|");
-//        GtkWidget *gtkLabel = gtk_label_new(token);
-//        gtk_widget_set_visible(gtkLabel, TRUE);
-//        gtk_label_set_xalign(GTK_LABEL(gtkLabel), 1);
-//        gtk_widget_set_halign(gtkLabel, GTK_ALIGN_START);
-//        gtk_label_set_max_width_chars(GTK_LABEL(gtkLabel), 30);
-//        gtk_label_set_line_wrap(GTK_LABEL(gtkLabel),TRUE);
-//        add_message(gtkLabel,userData);
-//    }
+    printf("Show_home: \n");
+
+    int senSize = send(userData->sockFd, HOME_SHOW, 1, 0);
+    if (senSize < 0)
+        perror("\nError: ");
+
+    char* value;
+    value = dataRecv(userData);
+    char *token;
+
+    token = strtok(value, "|");
+
+    while (token != NULL) {
+        GtkWidget *gtkLabel = gtk_label_new(token);
+        gtk_widget_set_visible(gtkLabel, TRUE);
+        gtk_label_set_xalign(GTK_LABEL(gtkLabel), 1);
+        gtk_widget_set_halign(gtkLabel, GTK_ALIGN_START);
+        gtk_label_set_max_width_chars(GTK_LABEL(gtkLabel), 30);
+        gtk_label_set_line_wrap(GTK_LABEL(gtkLabel),TRUE);
+        add_message(gtkLabel, userData->screenApp->homeContainer.box_place, userData);
+        token = strtok(NULL, "|");
+    }
 
     free(value);
     //printf("recv2: %s\n",value[i]);

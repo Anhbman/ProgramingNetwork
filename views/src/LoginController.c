@@ -23,6 +23,9 @@ void on_login_clicked(GtkButton *button, UserData *userData) {
     if (status) {
         gtk_widget_hide(userData->screenApp->loginContainer.window_login);
         gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
-        show_home(userData);
+        home_show(userData);
+        strcpy(userData->username,username);
     }
+
+    return;
 }

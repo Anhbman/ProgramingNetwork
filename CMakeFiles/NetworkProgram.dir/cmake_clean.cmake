@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/NetworkProgram.dir/exchange/src/handleClient.c.o"
+  "CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o"
   "CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o"
   "CMakeFiles/NetworkProgram.dir/main.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o"
+  "CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o"
   "NetworkProgram"
   "NetworkProgram.pdb"

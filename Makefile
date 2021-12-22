@@ -166,6 +166,36 @@ exchange/src/handleClient.c.s:
 	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/exchange/src/handleClient.c.s
 .PHONY : exchange/src/handleClient.c.s
 
+exchange/src/hepler.o: exchange/src/hepler.c.o
+
+.PHONY : exchange/src/hepler.o
+
+# target to build an object file
+exchange/src/hepler.c.o:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/exchange/src/hepler.c.o
+.PHONY : exchange/src/hepler.c.o
+
+exchange/src/hepler.i: exchange/src/hepler.c.i
+
+.PHONY : exchange/src/hepler.i
+
+# target to preprocess a source file
+exchange/src/hepler.c.i:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.i
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/exchange/src/hepler.c.i
+.PHONY : exchange/src/hepler.c.i
+
+exchange/src/hepler.s: exchange/src/hepler.c.s
+
+.PHONY : exchange/src/hepler.s
+
+# target to generate assembly for a file
+exchange/src/hepler.c.s:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.s
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/exchange/src/hepler.c.s
+.PHONY : exchange/src/hepler.c.s
+
 exchange/src/initClient.o: exchange/src/initClient.c.o
 
 .PHONY : exchange/src/initClient.o
@@ -283,6 +313,36 @@ views/src/LoginController.c.s:
 	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.s
 .PHONY : views/src/LoginController.c.s
 
+views/src/ShowController.o: views/src/ShowController.c.o
+
+.PHONY : views/src/ShowController.o
+
+# target to build an object file
+views/src/ShowController.c.o:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.o
+.PHONY : views/src/ShowController.c.o
+
+views/src/ShowController.i: views/src/ShowController.c.i
+
+.PHONY : views/src/ShowController.i
+
+# target to preprocess a source file
+views/src/ShowController.c.i:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.i
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.i
+.PHONY : views/src/ShowController.c.i
+
+views/src/ShowController.s: views/src/ShowController.c.s
+
+.PHONY : views/src/ShowController.s
+
+# target to generate assembly for a file
+views/src/ShowController.c.s:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.s
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.s
+.PHONY : views/src/ShowController.c.s
+
 views/src/initScreen.o: views/src/initScreen.c.o
 
 .PHONY : views/src/initScreen.o
@@ -326,6 +386,9 @@ help:
 	@echo "... exchange/src/handleClient.o"
 	@echo "... exchange/src/handleClient.i"
 	@echo "... exchange/src/handleClient.s"
+	@echo "... exchange/src/hepler.o"
+	@echo "... exchange/src/hepler.i"
+	@echo "... exchange/src/hepler.s"
 	@echo "... exchange/src/initClient.o"
 	@echo "... exchange/src/initClient.i"
 	@echo "... exchange/src/initClient.s"
@@ -338,6 +401,9 @@ help:
 	@echo "... views/src/LoginController.o"
 	@echo "... views/src/LoginController.i"
 	@echo "... views/src/LoginController.s"
+	@echo "... views/src/ShowController.o"
+	@echo "... views/src/ShowController.i"
+	@echo "... views/src/ShowController.s"
 	@echo "... views/src/initScreen.o"
 	@echo "... views/src/initScreen.i"
 	@echo "... views/src/initScreen.s"

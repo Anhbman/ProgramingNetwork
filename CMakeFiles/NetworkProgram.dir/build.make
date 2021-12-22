@@ -83,9 +83,22 @@ CMakeFiles/NetworkProgram.dir/exchange/src/handleClient.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/NetworkProgram.dir/exchange/src/handleClient.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.c -o CMakeFiles/NetworkProgram.dir/exchange/src/handleClient.c.s
 
+CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o: CMakeFiles/NetworkProgram.dir/flags.make
+CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o: exchange/src/hepler.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o   -c /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.c
+
+CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.c > CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.i
+
+CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.c -o CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.s
+
 CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o: CMakeFiles/NetworkProgram.dir/flags.make
 CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o: exchange/src/initClient.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o   -c /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/initClient.c
 
 CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.s: cmake_force
 
 CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o: CMakeFiles/NetworkProgram.dir/flags.make
 CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o: views/src/HomeController.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o   -c /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c
 
 CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.s: cmake_force
 
 CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o: CMakeFiles/NetworkProgram.dir/flags.make
 CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o: views/src/LoginController.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o   -c /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.c
 
 CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.i: cmake_force
@@ -122,9 +135,22 @@ CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.c -o CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.s
 
+CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o: CMakeFiles/NetworkProgram.dir/flags.make
+CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o: views/src/ShowController.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o   -c /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.c
+
+CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.c > CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.i
+
+CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.c -o CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.s
+
 CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o: CMakeFiles/NetworkProgram.dir/flags.make
 CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o: views/src/initScreen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o   -c /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/initScreen.c
 
 CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.i: cmake_force
@@ -139,9 +165,11 @@ CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.s: cmake_force
 NetworkProgram_OBJECTS = \
 "CMakeFiles/NetworkProgram.dir/main.c.o" \
 "CMakeFiles/NetworkProgram.dir/exchange/src/handleClient.c.o" \
+"CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o" \
 "CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o" \
 "CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o" \
 "CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o" \
+"CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o" \
 "CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o"
 
 # External object files for target NetworkProgram
@@ -149,13 +177,15 @@ NetworkProgram_EXTERNAL_OBJECTS =
 
 NetworkProgram: CMakeFiles/NetworkProgram.dir/main.c.o
 NetworkProgram: CMakeFiles/NetworkProgram.dir/exchange/src/handleClient.c.o
+NetworkProgram: CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o
 NetworkProgram: CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o
 NetworkProgram: CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o
 NetworkProgram: CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o
+NetworkProgram: CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o
 NetworkProgram: CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o
 NetworkProgram: CMakeFiles/NetworkProgram.dir/build.make
 NetworkProgram: CMakeFiles/NetworkProgram.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable NetworkProgram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable NetworkProgram"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NetworkProgram.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

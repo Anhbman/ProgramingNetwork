@@ -31,7 +31,14 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
-                      <placeholder/>
+                      <object class="GtkBox" id="box_show_place">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
                     </child>
                   </object>
                 </child>
@@ -48,19 +55,19 @@
             <child>
               <object class="GtkEntry" id="entry_place">
                 <property name="width_request">168</property>
-                <property name="height_request">80</property>
+                <property name="height_request">40</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
               </object>
               <packing>
-                <property name="x">42</property>
-                <property name="y">11</property>
+                <property name="x">36</property>
+                <property name="y">35</property>
               </packing>
             </child>
             <child>
               <object class="GtkMenuButton" id="menu_btn_cate">
                 <property name="width_request">100</property>
-                <property name="height_request">80</property>
+                <property name="height_request">40</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="focus_on_click">False</property>
@@ -71,15 +78,15 @@
                 </child>
               </object>
               <packing>
-                <property name="x">224</property>
-                <property name="y">12</property>
+                <property name="x">220</property>
+                <property name="y">35</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="btn_addplace">
                 <property name="label">gtk-add</property>
                 <property name="width_request">100</property>
-                <property name="height_request">80</property>
+                <property name="height_request">40</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -87,8 +94,24 @@
                 <property name="always_show_image">True</property>
               </object>
               <packing>
-                <property name="x">380</property>
-                <property name="y">12</property>
+                <property name="x">337</property>
+                <property name="y">35</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btn_show_back">
+                <property name="label">gtk-go-back</property>
+                <property name="width_request">100</property>
+                <property name="height_request">40</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_stock">True</property>
+                <property name="always_show_image">True</property>
+              </object>
+              <packing>
+                <property name="x">451</property>
+                <property name="y">35</property>
               </packing>
             </child>
           </object>

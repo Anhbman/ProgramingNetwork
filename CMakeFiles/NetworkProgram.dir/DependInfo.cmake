@@ -5,10 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/exchange/src/handleClient.c.o"
+  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/initClient.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/main.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/main.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o"
+  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/initScreen.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
