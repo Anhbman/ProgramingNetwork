@@ -313,6 +313,36 @@ views/src/LoginController.c.s:
 	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.s
 .PHONY : views/src/LoginController.c.s
 
+views/src/ShareController.o: views/src/ShareController.c.o
+
+.PHONY : views/src/ShareController.o
+
+# target to build an object file
+views/src/ShareController.c.o:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.o
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.o
+.PHONY : views/src/ShareController.c.o
+
+views/src/ShareController.i: views/src/ShareController.c.i
+
+.PHONY : views/src/ShareController.i
+
+# target to preprocess a source file
+views/src/ShareController.c.i:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.i
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.i
+.PHONY : views/src/ShareController.c.i
+
+views/src/ShareController.s: views/src/ShareController.c.s
+
+.PHONY : views/src/ShareController.s
+
+# target to generate assembly for a file
+views/src/ShareController.c.s:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.s
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.s
+.PHONY : views/src/ShareController.c.s
+
 views/src/ShowController.o: views/src/ShowController.c.o
 
 .PHONY : views/src/ShowController.o
@@ -401,6 +431,9 @@ help:
 	@echo "... views/src/LoginController.o"
 	@echo "... views/src/LoginController.i"
 	@echo "... views/src/LoginController.s"
+	@echo "... views/src/ShareController.o"
+	@echo "... views/src/ShareController.i"
+	@echo "... views/src/ShareController.s"
 	@echo "... views/src/ShowController.o"
 	@echo "... views/src/ShowController.i"
 	@echo "... views/src/ShowController.s"

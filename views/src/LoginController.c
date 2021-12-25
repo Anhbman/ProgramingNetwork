@@ -16,14 +16,20 @@ void on_login_clicked(GtkButton *button, UserData *userData) {
     char* pass =  (char *) gtk_entry_get_text(GTK_ENTRY(userData->screenApp->loginContainer.entry_pass));
 
     char user[MAX_LEN_BUFF];
+    int check = 0;
+
     sprintf(user, "user_name = '%s' and password = '%s'",username,pass);
     printf("%s\n",user);
+    if (userData->username) {
+        check = 1;
+    }
     int status = loginUser(user,userData->sockFd);
     printf("status %d\n",status);
     if (status) {
         gtk_widget_hide(userData->screenApp->loginContainer.window_login);
         gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
-        home_show(userData);
+        if (!check)
+            home_show(userData);
         strcpy(userData->username,username);
     }
 

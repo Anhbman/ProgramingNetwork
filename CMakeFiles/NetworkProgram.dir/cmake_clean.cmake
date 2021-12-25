@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/NetworkProgram.dir/main.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o"
+  "CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o"
   "NetworkProgram"

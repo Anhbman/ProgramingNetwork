@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/main.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/main.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o"
+  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShareController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/initScreen.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o"
   )

@@ -34,15 +34,32 @@ typedef struct {
     GtkWidget *scroll_show_place;
     GtkWidget *box_show_place;
     GtkWidget *entry_place;
-    GtkWidget *menu_btn_cate;
+    GtkWidget *category_show;
     GtkWidget *btn_addplace;
     GtkWidget *btn_show_back;
+    GtkWidget *message_add_place;
 } ShowContainer;
+
+typedef struct {
+    GtkWidget *window_share;
+    GtkWidget *fixed_main;
+    GtkWidget *fixed_control;
+    GtkWidget *btn_share_place;
+    GtkWidget *label_message;
+    GtkWidget *fixed_show_place;
+    GtkWidget *scroll_place;
+    GtkWidget *box_place;
+    GtkWidget *fixed_friend;
+    GtkWidget *scroll_friend;
+    GtkWidget *box_plac;
+    GtkWidget *btn_back_share;
+} ShareContainer;
 
 typedef struct {
     LoginContainer loginContainer;
     HomeContainer homeContainer;
     ShowContainer showContainer;
+    ShareContainer shareContainer;
 } ScreenApp;
 
 typedef struct{

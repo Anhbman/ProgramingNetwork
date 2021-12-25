@@ -6,23 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c
-HomeController.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.h
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/main.c
+initScreen.h
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/initScreen.h
 gtk/gtk.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/gtk/gtk.h
-appScreen.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/appScreen.h
-constant.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/constant.h
-sys/socket.h
 -
-hepler.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/hepler.h
-constant.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/constant.h
-ShowController.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.h
+initClient.h
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/initClient.h
 
 /usr/include/atk-1.0/atk/atk-enum-types.h
 atk/atkversion.h
@@ -4678,11 +4668,7 @@ limits.h
 float.h
 -
 
-exchange/include/constant.h
-
-exchange/include/hepler.h
-constant.h
-exchange/include/constant.h
+exchange/include/initClient.h
 netinet/in.h
 -
 arpa/inet.h
@@ -4692,27 +4678,13 @@ sys/socket.h
 appScreen.h
 exchange/include/appScreen.h
 
-views/include/HomeController.h
-gtk/gtk.h
-views/include/gtk/gtk.h
-appScreen.h
-views/include/appScreen.h
-
-views/include/ShowController.h
-gtk/gtk.h
-views/include/gtk/gtk.h
-appScreen.h
-views/include/appScreen.h
-sys/socket.h
--
-constant.h
-views/include/constant.h
-hepler.h
-views/include/hepler.h
-HomeController.h
-views/include/HomeController.h
-
 views/include/appScreen.h
 gtk/gtk.h
 -
+
+views/include/initScreen.h
+gtk/gtk.h
+-
+appScreen.h
+views/include/appScreen.h
 

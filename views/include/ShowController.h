@@ -14,5 +14,5 @@
 
 void show_place (UserData *userData);
 void on_click_back_show(UserData *userData);
-
+void on_click_add_place(UserData* userData);
 #endif //NETWORKPROGRAM_SHOWCONTROLLER_H

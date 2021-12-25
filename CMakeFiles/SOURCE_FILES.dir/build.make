@@ -122,9 +122,22 @@ CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.c -o CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.s
 
+CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.o: CMakeFiles/SOURCE_FILES.dir/flags.make
+CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.o: views/src/ShareController.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.o   -c /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShareController.c
+
+CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShareController.c > CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.i
+
+CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShareController.c -o CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.s
+
 CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.o: CMakeFiles/SOURCE_FILES.dir/flags.make
 CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.o: views/src/ShowController.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.o   -c /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.c
 
 CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.s: cmake_force
 
 CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.o: CMakeFiles/SOURCE_FILES.dir/flags.make
 CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.o: views/src/initScreen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.o   -c /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/initScreen.c
 
 CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.i: cmake_force
@@ -155,6 +168,7 @@ SOURCE_FILES_OBJECTS = \
 "CMakeFiles/SOURCE_FILES.dir/exchange/src/initClient.c.o" \
 "CMakeFiles/SOURCE_FILES.dir/views/src/HomeController.c.o" \
 "CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.o" \
+"CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.o" \
 "CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.o" \
 "CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.o"
 
@@ -166,11 +180,12 @@ SOURCE_FILES: CMakeFiles/SOURCE_FILES.dir/exchange/src/hepler.c.o
 SOURCE_FILES: CMakeFiles/SOURCE_FILES.dir/exchange/src/initClient.c.o
 SOURCE_FILES: CMakeFiles/SOURCE_FILES.dir/views/src/HomeController.c.o
 SOURCE_FILES: CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.o
+SOURCE_FILES: CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.o
 SOURCE_FILES: CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.o
 SOURCE_FILES: CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.o
 SOURCE_FILES: CMakeFiles/SOURCE_FILES.dir/build.make
 SOURCE_FILES: CMakeFiles/SOURCE_FILES.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable SOURCE_FILES"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable SOURCE_FILES"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SOURCE_FILES.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -7,7 +7,7 @@
 void show_place (UserData *userData) {
 
     printf("Show_place\n");
-    int senSize = send(userData->sockFd, SHOW_PLACE, 1, 0);
+    int senSize = send(userData->sockFd, SHOW_PLACE, MAX_LEN_BUFF, 0);
     if (senSize < 0)
         perror("\nshowPlace1 Error: ");
 
@@ -40,6 +40,20 @@ void on_click_back_show(UserData *userData) {
 
     printf("\nshow_back\n");
     gtk_widget_hide(userData->screenApp->showContainer.window_show);
+    printf("1\n");
     gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
+    printf("2\n");
     home_show(userData);
+    printf("3\n");
+}
+
+void on_click_add_place(UserData* userData) {
+
+    printf("\naddplace");
+//    char* place =  (char *) gtk_entry_get_text(GTK_ENTRY(userData->screenApp->showContainer.entry_place));
+    char* category = (char *) gtk_combo_box_get_active_id(GTK_COMBO_BOX(userData->screenApp->showContainer.category_show));
+
+//    printf("\nplace: %s\n",place);
+    printf("category: %s\n",category);
+
 }

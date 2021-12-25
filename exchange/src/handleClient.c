@@ -15,11 +15,11 @@ int loginUser (char * user, int sockFd){
     int senSize = 0;
     char recvData[MAX_LEN_BUFF];
 
-    senSize = send(sockFd,LOGIN, 1, 0);
+    senSize = send(sockFd,LOGIN, MAX_LEN_BUFF, 0);
     if (senSize < 0)
         perror("\nError: ");
 
-    senSize = send(sockFd,user, strlen(user), 0);
+    senSize = send(sockFd,user, MAX_LEN_BUFF, 0);
     if (senSize < 0)
         perror("\nError: ");
 
