@@ -22,6 +22,23 @@ void initLoginScreen(UserData* userData) {
     g_signal_connect(userData->screenApp->loginContainer.button_login, "clicked",G_CALLBACK(on_login_clicked), userData);
 }
 
+void initShowScreen(UserData* userData) {
+    printf("start inti Show\n");
+    GtkBuilder *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/show1.glade");
+
+    userData->screenApp->showContainer.window_show = (GtkWidget *) gtk_builder_get_object(builder, "window_show");
+    userData->screenApp->showContainer.box_place = (GtkWidget *) gtk_builder_get_object(builder, "box_place");
+    userData->screenApp->showContainer.entry_place = (GtkWidget *) gtk_builder_get_object(builder, "entry_place");
+    userData->screenApp->showContainer.btn_add_place = (GtkWidget *) gtk_builder_get_object(builder, "btn_add_place");
+    userData->screenApp->showContainer.combo_cate = (GtkWidget *) gtk_builder_get_object(builder, "combo_cate");
+    userData->screenApp->showContainer.message_show = (GtkWidget *) gtk_builder_get_object(builder, "message_show");
+    userData->screenApp->showContainer.btn_show_back = (GtkWidget *) gtk_builder_get_object(builder , "btn_show_back");
+
+    g_signal_connect(userData->screenApp->showContainer.btn_show_back, "clicked", G_CALLBACK(on_back_home_clicked), userData);
+    g_signal_connect(userData->screenApp->showContainer.btn_add_place, "clicked", G_CALLBACK(on_add_clicked), userData);
+    printf("show done\n");
+}
+
 void initHomeScreen(UserData* userData){
     GtkBuilder *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/home.glade");
 
@@ -35,26 +52,10 @@ void initHomeScreen(UserData* userData){
 
     g_signal_connect(userData->screenApp->homeContainer.btn_show_home, "clicked", G_CALLBACK(on_show_clicked), userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_back_home, "clicked", G_CALLBACK(on_back_clicked), userData);
-
-}
-
-void initShowScreen(UserData* userData) {
-    GtkBuilder *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/show.glade");
-
-    userData->screenApp->showContainer.window_show  = (GtkWidget *) gtk_builder_get_object(builder, "window_show");
-    userData->screenApp->showContainer.scroll_show_place = (GtkWidget *) gtk_builder_get_object(builder, "scroll_show_place");
-    userData->screenApp->showContainer.box_show_place = (GtkWidget *) gtk_builder_get_object(builder, "box_show_place");
-    userData->screenApp->showContainer.entry_place = (GtkWidget *) gtk_builder_get_object(builder, "entry_place");
-    userData->screenApp->showContainer.category_show = (GtkWidget *) gtk_builder_get_object(builder, "category_show");
-    userData->screenApp->showContainer.btn_addplace = (GtkWidget *) gtk_builder_get_object(builder, "btn_addplace");
-    userData->screenApp->showContainer.btn_show_back = (GtkWidget *) gtk_builder_get_object(builder, "btn_show_back");
-    userData->screenApp->showContainer.message_add_place = (GtkWidget *) gtk_builder_get_object(builder, "message_add_place");
-
-
-    g_signal_connect(userData->screenApp->showContainer.btn_show_back, "clicked", G_CALLBACK(on_click_back_show), userData);
-    g_signal_connect(userData->screenApp->showContainer.btn_addplace, "clicked", G_CALLBACK(on_click_add_place), userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_share_home, "clicked" , G_CALLBACK(on_share_clicked), userData);
+
 }
+
 
 void initShareScreen(UserData* userData) {
     GtkBuilder *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/share_place.glade");
@@ -69,16 +70,18 @@ void initShareScreen(UserData* userData) {
     userData->screenApp->shareContainer.box_place = (GtkWidget *) gtk_builder_get_object(builder, "box_place");
     userData->screenApp->shareContainer.fixed_friend = (GtkWidget *) gtk_builder_get_object(builder, "fixed_friend");
     userData->screenApp->shareContainer.scroll_friend = (GtkWidget *) gtk_builder_get_object(builder, "scroll_friend");
-    userData->screenApp->shareContainer.box_plac = (GtkWidget *) gtk_builder_get_object(builder, "box_plac");
+    userData->screenApp->shareContainer.box_friend = (GtkWidget *) gtk_builder_get_object(builder, "box_friend");
     userData->screenApp->shareContainer.btn_back_share = (GtkWidget *) gtk_builder_get_object(builder, "btn_back_share");
+    userData->screenApp->shareContainer.radio_show_place = (GtkWidget *) gtk_builder_get_object(builder, "radio_show_place");
 
     g_signal_connect(userData->screenApp->shareContainer.btn_back_share, "clicked", G_CALLBACK(on_back_share_clicked), userData);
 
 }
 
 void initApp(UserData *userData){
+    printf("init\n");
     initLoginScreen(userData);
     initHomeScreen(userData);
-    initShowScreen(userData);
     initShareScreen(userData);
+    initShowScreen(userData);
 }

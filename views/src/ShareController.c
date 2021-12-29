@@ -4,19 +4,22 @@
 
 #include "ShareController.h"
 
+static int status = 0;
+
 void on_back_share_clicked(GtkButton* button, UserData* userData) {
     gtk_widget_hide(userData->screenApp->shareContainer.window_share);
     gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
 }
 
 void share_show(UserData* userData) {
-
+    if (status)
+        return;
+    share_show_place(userData);
+    share_show_friend(userData);
+    status = 1;
 }
 
 void share_show_place (UserData* userData) {
-    int recvSize = 0;
-
-    char recvData[MAX_LEN_BUFF];
 
     printf("Share_show_place: \n");
 
@@ -28,20 +31,58 @@ void share_show_place (UserData* userData) {
     if (senSize < 0)
         perror("\nError: ");
 
-    char *value = dataRecv(userData);
-
+    char* value = dataRecv(userData);
     char *token;
-
     token = strtok(value, "|");
-
+    int check = 0;
+    GtkWidget *radio2;
     while (token != NULL) {
-        GtkWidget *gtkLabel = gtk_check_button_new_with_label(token);
-        gtk_widget_set_visible(gtkLabel, TRUE);
-//        gtk_label_set_xalign(GTK_CHECK_BUTTON(gtkLabel), 1);
-//        gtk_widget_set_halign(gtkLabel, GTK_ALIGN_START);
-//        gtk_label_set_max_width_chars(GTK_CHECK_BUTTON(gtkLabel), 30);
-//        gtk_label_set_line_wrap(GTK_CHECK_BUTTON(gtkLabel),TRUE);
-        add_message(gtkLabel, userData->screenApp->shareContainer.box_place, userData);
+        GtkWidget *radio1;
+        if (check == 0) {
+            radio2 = gtk_radio_button_new_with_label(NULL, token);
+            add_message(radio2, userData->screenApp->shareContainer.box_place, userData);
+            check = 1;
+        } else {
+            radio1 = gtk_radio_button_new_with_label_from_widget(
+                    GTK_RADIO_BUTTON(radio2), token);
+            add_message(radio1, userData->screenApp->shareContainer.box_place, userData);
+        }
         token = strtok(NULL, "|");
     }
+
+    free(value);
+}
+
+void share_show_friend (UserData* userData) {
+
+    printf("Share_show_friend: \n");
+
+//    int senSize = send(userData->sockFd, SHARE_SHOW_FRIEND, MAX_LEN_BUFF, 0);
+//    if (senSize < 0)
+//        perror("\nError: ");
+//
+//    senSize = send(userData->sockFd, userData->username, MAX_LEN_BUFF, 0);
+//    if (senSize < 0)
+//        perror("\nError: ");
+
+    char* value = dataRecv(userData);
+    char *token;
+    token = strtok(value, "|");
+    int check = 0;
+    GtkWidget *radio2;
+    while (token != NULL) {
+        GtkWidget *radio1;
+        if (check == 0) {
+            radio2 = gtk_radio_button_new_with_label(NULL, token);
+            add_message(radio2, userData->screenApp->shareContainer.box_friend, userData);
+            check = 1;
+        } else {
+            radio1 = gtk_radio_button_new_with_label_from_widget(
+                    GTK_RADIO_BUTTON(radio2), token);
+            add_message(radio1, userData->screenApp->shareContainer.box_friend, userData);
+        }
+        token = strtok(NULL, "|");
+    }
+
+    free(value);
 }

@@ -14,6 +14,9 @@
 #define SHARE_SHOW_PLACE "5"
 #define SHARE_SHOW_FRIEND "6"
 #define REGISTER "7"
+#define ADD_PLACE "8"
+#define ADD_PLACE_OK "81"
+#define ADD_PLACE_ERR "80"
 
 
 #endif //NETWORKPROGRAM_CONSTANT_H

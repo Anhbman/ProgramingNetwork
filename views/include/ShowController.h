@@ -1,5 +1,5 @@
 //
-// Created by bumman on 22/12/2021.
+// Created by bumman on 28/12/2021.
 //
 
 #ifndef NETWORKPROGRAM_SHOWCONTROLLER_H
@@ -7,12 +7,16 @@
 
 #include "gtk/gtk.h"
 #include "appScreen.h"
-#include <sys/socket.h>
+#include "appScreen.h"
 #include "constant.h"
+#include <sys/socket.h>
 #include "hepler.h"
-#include "HomeController.h"
+#include "constant.h"
+#include "ShareController.h"
+#include "handleClient.h"
 
-void show_place (UserData *userData);
-void on_click_back_show(UserData *userData);
-void on_click_add_place(UserData* userData);
+void on_back_home_clicked (GtkButton* button, UserData* userData);
+void home_show(UserData *userData);
+void on_add_clicked(GtkButton* button, UserData* userData);
+
 #endif //NETWORKPROGRAM_SHOWCONTROLLER_H

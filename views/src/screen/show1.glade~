@@ -10,17 +10,17 @@
       <placeholder/>
     </child>
     <child>
-      <object class="GtkFixed" id="fixed_show_main">
+      <object class="GtkFixed" id="fixed_main">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <child>
-          <object class="GtkFixed" id="fixed_show_place">
+          <object class="GtkFixed">
             <property name="width_request">600</property>
             <property name="height_request">300</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
-              <object class="GtkScrolledWindow" id="scroll_show_place">
+              <object class="GtkScrolledWindow">
                 <property name="width_request">600</property>
                 <property name="height_request">300</property>
                 <property name="visible">True</property>
@@ -31,7 +31,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkBox" id="box_show_place">
+                      <object class="GtkBox" id="box_place">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="orientation">vertical</property>
@@ -47,25 +47,25 @@
           </object>
         </child>
         <child>
-          <object class="GtkFixed" id="fixed_add">
+          <object class="GtkFixed">
             <property name="width_request">600</property>
             <property name="height_request">100</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
               <object class="GtkEntry" id="entry_place">
-                <property name="width_request">168</property>
+                <property name="width_request">100</property>
                 <property name="height_request">40</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
               </object>
               <packing>
-                <property name="x">36</property>
-                <property name="y">35</property>
+                <property name="x">46</property>
+                <property name="y">30</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="btn_addplace">
+              <object class="GtkButton" id="btn_add_place">
                 <property name="label">gtk-add</property>
                 <property name="width_request">100</property>
                 <property name="height_request">40</property>
@@ -76,8 +76,40 @@
                 <property name="always_show_image">True</property>
               </object>
               <packing>
-                <property name="x">337</property>
-                <property name="y">35</property>
+                <property name="x">343</property>
+                <property name="y">30</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="message_show">
+                <property name="width_request">100</property>
+                <property name="height_request">23</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="x">254</property>
+                <property name="y">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="combo_cate">
+                <property name="width_request">100</property>
+                <property name="height_request">40</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="active">0</property>
+                <property name="active_id">1</property>
+                <items>
+                  <item id="1" translatable="yes">cafe</item>
+                  <item id="2" translatable="yes">food</item>
+                  <item id="3" translatable="yes">hotel</item>
+                  <item translatable="yes">sport</item>
+                </items>
+              </object>
+              <packing>
+                <property name="x">228</property>
+                <property name="y">30</property>
               </packing>
             </child>
             <child>
@@ -92,40 +124,8 @@
                 <property name="always_show_image">True</property>
               </object>
               <packing>
-                <property name="x">451</property>
-                <property name="y">35</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkComboBoxText" id="category_show">
-                <property name="width_request">100</property>
-                <property name="height_request">40</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="active">0</property>
-                <items>
-                  <item id="1" translatable="yes">cafe</item>
-                  <item id="2" translatable="yes">food</item>
-                  <item id="3" translatable="yes">hotel</item>
-                  <item translatable="yes">sport</item>
-                </items>
-              </object>
-              <packing>
-                <property name="x">221</property>
-                <property name="y">35</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkLabel" id="message_add_place">
-                <property name="width_request">100</property>
-                <property name="height_request">20</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="label" translatable="yes">1</property>
-              </object>
-              <packing>
-                <property name="x">222</property>
-                <property name="y">9</property>
+                <property name="x">464</property>
+                <property name="y">30</property>
               </packing>
             </child>
           </object>

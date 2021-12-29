@@ -25,3 +25,7 @@ char* dataRecv(UserData *userData) {
 
     return recvData;
 }
+
+void create_radio_button(GtkWidget* group, GtkWidget *addBox) {
+
+}

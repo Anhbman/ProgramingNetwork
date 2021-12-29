@@ -30,17 +30,6 @@ typedef struct {
 } HomeContainer;
 
 typedef struct {
-    GtkWidget *window_show;
-    GtkWidget *scroll_show_place;
-    GtkWidget *box_show_place;
-    GtkWidget *entry_place;
-    GtkWidget *category_show;
-    GtkWidget *btn_addplace;
-    GtkWidget *btn_show_back;
-    GtkWidget *message_add_place;
-} ShowContainer;
-
-typedef struct {
     GtkWidget *window_share;
     GtkWidget *fixed_main;
     GtkWidget *fixed_control;
@@ -51,15 +40,26 @@ typedef struct {
     GtkWidget *box_place;
     GtkWidget *fixed_friend;
     GtkWidget *scroll_friend;
-    GtkWidget *box_plac;
+    GtkWidget *box_friend;
     GtkWidget *btn_back_share;
+    GtkWidget *radio_show_place;
 } ShareContainer;
+
+typedef struct {
+    GtkWidget *window_show;
+    GtkWidget *box_place;
+    GtkWidget *entry_place;
+    GtkWidget *btn_add_place;
+    GtkWidget *message_show;
+    GtkWidget *combo_cate;
+    GtkWidget *btn_show_back;
+} ShowContainer;
 
 typedef struct {
     LoginContainer loginContainer;
     HomeContainer homeContainer;
-    ShowContainer showContainer;
     ShareContainer shareContainer;
+    ShowContainer showContainer;
 } ScreenApp;
 
 typedef struct{

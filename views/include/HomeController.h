@@ -15,7 +15,6 @@
 #include "ShowController.h"
 #include "ShareController.h"
 
-void home_show(UserData *userData);
 void add_message(GtkWidget *message, GtkWidget *addBox,UserData *userData);
 void on_show_clicked(GtkButton *button, UserData *userData);
 void on_back_clicked(GtkButton *button, UserData *userData);

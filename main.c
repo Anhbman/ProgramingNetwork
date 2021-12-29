@@ -18,6 +18,7 @@ int main(int argc, char *argv[]) {
 
     userData.screenApp = &screenApp;
     initApp(&userData);
+    printf("init done\n");
     gtk_widget_show(screenApp.loginContainer.window_login);
 
     gtk_main();
