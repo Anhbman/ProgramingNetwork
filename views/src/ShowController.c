@@ -7,41 +7,9 @@
 void on_back_home_clicked (GtkButton* button, UserData* userData) {
     gtk_widget_hide(userData->screenApp->showContainer.window_show);
     gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
+    remove_all_box_child(userData->screenApp->showContainer.box_place);
 }
 
-void home_show(UserData *userData) {
-
-//    test dung
-    printf("Show_home: \n");
-
-    int senSize = send(userData->sockFd, HOME_SHOW, MAX_LEN_BUFF, 0);
-    if (senSize < 0)
-        perror("\nError: ");
-
-    char* value;
-    value = dataRecv(userData);
-    char *token;
-
-    token = strtok(value, "|");
-
-    int check = 0;
-    GtkWidget *radio2;
-    while (token != NULL) {
-        GtkWidget *radio1;
-        if (check == 0) {
-            radio2 = gtk_radio_button_new_with_label(NULL, token);
-            add_message(radio2, userData->screenApp->showContainer.box_place, userData);
-            check = 1;
-        } else {
-            radio1 = gtk_radio_button_new_with_label_from_widget(
-                    GTK_RADIO_BUTTON(radio2), token);
-            add_message(radio1, userData->screenApp->showContainer.box_place, userData);
-        }
-        token = strtok(NULL, "|");
-    }
-
-    free(value);
-}
 
 void on_add_clicked(GtkButton* button, UserData* userData) {
 
@@ -54,5 +22,43 @@ void on_add_clicked(GtkButton* button, UserData* userData) {
         gtk_label_set_text(userData->screenApp->showContainer.message_show, "successfully");
     } else {
         gtk_label_set_text(userData->screenApp->showContainer.message_show, "error");
+    }
+}
+
+void show_page_data(UserData *userData) {
+
+//    test dung
+    printf("Show_home: \n");
+
+    int senSize = send(userData->sockFd, SHOW_PLACE, MAX_LEN_BUFF, 0);
+    if (senSize < 0)
+        perror("\nError: ");
+
+    while (1) {
+        int tmp = 0;
+        char* value;
+        value = dataRecv(userData);
+        if (strcmp(value, SEND_END) == 0) {
+            free(value);
+            break;
+        }
+        char *token;
+
+        token = strtok(value, "|");
+
+        GtkWidget *radio2;
+        while (token != NULL) {
+            GtkWidget *check;
+
+            if (tmp == 0) {
+                add_message(gtk_label_new(token), userData->screenApp->showContainer.box_place, userData);
+                tmp++;
+            } else {
+                /* --- Get the check button --- */
+                check = gtk_check_button_new_with_label(token);
+                add_message(check, userData->screenApp->showContainer.box_place, userData);
+            }
+            token = strtok(NULL, "|");
+        }
     }
 }

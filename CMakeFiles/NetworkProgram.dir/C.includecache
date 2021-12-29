@@ -10,6 +10,10 @@
 handleClient.h
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.h
 
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.c
+hepler.h
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.h
+
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c
 HomeController.h
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.h
@@ -4759,6 +4763,8 @@ appScreen.h
 views/include/appScreen.h
 handleClient.h
 views/include/handleClient.h
+HomeController.h
+views/include/HomeController.h
 
 views/include/ShareController.h
 HomeController.h

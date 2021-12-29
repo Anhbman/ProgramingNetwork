@@ -17,6 +17,7 @@
 #define ADD_PLACE "8"
 #define ADD_PLACE_OK "81"
 #define ADD_PLACE_ERR "80"
+#define SEND_END "-1"
 
 
 #endif //NETWORKPROGRAM_CONSTANT_H

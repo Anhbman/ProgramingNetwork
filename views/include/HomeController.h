@@ -19,5 +19,6 @@ void add_message(GtkWidget *message, GtkWidget *addBox,UserData *userData);
 void on_show_clicked(GtkButton *button, UserData *userData);
 void on_back_clicked(GtkButton *button, UserData *userData);
 void on_share_clicked(GtkButton *button, UserData *userData);
+void home_show(UserData *userData);
 
 #endif //NETWORKPROGRAM_HOMECONTROLLER_H

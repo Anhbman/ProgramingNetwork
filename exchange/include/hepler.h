@@ -13,5 +13,6 @@
 
 void add_message(GtkWidget *message, GtkWidget *addBox, UserData *userData);
 char* dataRecv(UserData *userData);
+void remove_all_box_child (GtkWidget* box);
 
 #endif //NETWORKPROGRAM_HEPLER_H

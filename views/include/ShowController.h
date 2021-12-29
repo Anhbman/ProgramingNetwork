@@ -15,8 +15,8 @@
 #include "ShareController.h"
 #include "handleClient.h"
 
+void show_page_data(UserData *userData);
 void on_back_home_clicked (GtkButton* button, UserData* userData);
-void home_show(UserData *userData);
 void on_add_clicked(GtkButton* button, UserData* userData);
 
 #endif //NETWORKPROGRAM_SHOWCONTROLLER_H
