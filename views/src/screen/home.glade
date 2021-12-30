@@ -193,7 +193,6 @@
                 <property name="can_focus">True</property>
                 <property name="no_show_all">True</property>
                 <property name="double_buffered">False</property>
-                <property name="label" translatable="yes">batman</property>
               </object>
               <packing>
                 <property name="x">48</property>

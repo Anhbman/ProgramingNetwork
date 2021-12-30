@@ -132,6 +132,19 @@
             <property name="y">205</property>
           </packing>
         </child>
+        <child>
+          <object class="GtkButton" id="button_register">
+            <property name="label" translatable="yes">Register</property>
+            <property name="width_request">100</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="x">395</property>
+            <property name="y">88</property>
+          </packing>
+        </child>
       </object>
     </child>
   </object>

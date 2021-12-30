@@ -26,12 +26,19 @@ void on_login_clicked(GtkButton *button, UserData *userData) {
     int status = loginUser(user,userData->sockFd);
     printf("status %d\n",status);
     if (status) {
-        gtk_widget_hide(userData->screenApp->loginContainer.window_login);
-        gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
         if (!check)
             home_show(userData);
         strcpy(userData->username,username);
-    }
+        printf("%s\n",username);
+        gtk_label_set_text(userData->screenApp->homeContainer.label_name_home,userData->username);
+        gtk_widget_hide(userData->screenApp->loginContainer.window_login);
+        gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
+
+   }
 
     return;
+}
+void on_register_clicked(GtkButton *button,UserData *userData) {
+    gtk_widget_hide(userData->screenApp->loginContainer.window_login);
+    gtk_widget_show_all(userData->screenApp->registerContainer.window_register);
 }

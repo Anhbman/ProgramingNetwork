@@ -1,4 +1,4 @@
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/rebuild_cache.dir
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/edit_cache.dir
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir
+/home/phonghoang/ProgramingNetwork/CMakeFiles/rebuild_cache.dir
+/home/phonghoang/ProgramingNetwork/CMakeFiles/edit_cache.dir
+/home/phonghoang/ProgramingNetwork/CMakeFiles/NetworkProgram.dir
+/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir

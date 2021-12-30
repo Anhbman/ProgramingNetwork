@@ -8,6 +8,6 @@
 #include "appScreen.h"
 
 int loginUser (char * user, int sockFd);
-
-
+int registerUser (char *user, int sockFd);
+int addFriend(char *user,int sockFd);
 #endif //NETWORKPROGRAM_HANDLECLIENT_H

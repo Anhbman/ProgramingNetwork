@@ -58,15 +58,15 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/include"
+					"path" : "/home/phonghoang/ProgramingNetwork/views/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/include"
+					"path" : "/home/phonghoang/ProgramingNetwork/exchange/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/constant"
+					"path" : "/home/phonghoang/ProgramingNetwork/exchange/constant"
 				},
 				{
 					"backtrace" : 3,
@@ -160,7 +160,9 @@
 				5,
 				6,
 				7,
-				8
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -249,7 +251,9 @@
 				5,
 				6,
 				7,
-				8
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -282,6 +286,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "views/src/AddFriendController.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "views/src/HomeController.c",
 			"sourceGroupIndex" : 0
 		},
@@ -289,6 +299,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "views/src/LoginController.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "views/src/RegisterController.c",
 			"sourceGroupIndex" : 0
 		},
 		{

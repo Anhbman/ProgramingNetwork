@@ -40,14 +40,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "NetworkProgram::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-NetworkProgram-Debug-72bcba7812978ea01745.json",
+					"jsonFile" : "target-NetworkProgram-Debug-2c6e820100a51a43fcb4.json",
 					"name" : "NetworkProgram",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "SOURCE_FILES::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SOURCE_FILES-Debug-6229a1c503c69894d07b.json",
+					"jsonFile" : "target-SOURCE_FILES-Debug-43c7f016d97ccd61d157.json",
 					"name" : "SOURCE_FILES",
 					"projectIndex" : 0
 				}
@@ -57,8 +57,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM",
-		"source" : "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM"
+		"build" : "/home/phonghoang/ProgramingNetwork",
+		"source" : "/home/phonghoang/ProgramingNetwork"
 	},
 	"version" : 
 	{

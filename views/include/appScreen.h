@@ -14,9 +14,17 @@ typedef struct{
     GtkWidget *button_login;
     GtkWidget *entry_user;
     GtkWidget *entry_pass;
+    GtkWidget *button_register;
 
 } LoginContainer;
-
+ typedef  struct {
+     GtkWidget *window_register;
+     GtkWidget *button_back;
+     GtkWidget *button_register;
+     GtkWidget *entry_username;
+     GtkWidget *entry_password;
+     GtkWidget *entry_password1;
+ } RegisterContainer;
 typedef struct {
     GtkWidget *window_home;
     GtkWidget *scroll_place;
@@ -54,12 +62,25 @@ typedef struct {
     GtkWidget *box_plac;
     GtkWidget *btn_back_share;
 } ShareContainer;
-
+typedef struct  {
+    GtkWidget *window_addFriend;
+    GtkWidget *scroll_place;
+    GtkWidget *fix_place;
+    GtkWidget *fix_btn;
+    GtkWidget *fix_main;
+    GtkWidget *box_place;
+    GtkWidget *btn_back;
+    GtkWidget *btn_add;
+    GtkWidget *entry_friendname;
+    GtkWidget *label_result
+} AddFriendContainer;
 typedef struct {
     LoginContainer loginContainer;
     HomeContainer homeContainer;
     ShowContainer showContainer;
     ShareContainer shareContainer;
+    RegisterContainer registerContainer;
+    AddFriendContainer addFriendContainer;
 } ScreenApp;
 
 typedef struct{
