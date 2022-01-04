@@ -32,6 +32,7 @@ void home_show(UserData *userData) {
     if (senSize < 0)
         perror("\nError: ");
 
+
     while (1) {
         int tmp = 0;
         char* value;

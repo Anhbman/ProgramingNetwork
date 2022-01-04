@@ -34,6 +34,9 @@ void show_page_data(UserData *userData) {
     if (senSize < 0)
         perror("\nError: ");
 
+    senSize = send(userData->sockFd, userData->username, MAX_LEN_BUFF, 0);
+    if (senSize < 0)
+        perror("\nError: ");
     while (1) {
         int tmp = 0;
         char* value;

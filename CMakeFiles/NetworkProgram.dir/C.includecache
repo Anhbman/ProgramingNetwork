@@ -6,53 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.c
-handleClient.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.h
-
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.c
-hepler.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.h
-
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c
 HomeController.h
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.h
 
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.c
-handleClient.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/handleClient.h
-appScreen.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/appScreen.h
-string.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/string.h
-constant.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/constant.h
-gtk/gtk.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/gtk/gtk.h
-LoginController.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.h
-HomeController.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.h
-
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShareController.c
-ShareController.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShareController.h
-
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.c
 ShowController.h
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.h
-
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/initScreen.c
-initScreen.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/initScreen.h
-LoginController.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.h
-HomeController.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.h
-ShowController.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.h
-ShareController.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShareController.h
 
 /usr/include/atk-1.0/atk/atk-enum-types.h
 atk/atkversion.h
@@ -4758,14 +4718,6 @@ views/include/ShowController.h
 ShareController.h
 views/include/ShareController.h
 
-views/include/LoginController.h
-appScreen.h
-views/include/appScreen.h
-handleClient.h
-views/include/handleClient.h
-HomeController.h
-views/include/HomeController.h
-
 views/include/ShareController.h
 HomeController.h
 views/include/HomeController.h
@@ -4807,10 +4759,4 @@ views/include/handleClient.h
 views/include/appScreen.h
 gtk/gtk.h
 -
-
-views/include/initScreen.h
-gtk/gtk.h
--
-appScreen.h
-views/include/appScreen.h
 
