@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c
-HomeController.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.h
-
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.c
 ShowController.h
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.h

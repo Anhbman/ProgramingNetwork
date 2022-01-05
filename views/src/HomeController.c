@@ -9,18 +9,28 @@ void on_show_clicked(GtkButton *button, UserData *userData) {
     show_page_data(userData);
     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
     gtk_widget_show_all(userData->screenApp->showContainer.window_show);
+    remove_all_box_child(userData->screenApp->homeContainer.box_place);
 }
 
 void on_back_clicked(GtkButton *button, UserData *userData) {
     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
     gtk_widget_show_all(userData->screenApp->loginContainer.window_login);
     remove_all_box_child(userData->screenApp->homeContainer.box_place);
+
+//    GList *children, *iter;
+//    children = gtk_container_get_children(GTK_CONTAINER(userData->screenApp->homeContainer.box_place));
+//    printf("delete home\n");
+//    for(iter = children; iter != NULL; iter = g_list_next(iter)){
+//        gtk_widget_destroy(GTK_WIDGET(iter->data));
+//    }
+//    g_list_free(children);
 }
 
 void on_share_clicked(GtkButton *button, UserData *userData) {
 //    share_show(userData);
     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
     gtk_widget_show_all(userData->screenApp->shareContainer.window_share);
+//    remove_all_box_child(userData->screenApp->homeContainer.box_place);
 }
 
 void home_show(UserData *userData) {
@@ -60,4 +70,29 @@ void home_show(UserData *userData) {
             token = strtok(NULL, "|");
         }
     }
+}
+
+void on_delete_clicked (GtkButton *button ,UserData* userData) {
+
+    printf("delete home\n");
+    GList *children, *iter;
+    GtkCheckButton a;
+
+    children = gtk_container_get_children(GTK_CONTAINER(userData->screenApp->homeContainer.box_place));
+    printf("delete home\n");
+    for(iter = children; iter != NULL; iter = g_list_next(iter)){
+        GtkWidget *child = iter->data;
+        if (GTK_IS_CHECK_BUTTON(child)){
+            if (gtk_toggle_button_get_active(child)){
+                char* name = gtk_button_get_label(child);
+                if (remove_place(userData,name)) {
+                    printf("haah");
+                    gtk_widget_destroy(child);
+                }
+            }
+
+        }
+    }
+
+    return;
 }

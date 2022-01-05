@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.c
+handleClient.h
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.h
+
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.c
 hepler.h
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.h
-
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/initClient.c
-initClient.h
-/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/initClient.h
 
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c
 HomeController.h
@@ -4713,20 +4713,22 @@ exchange/include/constant.h
 exchange/include/handleClient.h
 appScreen.h
 exchange/include/appScreen.h
+hepler.h
+exchange/include/hepler.h
+constant.h
+exchange/include/constant.h
+stdlib.h
+-
+stdio.h
+-
+sys/socket.h
+-
+string.h
+-
 
 exchange/include/hepler.h
 constant.h
 exchange/include/constant.h
-netinet/in.h
--
-arpa/inet.h
--
-sys/socket.h
--
-appScreen.h
-exchange/include/appScreen.h
-
-exchange/include/initClient.h
 netinet/in.h
 -
 arpa/inet.h
@@ -4761,6 +4763,8 @@ appScreen.h
 views/include/appScreen.h
 handleClient.h
 views/include/handleClient.h
+HomeController.h
+views/include/HomeController.h
 
 views/include/ShareController.h
 HomeController.h
@@ -4797,6 +4801,8 @@ constant.h
 views/include/constant.h
 ShareController.h
 views/include/ShareController.h
+handleClient.h
+views/include/handleClient.h
 
 views/include/appScreen.h
 gtk/gtk.h

@@ -17,6 +17,9 @@
 #define ADD_PLACE "8"
 #define ADD_PLACE_OK "81"
 #define ADD_PLACE_ERR "80"
+#define REMOVE_PLACE "9"
+#define REMOVE_PLACE_OK "91"
+#define REMOVE_PLACE_ERROR "90"
 #define SEND_END "-1"
 
 

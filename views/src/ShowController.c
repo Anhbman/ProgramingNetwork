@@ -5,6 +5,7 @@
 #include "ShowController.h"
 
 void on_back_home_clicked (GtkButton* button, UserData* userData) {
+    home_show(userData);
     gtk_widget_hide(userData->screenApp->showContainer.window_show);
     gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
     remove_all_box_child(userData->screenApp->showContainer.box_place);

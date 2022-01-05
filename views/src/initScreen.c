@@ -49,10 +49,12 @@ void initHomeScreen(UserData* userData){
     userData->screenApp->homeContainer.btn_addfriend_home = (GtkWidget*) gtk_builder_get_object(builder, "btn_addfriend_home");
     userData->screenApp->homeContainer.btn_share_home = (GtkWidget*) gtk_builder_get_object(builder, "btn_share_home");
     userData->screenApp->homeContainer.btn_back_home = (GtkWidget*) gtk_builder_get_object(builder, "btn_back_home");
+    userData->screenApp->homeContainer.btn_home_delete = (GtkWidget*) gtk_builder_get_object(builder,"btn_home_delete");
 
     g_signal_connect(userData->screenApp->homeContainer.btn_show_home, "clicked", G_CALLBACK(on_show_clicked), userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_back_home, "clicked", G_CALLBACK(on_back_clicked), userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_share_home, "clicked" , G_CALLBACK(on_share_clicked), userData);
+    g_signal_connect(userData->screenApp->homeContainer.btn_home_delete,"clicked", G_CALLBACK(on_delete_clicked), userData);
 
 }
 

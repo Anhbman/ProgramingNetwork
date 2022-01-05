@@ -139,7 +139,7 @@
               </object>
               <packing>
                 <property name="x">46</property>
-                <property name="y">96</property>
+                <property name="y">75</property>
               </packing>
             </child>
             <child>
@@ -182,7 +182,7 @@
               </object>
               <packing>
                 <property name="x">45</property>
-                <property name="y">165</property>
+                <property name="y">128</property>
               </packing>
             </child>
             <child>
@@ -212,8 +212,24 @@
                 <property name="always_show_image">True</property>
               </object>
               <packing>
+                <property name="x">46</property>
+                <property name="y">335</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btn_home_delete">
+                <property name="label">gtk-delete</property>
+                <property name="width_request">110</property>
+                <property name="height_request">45</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_stock">True</property>
+                <property name="always_show_image">True</property>
+              </object>
+              <packing>
                 <property name="x">45</property>
-                <property name="y">225</property>
+                <property name="y">186</property>
               </packing>
             </child>
           </object>

@@ -27,6 +27,7 @@ typedef struct {
     GtkWidget *btn_share_home;
     GtkWidget *label_name_home;
     GtkWidget *btn_back_home;
+    GtkWidget *btn_home_delete;
 } HomeContainer;
 
 typedef struct {

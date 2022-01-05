@@ -73,4 +73,34 @@ int add_place (char* user,char * namePlace, char* category, int sockFd) {
 
 }
 
+int remove_place (UserData* userData, char *name) {
+
+    int senSize;
+
+    senSize = send(userData->sockFd,REMOVE_PLACE, MAX_LEN_BUFF, 0);
+    if (senSize < 0)
+        perror("\nError: ");
+
+    senSize = send(userData->sockFd,userData->username, MAX_LEN_BUFF, 0);
+    if (senSize < 0)
+        perror("\nError: ");
+
+    senSize = send(userData->sockFd,name, MAX_LEN_BUFF, 0);
+    if (senSize < 0)
+        perror("\nError: ");
+
+    char* recvData;
+
+    recvData = dataRecv(userData);
+    if (strncmp(recvData,REMOVE_PLACE_OK,2) == 0) {
+        printf("ok\n");
+        free(recvData);
+        return 1;
+    }
+    free(recvData);
+    return 0;
+
+
+}
+
 

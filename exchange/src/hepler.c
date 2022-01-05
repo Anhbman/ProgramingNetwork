@@ -35,3 +35,9 @@ void remove_all_box_child (GtkWidget* box) {
         gtk_widget_destroy(GTK_WIDGET(iter->data));
     g_list_free(children);
 }
+
+GList* get_child_box (UserData *userData) {
+    GList* list = gtk_container_get_children (GTK_CONTAINER (userData->screenApp->homeContainer.box_place));
+    return list;
+}
+

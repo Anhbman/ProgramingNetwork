@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
     ScreenApp screenApp;
     gtk_init(&argc, &argv);
 
-    if ((userData.sockFd = initSocket("127.0.0.1", 5000, &userData)) <= 0)
+    if ((userData.sockFd = initSocket("127.0.0.1", 5001, &userData)) <= 0)
         return userData.sockFd;
 
     userData.screenApp = &screenApp;
