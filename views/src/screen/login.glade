@@ -4,7 +4,7 @@
   <requires lib="gtk+" version="3.20"/>
   <object class="GtkWindow" id="window_login">
     <property name="width_request">400</property>
-    <property name="height_request">300</property>
+    <property name="height_request">400</property>
     <property name="can_focus">False</property>
     <property name="resizable">False</property>
     <child type="titlebar">
@@ -129,20 +129,21 @@
           </object>
           <packing>
             <property name="x">119</property>
-            <property name="y">205</property>
+            <property name="y">159</property>
           </packing>
         </child>
         <child>
           <object class="GtkButton" id="button_register">
             <property name="label" translatable="yes">Register</property>
-            <property name="width_request">100</property>
+            <property name="width_request">168</property>
+            <property name="height_request">40</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
           </object>
           <packing>
-            <property name="x">395</property>
-            <property name="y">88</property>
+            <property name="x">119</property>
+            <property name="y">340</property>
           </packing>
         </child>
       </object>

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SOURCE_FILES.dir/exchange/src/hepler.c.o"
   "CMakeFiles/SOURCE_FILES.dir/exchange/src/initClient.c.o"
   "CMakeFiles/SOURCE_FILES.dir/views/src/AddFriendController.c.o"
+  "CMakeFiles/SOURCE_FILES.dir/views/src/FriendRequestController.c.o"
   "CMakeFiles/SOURCE_FILES.dir/views/src/HomeController.c.o"
   "CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.o"
   "CMakeFiles/SOURCE_FILES.dir/views/src/RegisterController.c.o"

@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o"
   "CMakeFiles/NetworkProgram.dir/main.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/AddFriendController.c.o"
+  "CMakeFiles/NetworkProgram.dir/views/src/FriendRequestController.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/RegisterController.c.o"

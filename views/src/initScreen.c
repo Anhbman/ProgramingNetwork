@@ -9,6 +9,7 @@
 #include "ShareController.h"
 #include "RegisterController.h"
 #include "AddFriendController.h"
+#include "FriendRequestController.h"
 //#include <gtk/gtk.h>
 
 
@@ -89,6 +90,7 @@ void initRegisterScreen(UserData* userData) {
     userData->screenApp->registerContainer.entry_username = (GtkWidget *) gtk_builder_get_object(builder, "entry_username");
     userData->screenApp->registerContainer.entry_password = (GtkWidget *) gtk_builder_get_object(builder, "entry_password");
     userData->screenApp->registerContainer.entry_password1 = (GtkWidget *) gtk_builder_get_object(builder, "entry_password1");
+    userData->screenApp->registerContainer.label_status = (GtkWidget *) gtk_builder_get_object(builder, "label_status");
 
     g_signal_connect(userData->screenApp->registerContainer.button_register,"clicked",G_CALLBACK(on_register_btn_clicked),userData);
     g_signal_connect(userData->screenApp->registerContainer.button_back,"clicked",G_CALLBACK(on_back_register_clicked),userData);
@@ -98,17 +100,38 @@ void initAddFriendScreen(UserData* userData) {
     userData->screenApp->addFriendContainer.window_addFriend = (GtkWidget *) gtk_builder_get_object(builder,"window_addFriend");
     userData->screenApp->addFriendContainer.fix_main = (GtkWidget *) gtk_builder_get_object(builder,"fix_main");
     userData->screenApp->addFriendContainer.fix_btn = (GtkWidget *) gtk_builder_get_object(builder,"fix_btn");
-    userData->screenApp->addFriendContainer.fix_place = (GtkWidget *) gtk_builder_get_object(builder,"fix_place");
-    userData->screenApp->addFriendContainer.scroll_place = (GtkWidget *) gtk_builder_get_object(builder,"scroll_place");
-    userData->screenApp->addFriendContainer.box_place = (GtkWidget *) gtk_builder_get_object(builder,"box_place");
+    userData->screenApp->addFriendContainer.fix_place1 = (GtkWidget *) gtk_builder_get_object(builder,"fix_place1");
+    userData->screenApp->addFriendContainer.scroll_place1 = (GtkWidget *) gtk_builder_get_object(builder,"scroll_place1");
+    userData->screenApp->addFriendContainer.box_place1 = (GtkWidget *) gtk_builder_get_object(builder,"box_place1");
     userData->screenApp->addFriendContainer.btn_add = (GtkWidget *) gtk_builder_get_object(builder,"btn_add");
     userData->screenApp->addFriendContainer.btn_back = (GtkWidget *) gtk_builder_get_object(builder,"btn_back");
     userData->screenApp->addFriendContainer.entry_friendname = (GtkWidget *) gtk_builder_get_object(builder,"entry_friendname");
     userData->screenApp->addFriendContainer.label_result = (GtkWidget *) gtk_builder_get_object(builder,"label_result");
+    userData->screenApp->addFriendContainer.fix_place2 = (GtkWidget *) gtk_builder_get_object(builder,"fix_place2");
+    userData->screenApp->addFriendContainer.scroll_place2 = (GtkWidget *) gtk_builder_get_object(builder,"scroll_place2");
+    userData->screenApp->addFriendContainer.box_place2 = (GtkWidget *) gtk_builder_get_object(builder,"box_place2");
+    userData->screenApp->addFriendContainer.label_name = (GtkWidget *) gtk_builder_get_object(builder,"label_name");
+    userData->screenApp->addFriendContainer.btn_friend_request = (GtkWidget *) gtk_builder_get_object(builder,"btn_friend_request");
 
     g_signal_connect(userData->screenApp->addFriendContainer.btn_back,"clicked",G_CALLBACK(on_back_addFriend_clicked),userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_addfriend_home,"clicked",G_CALLBACK(on_addFriend_home_clicked),userData);
     g_signal_connect(userData->screenApp->addFriendContainer.btn_add,"clicked",G_CALLBACK(on_add_addFriend_clicked),userData);
+    g_signal_connect(userData->screenApp->addFriendContainer.btn_friend_request,"clicked",G_CALLBACK(on_see_friendRequest_clicked),userData);
+
+}
+void initFriendRequestScreen(UserData* userData){
+    GtkBuilder  *builder = gtk_builder_new_from_file("/home/phonghoang/ProgramingNetwork/views/src/screen/friendRequest.glade");
+    userData->screenApp->friendRequestContainer.window_friendRequest = (GtkWidget *) gtk_builder_get_object(builder,"window_friendRequest");
+    userData->screenApp->friendRequestContainer.label_name = (GtkWidget *) gtk_builder_get_object(builder,"label_name");
+    userData->screenApp->friendRequestContainer.btn_back = (GtkWidget *) gtk_builder_get_object(builder,"btn_back");
+    userData->screenApp->friendRequestContainer.fix_place = (GtkWidget *) gtk_builder_get_object(builder,"fix_place");
+    userData->screenApp->friendRequestContainer.fix_btn = (GtkWidget *) gtk_builder_get_object(builder,"fix_btn");
+    userData->screenApp->friendRequestContainer.fix_main = (GtkWidget *) gtk_builder_get_object(builder,"fix_main");
+    userData->screenApp->friendRequestContainer.btn_accept = (GtkWidget *) gtk_builder_get_object(builder,"btn_accept");
+    userData->screenApp->friendRequestContainer.btn_delete = (GtkWidget *) gtk_builder_get_object(builder,"btn_delete");
+    userData->screenApp->friendRequestContainer.box_place = (GtkWidget *) gtk_builder_get_object(builder,"box_place");
+
+    g_signal_connect(userData->screenApp->friendRequestContainer.btn_back,"clicked",G_CALLBACK(on_back_friendRequest_clicked),userData);
 
 }
 void initApp(UserData *userData){
@@ -118,4 +141,5 @@ void initApp(UserData *userData){
     initShareScreen(userData);
     initRegisterScreen(userData);
     initAddFriendScreen(userData);
+    initFriendRequestScreen(userData);
 }

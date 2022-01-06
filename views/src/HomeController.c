@@ -28,24 +28,40 @@ void home_show(UserData *userData) {
     if (senSize < 0)
         perror("\nError: ");
 
-    char* value;
-    value = dataRecv(userData);
-    char *token;
+    while (1) {
+        int tmp = 0;
+        char* value;
+        value = dataRecv(userData);
+        if (strcmp(value,SEND_END) == 0) {
+            free(value);
+            break;
+        }
+        char *token;
 
-    token = strtok(value, "|");
+        token = strtok(value, "|");
 
-    while (token != NULL) {
-        GtkWidget *gtkLabel = gtk_label_new(token);
-        gtk_widget_set_visible(gtkLabel, TRUE);
-        gtk_label_set_xalign(GTK_LABEL(gtkLabel), 1);
-        gtk_widget_set_halign(gtkLabel, GTK_ALIGN_START);
-        gtk_label_set_max_width_chars(GTK_LABEL(gtkLabel), 30);
-        gtk_label_set_line_wrap(GTK_LABEL(gtkLabel),TRUE);
-        add_message(gtkLabel, userData->screenApp->homeContainer.box_place, userData);
-        token = strtok(NULL, "|");
+        while (token != NULL) {
+//        GtkWidget *gtkLabel = gtk_label_new(token);
+//        gtk_widget_set_visible(gtkLabel, TRUE);
+//        gtk_label_set_xalign(GTK_LABEL(gtkLabel), 1);
+//        gtk_widget_set_halign(gtkLabel, GTK_ALIGN_START);
+//        gtk_label_set_max_width_chars(GTK_LABEL(gtkLabel), 30);
+//        gtk_label_set_line_wrap(GTK_LABEL(gtkLabel),TRUE);
+//        add_message(gtkLabel, userData->screenApp->homeContainer.box_place, userData);
+//        token = strtok(NULL, "|");
+            GtkWidget *check;
+
+
+                /* --- Get the check button --- */
+                check = gtk_check_button_new_with_label(token);
+                add_message(check, userData->screenApp->homeContainer.box_place, userData);
+            //}
+            token = strtok(NULL, "|");
+
+        }
+
     }
 
-    free(value);
 }
 
 void on_back_clicked(GtkButton *button, UserData *userData) {
@@ -59,6 +75,9 @@ void on_share_clicked(GtkButton *button, UserData *userData) {
     share_show_place(userData);
 }
 void on_addFriend_home_clicked(GtkButton * button, UserData *userData) {
+    showFriendList(userData);
+    showUserList(userData);
+    gtk_label_set_text(userData->screenApp->addFriendContainer.label_name,userData->username);
     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
     gtk_widget_show_all(userData->screenApp->addFriendContainer.window_addFriend);
 }

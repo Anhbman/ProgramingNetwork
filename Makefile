@@ -283,6 +283,36 @@ views/src/AddFriendController.c.s:
 	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/AddFriendController.c.s
 .PHONY : views/src/AddFriendController.c.s
 
+views/src/FriendRequestController.o: views/src/FriendRequestController.c.o
+
+.PHONY : views/src/FriendRequestController.o
+
+# target to build an object file
+views/src/FriendRequestController.c.o:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/FriendRequestController.c.o
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/FriendRequestController.c.o
+.PHONY : views/src/FriendRequestController.c.o
+
+views/src/FriendRequestController.i: views/src/FriendRequestController.c.i
+
+.PHONY : views/src/FriendRequestController.i
+
+# target to preprocess a source file
+views/src/FriendRequestController.c.i:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/FriendRequestController.c.i
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/FriendRequestController.c.i
+.PHONY : views/src/FriendRequestController.c.i
+
+views/src/FriendRequestController.s: views/src/FriendRequestController.c.s
+
+.PHONY : views/src/FriendRequestController.s
+
+# target to generate assembly for a file
+views/src/FriendRequestController.c.s:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/FriendRequestController.c.s
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/FriendRequestController.c.s
+.PHONY : views/src/FriendRequestController.c.s
+
 views/src/HomeController.o: views/src/HomeController.c.o
 
 .PHONY : views/src/HomeController.o
@@ -488,6 +518,9 @@ help:
 	@echo "... views/src/AddFriendController.o"
 	@echo "... views/src/AddFriendController.i"
 	@echo "... views/src/AddFriendController.s"
+	@echo "... views/src/FriendRequestController.o"
+	@echo "... views/src/FriendRequestController.i"
+	@echo "... views/src/FriendRequestController.s"
 	@echo "... views/src/HomeController.o"
 	@echo "... views/src/HomeController.i"
 	@echo "... views/src/HomeController.s"

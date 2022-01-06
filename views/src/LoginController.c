@@ -26,8 +26,11 @@ void on_login_clicked(GtkButton *button, UserData *userData) {
     int status = loginUser(user,userData->sockFd);
     printf("status %d\n",status);
     if (status) {
-        if (!check)
-            home_show(userData);
+//        if (!check){
+//            printf("hehehe\n");
+//            home_show(userData);
+//        }
+        home_show(userData);
         strcpy(userData->username,username);
         printf("%s\n",username);
         gtk_label_set_text(userData->screenApp->homeContainer.label_name_home,userData->username);

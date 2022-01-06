@@ -21,3 +21,8 @@ void  on_add_addFriend_clicked(GtkButton* button,UserData* userData) {
         gtk_label_set_text(userData->screenApp->addFriendContainer.label_result,"Failed");
     }
 }
+void on_see_friendRequest_clicked(GtkButton* button,UserData* userData) {
+    showFriendRequest(userData);
+    gtk_widget_hide(userData->screenApp->addFriendContainer.window_addFriend);
+    gtk_widget_show_all(userData->screenApp->friendRequestContainer.window_friendRequest);
+}

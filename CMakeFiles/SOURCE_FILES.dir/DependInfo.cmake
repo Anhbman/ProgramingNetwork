@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/phonghoang/ProgramingNetwork/exchange/src/hepler.c" "/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir/exchange/src/hepler.c.o"
   "/home/phonghoang/ProgramingNetwork/exchange/src/initClient.c" "/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir/exchange/src/initClient.c.o"
   "/home/phonghoang/ProgramingNetwork/views/src/AddFriendController.c" "/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir/views/src/AddFriendController.c.o"
+  "/home/phonghoang/ProgramingNetwork/views/src/FriendRequestController.c" "/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir/views/src/FriendRequestController.c.o"
   "/home/phonghoang/ProgramingNetwork/views/src/HomeController.c" "/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir/views/src/HomeController.c.o"
   "/home/phonghoang/ProgramingNetwork/views/src/LoginController.c" "/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.o"
   "/home/phonghoang/ProgramingNetwork/views/src/RegisterController.c" "/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir/views/src/RegisterController.c.o"

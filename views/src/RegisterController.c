@@ -15,14 +15,19 @@ void on_register_btn_clicked(GtkButton *button,UserData *userData) {
     char * pass1 = (char *) gtk_entry_get_text(GTK_ENTRY(userData->screenApp->registerContainer.entry_password1));
     char user[MAX_LEN_BUFF];
     if (strcmp(pass,pass1) != 0) {
+        gtk_label_set_text(userData->screenApp->registerContainer.label_status,"Password not match");
         printf("Password not match\n");
     } else {
         sprintf(user,"%s|%s",username,pass);
         printf("%s\n",user);
         int status = registerUser(user,userData->sockFd);
         if (status) {
-            gtk_widget_hide(userData->screenApp->registerContainer.window_register);
-            gtk_widget_show_all(userData->screenApp->loginContainer.window_login);
+            //gtk_widget_hide(userData->screenApp->registerContainer.window_register);
+            //gtk_widget_show_all(userData->screenApp->loginContainer.window_login);
+            gtk_label_set_text(userData->screenApp->registerContainer.label_status,"Register successfully");
+        }
+        else {
+            gtk_label_set_text(userData->screenApp->registerContainer.label_status,"Register failed");
         }
     }
 

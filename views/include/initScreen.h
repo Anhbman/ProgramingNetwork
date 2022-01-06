@@ -13,5 +13,6 @@ void initRegisterScreen(UserData* userData);
 void initHomeScreen(UserData* userData);
 void initApp(UserData *userData);
 void initAddFriendScreen(UserData* userData);
+void initFriendRequestScreen(UserData* userData);
 
 #endif //PJLTM_INITSCREEN_H

@@ -225,6 +225,10 @@
 			<Option target="NetworkProgram"/>
 			<Option target="SOURCE_FILES"/>
 		</Unit>
+		<Unit filename="/home/phonghoang/ProgramingNetwork/views/src/FriendRequestController.c">
+			<Option target="NetworkProgram"/>
+			<Option target="SOURCE_FILES"/>
+		</Unit>
 		<Unit filename="/home/phonghoang/ProgramingNetwork/views/src/HomeController.c">
 			<Option target="NetworkProgram"/>
 			<Option target="SOURCE_FILES"/>
