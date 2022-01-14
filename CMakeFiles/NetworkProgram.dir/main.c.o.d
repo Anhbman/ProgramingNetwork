@@ -1,7 +1,6 @@
 CMakeFiles/NetworkProgram.dir/main.c.o: \
- /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/main.c \
- /usr/include/stdc-predef.h \
- /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/include/initScreen.h \
+ /home/phonghoang/ProgramingNetwork/main.c /usr/include/stdc-predef.h \
+ /home/phonghoang/ProgramingNetwork/views/include/initScreen.h \
  /usr/include/gtk-3.0/gtk/gtk.h /usr/include/gtk-3.0/gdk/gdk.h \
  /usr/include/gtk-3.0/gdk/gdkconfig.h /usr/include/glib-2.0/glib.h \
  /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
@@ -694,4 +693,23 @@ CMakeFiles/NetworkProgram.dir/main.c.o: \
  /usr/include/gtk-3.0/gtk/deprecated/gtkvscrollbar.h \
  /usr/include/gtk-3.0/gtk/deprecated/gtkvseparator.h \
  /usr/include/gtk-3.0/gtk/gtk-autocleanups.h \
- /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/include/appScreen.h
+ /home/phonghoang/ProgramingNetwork/views/include/appScreen.h \
+ /home/phonghoang/ProgramingNetwork/exchange/include/initClient.h \
+ /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
+ /home/phonghoang/ProgramingNetwork/views/include/appScreen.h

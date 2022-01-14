@@ -14,6 +14,15 @@
 #include <string.h>
 
 int loginUser (char * user, int sockFd);
+int registerUser (char *user, int sockFd);
+int addFriend(char *user,int sockFd);
+void showFriendList(UserData *userData);
+void showUserList(UserData *userData);
+void showFriendRequest(UserData *userData);
+int acceptFriend(char* user, int sockFd);
+int sharePlace(char* user,int sockFd);
+
+
 int add_place (char* user,char * namePlace, char* category, int sockFd);
 int remove_place (UserData* userData, char *name, char *cate);
 #endif //NETWORKPROGRAM_HANDLECLIENT_H

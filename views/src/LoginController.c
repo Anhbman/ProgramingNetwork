@@ -28,6 +28,7 @@ void on_login_clicked(GtkButton *button, UserData *userData) {
     if (status) {
         strcpy(userData->username,username);
         home_show(userData);
+        printf("login ok\n");
         gtk_widget_hide(userData->screenApp->loginContainer.window_login);
         gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
 
@@ -35,4 +36,8 @@ void on_login_clicked(GtkButton *button, UserData *userData) {
     }
 
     return;
+}
+void on_register_clicked(GtkButton *button,UserData *userData) {
+    gtk_widget_hide(userData->screenApp->loginContainer.window_login);
+    gtk_widget_show_all(userData->screenApp->registerContainer.window_register);
 }

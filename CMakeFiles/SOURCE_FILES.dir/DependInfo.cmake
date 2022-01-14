@@ -7,11 +7,15 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/exchange/src/handleClient.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/exchange/src/hepler.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/initClient.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/exchange/src/initClient.c.o"
+  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/AddFriendController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/views/src/AddFriendController.c.o"
+  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/FriendRequestController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/views/src/FriendRequestController.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/views/src/HomeController.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.o"
+  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/RegisterController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/views/src/RegisterController.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShareController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.o"
   "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/initScreen.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.o"
+  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/styleScreen.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/SOURCE_FILES.dir/views/src/styleScreen.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -19,5 +19,6 @@ void on_back_share_clicked(GtkButton* button, UserData* userData);
 void share_show(UserData* userData);
 void share_show_place (UserData* userData);
 void share_show_friend (UserData* userData);
+void on_share_place_clicked(GtkButton* button, UserData* userData);
 
 #endif //NETWORKPROGRAM_SHARECONTROLLER_H

@@ -43,6 +43,21 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeFindCodeBlocks.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/ProcessorCount.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "/usr/share/cmake-3.16/Modules/CMakeCInformation.cmake"
 		},
 		{

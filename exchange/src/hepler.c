@@ -14,6 +14,7 @@ char* dataRecv(UserData *userData) {
     int recvSize = 0;
 
     char* recvData = (char *)malloc(sizeof (char )*MAX_LEN_BUFF);
+//    char* recvData ;
 
     recvSize = recv(userData->sockFd, recvData, MAX_LEN_BUFF, 0); /* echo to the client */
     if (recvSize < 0)

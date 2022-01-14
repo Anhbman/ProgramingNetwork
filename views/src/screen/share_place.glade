@@ -23,7 +23,7 @@
             <property name="can_focus">False</property>
             <child>
               <object class="GtkButton" id="btn_share_place">
-                <property name="label" translatable="yes">share</property>
+                <property name="label" translatable="yes">Share</property>
                 <property name="width_request">100</property>
                 <property name="height_request">45</property>
                 <property name="visible">True</property>
@@ -31,7 +31,7 @@
                 <property name="receives_default">True</property>
               </object>
               <packing>
-                <property name="x">253</property>
+                <property name="x">350</property>
                 <property name="y">19</property>
               </packing>
             </child>
@@ -43,8 +43,8 @@
                 <property name="can_focus">False</property>
               </object>
               <packing>
-                <property name="x">87</property>
-                <property name="y">21</property>
+                <property name="x">70</property>
+                <property name="y">19</property>
               </packing>
             </child>
             <child>
@@ -59,7 +59,21 @@
                 <property name="always_show_image">True</property>
               </object>
               <packing>
-                <property name="x">407</property>
+                <property name="x">490</property>
+                <property name="y">19</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btn_request">
+                <property name="label" translatable="yes">Request</property>
+                <property name="width_request">100</property>
+                <property name="height_request">45</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="x">210</property>
                 <property name="y">19</property>
               </packing>
             </child>

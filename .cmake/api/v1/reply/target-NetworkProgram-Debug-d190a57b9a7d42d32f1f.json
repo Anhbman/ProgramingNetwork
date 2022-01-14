@@ -160,7 +160,11 @@
 				5,
 				6,
 				7,
-				8
+				8,
+				9,
+				10,
+				11,
+				12
 			]
 		}
 	],
@@ -249,7 +253,11 @@
 				5,
 				6,
 				7,
-				8
+				8,
+				9,
+				10,
+				11,
+				12
 			]
 		}
 	],
@@ -282,6 +290,18 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "views/src/AddFriendController.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "views/src/FriendRequestController.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "views/src/HomeController.c",
 			"sourceGroupIndex" : 0
 		},
@@ -289,6 +309,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "views/src/LoginController.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "views/src/RegisterController.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -307,6 +333,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "views/src/initScreen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "views/src/styleScreen.c",
 			"sourceGroupIndex" : 0
 		}
 	],

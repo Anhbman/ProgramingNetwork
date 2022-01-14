@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/home/bumman/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/cmake/linux/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -253,6 +253,66 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/main.c.s
 .PHONY : main.c.s
 
+views/src/AddFriendController.o: views/src/AddFriendController.c.o
+
+.PHONY : views/src/AddFriendController.o
+
+# target to build an object file
+views/src/AddFriendController.c.o:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/AddFriendController.c.o
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/AddFriendController.c.o
+.PHONY : views/src/AddFriendController.c.o
+
+views/src/AddFriendController.i: views/src/AddFriendController.c.i
+
+.PHONY : views/src/AddFriendController.i
+
+# target to preprocess a source file
+views/src/AddFriendController.c.i:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/AddFriendController.c.i
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/AddFriendController.c.i
+.PHONY : views/src/AddFriendController.c.i
+
+views/src/AddFriendController.s: views/src/AddFriendController.c.s
+
+.PHONY : views/src/AddFriendController.s
+
+# target to generate assembly for a file
+views/src/AddFriendController.c.s:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/AddFriendController.c.s
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/AddFriendController.c.s
+.PHONY : views/src/AddFriendController.c.s
+
+views/src/FriendRequestController.o: views/src/FriendRequestController.c.o
+
+.PHONY : views/src/FriendRequestController.o
+
+# target to build an object file
+views/src/FriendRequestController.c.o:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/FriendRequestController.c.o
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/FriendRequestController.c.o
+.PHONY : views/src/FriendRequestController.c.o
+
+views/src/FriendRequestController.i: views/src/FriendRequestController.c.i
+
+.PHONY : views/src/FriendRequestController.i
+
+# target to preprocess a source file
+views/src/FriendRequestController.c.i:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/FriendRequestController.c.i
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/FriendRequestController.c.i
+.PHONY : views/src/FriendRequestController.c.i
+
+views/src/FriendRequestController.s: views/src/FriendRequestController.c.s
+
+.PHONY : views/src/FriendRequestController.s
+
+# target to generate assembly for a file
+views/src/FriendRequestController.c.s:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/FriendRequestController.c.s
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/FriendRequestController.c.s
+.PHONY : views/src/FriendRequestController.c.s
+
 views/src/HomeController.o: views/src/HomeController.c.o
 
 .PHONY : views/src/HomeController.o
@@ -312,6 +372,36 @@ views/src/LoginController.c.s:
 	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.s
 	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/LoginController.c.s
 .PHONY : views/src/LoginController.c.s
+
+views/src/RegisterController.o: views/src/RegisterController.c.o
+
+.PHONY : views/src/RegisterController.o
+
+# target to build an object file
+views/src/RegisterController.c.o:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/RegisterController.c.o
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/RegisterController.c.o
+.PHONY : views/src/RegisterController.c.o
+
+views/src/RegisterController.i: views/src/RegisterController.c.i
+
+.PHONY : views/src/RegisterController.i
+
+# target to preprocess a source file
+views/src/RegisterController.c.i:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/RegisterController.c.i
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/RegisterController.c.i
+.PHONY : views/src/RegisterController.c.i
+
+views/src/RegisterController.s: views/src/RegisterController.c.s
+
+.PHONY : views/src/RegisterController.s
+
+# target to generate assembly for a file
+views/src/RegisterController.c.s:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/RegisterController.c.s
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/RegisterController.c.s
+.PHONY : views/src/RegisterController.c.s
 
 views/src/ShareController.o: views/src/ShareController.c.o
 
@@ -403,6 +493,36 @@ views/src/initScreen.c.s:
 	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.s
 .PHONY : views/src/initScreen.c.s
 
+views/src/styleScreen.o: views/src/styleScreen.c.o
+
+.PHONY : views/src/styleScreen.o
+
+# target to build an object file
+views/src/styleScreen.c.o:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/styleScreen.c.o
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/styleScreen.c.o
+.PHONY : views/src/styleScreen.c.o
+
+views/src/styleScreen.i: views/src/styleScreen.c.i
+
+.PHONY : views/src/styleScreen.i
+
+# target to preprocess a source file
+views/src/styleScreen.c.i:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/styleScreen.c.i
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/styleScreen.c.i
+.PHONY : views/src/styleScreen.c.i
+
+views/src/styleScreen.s: views/src/styleScreen.c.s
+
+.PHONY : views/src/styleScreen.s
+
+# target to generate assembly for a file
+views/src/styleScreen.c.s:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/styleScreen.c.s
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/styleScreen.c.s
+.PHONY : views/src/styleScreen.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -425,12 +545,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... views/src/AddFriendController.o"
+	@echo "... views/src/AddFriendController.i"
+	@echo "... views/src/AddFriendController.s"
+	@echo "... views/src/FriendRequestController.o"
+	@echo "... views/src/FriendRequestController.i"
+	@echo "... views/src/FriendRequestController.s"
 	@echo "... views/src/HomeController.o"
 	@echo "... views/src/HomeController.i"
 	@echo "... views/src/HomeController.s"
 	@echo "... views/src/LoginController.o"
 	@echo "... views/src/LoginController.i"
 	@echo "... views/src/LoginController.s"
+	@echo "... views/src/RegisterController.o"
+	@echo "... views/src/RegisterController.i"
+	@echo "... views/src/RegisterController.s"
 	@echo "... views/src/ShareController.o"
 	@echo "... views/src/ShareController.i"
 	@echo "... views/src/ShareController.s"
@@ -440,6 +569,9 @@ help:
 	@echo "... views/src/initScreen.o"
 	@echo "... views/src/initScreen.i"
 	@echo "... views/src/initScreen.s"
+	@echo "... views/src/styleScreen.o"
+	@echo "... views/src/styleScreen.i"
+	@echo "... views/src/styleScreen.s"
 .PHONY : help
 
 
