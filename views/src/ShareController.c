@@ -57,14 +57,6 @@ void share_show_friend (UserData* userData) {
 
     printf("Share_show_friend: \n");
 
-//    int senSize = send(userData->sockFd, SHARE_SHOW_FRIEND, MAX_LEN_BUFF, 0);
-//    if (senSize < 0)
-//        perror("\nError: ");
-//
-//    senSize = send(userData->sockFd, userData->username, MAX_LEN_BUFF, 0);
-//    if (senSize < 0)
-//        perror("\nError: ");
-
     char* value = dataRecv(userData);
     char *token;
     token = strtok(value, "|");

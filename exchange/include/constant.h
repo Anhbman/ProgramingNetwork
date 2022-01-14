@@ -20,6 +20,8 @@
 #define REMOVE_PLACE "9"
 #define REMOVE_PLACE_OK "91"
 #define REMOVE_PLACE_ERROR "90"
+#define BACKUP "10"
+#define RESTORE "11"
 #define SEND_END "-1"
 
 

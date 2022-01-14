@@ -26,12 +26,12 @@ void on_login_clicked(GtkButton *button, UserData *userData) {
     int status = loginUser(user,userData->sockFd);
     printf("status %d\n",status);
     if (status) {
+        strcpy(userData->username,username);
         home_show(userData);
         gtk_widget_hide(userData->screenApp->loginContainer.window_login);
         gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
-//        if (!check)
-//            home_show(userData);
-        strcpy(userData->username,username);
+
+//        show_error(userData->screenApp->homeContainer.window_home,userData->screenApp->homeContainer.window_home);
     }
 
     return;

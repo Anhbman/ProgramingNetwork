@@ -104,7 +104,7 @@
                   <item id="1" translatable="yes">cafe</item>
                   <item id="2" translatable="yes">food</item>
                   <item id="3" translatable="yes">hotel</item>
-                  <item translatable="yes">sport</item>
+                  <item id="4" translatable="yes">sport</item>
                 </items>
               </object>
               <packing>

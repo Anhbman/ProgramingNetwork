@@ -73,7 +73,7 @@ int add_place (char* user,char * namePlace, char* category, int sockFd) {
 
 }
 
-int remove_place (UserData* userData, char *name) {
+int remove_place (UserData* userData, char *name, char *cate) {
 
     int senSize;
 
@@ -81,14 +81,18 @@ int remove_place (UserData* userData, char *name) {
     if (senSize < 0)
         perror("\nError: ");
 
-    senSize = send(userData->sockFd,userData->username, MAX_LEN_BUFF, 0);
+//    senSize = send(userData->sockFd,userData->username, MAX_LEN_BUFF, 0);
+//    if (senSize < 0)
+//        perror("\nError: ");
+
+    char * place = (char *) malloc(sizeof (char )*MAX_LEN_BUFF);
+    sprintf(place,"%s|%s|%s",userData->username,name,cate);
+
+    senSize = send(userData->sockFd,place, MAX_LEN_BUFF, 0);
     if (senSize < 0)
         perror("\nError: ");
 
-    senSize = send(userData->sockFd,name, MAX_LEN_BUFF, 0);
-    if (senSize < 0)
-        perror("\nError: ");
-
+    free(place);
     char* recvData;
 
     recvData = dataRecv(userData);

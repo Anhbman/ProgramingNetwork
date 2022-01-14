@@ -14,6 +14,10 @@ handleClient.h
 hepler.h
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.h
 
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/initClient.c
+initClient.h
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/initClient.h
+
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c
 HomeController.h
 /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.h
@@ -4729,6 +4733,16 @@ string.h
 exchange/include/hepler.h
 constant.h
 exchange/include/constant.h
+netinet/in.h
+-
+arpa/inet.h
+-
+sys/socket.h
+-
+appScreen.h
+exchange/include/appScreen.h
+
+exchange/include/initClient.h
 netinet/in.h
 -
 arpa/inet.h

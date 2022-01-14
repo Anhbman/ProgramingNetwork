@@ -18,6 +18,7 @@ void initLoginScreen(UserData* userData) {
     userData->screenApp->loginContainer.entry_user = (GtkWidget *) gtk_builder_get_object(builder, "entry_user");
     userData->screenApp->loginContainer.entry_pass = (GtkWidget *) gtk_builder_get_object(builder, "entry_pass");
 
+
 //    g_signal_connect(userData->screenApp->loginContainer.window_login, "destroy", G_CALLBACK(gtk_main_quit()));
     g_signal_connect(userData->screenApp->loginContainer.button_login, "clicked",G_CALLBACK(on_login_clicked), userData);
 }
@@ -50,11 +51,15 @@ void initHomeScreen(UserData* userData){
     userData->screenApp->homeContainer.btn_share_home = (GtkWidget*) gtk_builder_get_object(builder, "btn_share_home");
     userData->screenApp->homeContainer.btn_back_home = (GtkWidget*) gtk_builder_get_object(builder, "btn_back_home");
     userData->screenApp->homeContainer.btn_home_delete = (GtkWidget*) gtk_builder_get_object(builder,"btn_home_delete");
+    userData->screenApp->homeContainer.btn_backup_home = (GtkWidget*) gtk_builder_get_object(builder, "btn_backup_home");
+    userData->screenApp->homeContainer.btn_restore_home = (GtkWidget*) gtk_builder_get_object(builder,"btn_restore_home");
 
     g_signal_connect(userData->screenApp->homeContainer.btn_show_home, "clicked", G_CALLBACK(on_show_clicked), userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_back_home, "clicked", G_CALLBACK(on_back_clicked), userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_share_home, "clicked" , G_CALLBACK(on_share_clicked), userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_home_delete,"clicked", G_CALLBACK(on_delete_clicked), userData);
+    g_signal_connect(userData->screenApp->homeContainer.btn_backup_home, "clicked", G_CALLBACK(on_backup_clicked), userData);
+    g_signal_connect(userData->screenApp->homeContainer.btn_restore_home, "clicked", G_CALLBACK(on_restore_clicked), userData);
 
 }
 
@@ -75,6 +80,18 @@ void initShareScreen(UserData* userData) {
     userData->screenApp->shareContainer.box_friend = (GtkWidget *) gtk_builder_get_object(builder, "box_friend");
     userData->screenApp->shareContainer.btn_back_share = (GtkWidget *) gtk_builder_get_object(builder, "btn_back_share");
     userData->screenApp->shareContainer.radio_show_place = (GtkWidget *) gtk_builder_get_object(builder, "radio_show_place");
+    userData->screenApp->shareContainer.image = (GtkWidget* ) gtk_builder_get_object(builder,"");
+
+//    GtkWidget *image;
+//    image = gtk_image_new_from_file ("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/img/1.jpg");
+//
+//    GIcon * icon;
+//
+//    gtk_image_get_gicon(image,&icon,NULL);
+//
+//    add_message(icon,userData->screenApp->shareContainer.box_place,userData);
+
+
 
     g_signal_connect(userData->screenApp->shareContainer.btn_back_share, "clicked", G_CALLBACK(on_back_share_clicked), userData);
 

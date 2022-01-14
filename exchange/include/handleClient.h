@@ -15,5 +15,5 @@
 
 int loginUser (char * user, int sockFd);
 int add_place (char* user,char * namePlace, char* category, int sockFd);
-int remove_place (UserData* userData, char *name);
+int remove_place (UserData* userData, char *name, char *cate);
 #endif //NETWORKPROGRAM_HANDLECLIENT_H

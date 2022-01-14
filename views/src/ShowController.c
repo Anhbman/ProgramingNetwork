@@ -14,16 +14,58 @@ void on_back_home_clicked (GtkButton* button, UserData* userData) {
 
 void on_add_clicked(GtkButton* button, UserData* userData) {
 
+    printf("clicked button add\n");
+    int check = 0;
+    int check1 = 0;
+
     char * placeName = (char *) gtk_entry_get_text(GTK_ENTRY(userData->screenApp->showContainer.entry_place));
-    char * category = (char *) gtk_combo_box_get_active_id(userData->screenApp->showContainer.combo_cate);
+    char * category = (char *) gtk_combo_box_text_get_active_text(userData->screenApp->showContainer.combo_cate);
 
-    printf("placeName: %s\n", placeName);
+    printf("cate: %s\n", category);
 
-    if (add_place(userData->username,placeName, category, userData->sockFd)) {
-        gtk_label_set_text(userData->screenApp->showContainer.message_show, "successfully");
-    } else {
-        gtk_label_set_text(userData->screenApp->showContainer.message_show, "error");
+    if (strlen(placeName) != 0) {
+        if (add_place(userData->username,placeName, category, userData->sockFd)) {
+//            gtk_label_set_text(userData->screenApp->showContainer.message_show, "successfully");
+            show_info(userData->screenApp->showContainer.window_show,userData->screenApp->showContainer.window_show, "Add place success!");
+        } else {
+            check = 1;
+//            gtk_label_set_text(userData->screenApp->showContainer.message_show, "error");
+            show_error(userData->screenApp->showContainer.window_show,userData->screenApp->showContainer.window_show, "Add place error!");
+        }
     }
+
+
+
+    GList *children, *iter;
+
+    children = gtk_container_get_children(GTK_CONTAINER(userData->screenApp->showContainer.box_place));
+    printf("Show add\n");
+    char cate[20] = {0};
+    for(iter = children; iter != NULL; iter = g_list_next(iter)){
+        GtkWidget *child = iter->data;
+
+        if (!GTK_IS_CHECK_BUTTON(child)) {
+            bzero(cate,20);
+            strcpy(cate, gtk_label_get_text(child));
+        } else {
+            if (gtk_toggle_button_get_active(child)){
+                char* name = gtk_button_get_label(child);
+                if (add_place(userData->username,name,cate,userData->sockFd)) {
+                    printf("haah");
+                    gtk_widget_destroy(child);
+                } else {
+                    check1 = 1;
+                }
+            }
+
+        }
+    }
+
+//    if (check == 1) {
+//        show_error(userData->screenApp->showContainer.window_show,userData->screenApp->showContainer.window_show);
+//    } else {
+//        show_info(userData->screenApp->showContainer.window_show,userData->screenApp->showContainer.window_show);
+//    }
 }
 
 void show_page_data(UserData *userData) {
@@ -50,7 +92,6 @@ void show_page_data(UserData *userData) {
 
         token = strtok(value, "|");
 
-        GtkWidget *radio2;
         while (token != NULL) {
             GtkWidget *check;
 

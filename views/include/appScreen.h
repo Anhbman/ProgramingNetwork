@@ -28,6 +28,8 @@ typedef struct {
     GtkWidget *label_name_home;
     GtkWidget *btn_back_home;
     GtkWidget *btn_home_delete;
+    GtkWidget *btn_restore_home;
+    GtkWidget *btn_backup_home;
 } HomeContainer;
 
 typedef struct {
@@ -44,6 +46,7 @@ typedef struct {
     GtkWidget *box_friend;
     GtkWidget *btn_back_share;
     GtkWidget *radio_show_place;
+    GtkWidget *image;
 } ShareContainer;
 
 typedef struct {

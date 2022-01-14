@@ -13,24 +13,15 @@ void on_show_clicked(GtkButton *button, UserData *userData) {
 }
 
 void on_back_clicked(GtkButton *button, UserData *userData) {
+    remove_all_box_child(userData->screenApp->homeContainer.box_place);
     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
     gtk_widget_show_all(userData->screenApp->loginContainer.window_login);
-    remove_all_box_child(userData->screenApp->homeContainer.box_place);
-
-//    GList *children, *iter;
-//    children = gtk_container_get_children(GTK_CONTAINER(userData->screenApp->homeContainer.box_place));
-//    printf("delete home\n");
-//    for(iter = children; iter != NULL; iter = g_list_next(iter)){
-//        gtk_widget_destroy(GTK_WIDGET(iter->data));
-//    }
-//    g_list_free(children);
 }
 
 void on_share_clicked(GtkButton *button, UserData *userData) {
-//    share_show(userData);
+    share_show(userData);
     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
     gtk_widget_show_all(userData->screenApp->shareContainer.window_share);
-//    remove_all_box_child(userData->screenApp->homeContainer.box_place);
 }
 
 void home_show(UserData *userData) {
@@ -42,6 +33,11 @@ void home_show(UserData *userData) {
     if (senSize < 0)
         perror("\nError: ");
 
+    senSize = send(userData->sockFd, userData->username, MAX_LEN_BUFF, 0);
+    if (senSize < 0)
+        perror("\nError: ");
+
+    printf(" name = %s\n",userData->username);
 
     while (1) {
         int tmp = 0;
@@ -72,27 +68,63 @@ void home_show(UserData *userData) {
     }
 }
 
+void on_backup_clicked (GtkButton *button, UserData* userData) {
+    int sendbytes;
+
+    sendbytes = send(userData->sockFd,BACKUP,MAX_LEN_BUFF,0);
+    if (sendbytes < 0)
+        perror("ERROR backup");
+
+    sendbytes = send(userData->sockFd,userData->username,MAX_LEN_BUFF,0);
+    if (sendbytes < 0)
+        perror("ERROR backup");
+
+}
+
+void on_restore_clicked (GtkButton *button, UserData* userData) {
+    int sendbytes;
+
+    sendbytes = send(userData->sockFd,RESTORE,MAX_LEN_BUFF,0);
+    if (sendbytes < 0)
+        perror("ERROR restore");
+
+    sendbytes = send(userData->sockFd,userData->username,MAX_LEN_BUFF,0);
+    if (sendbytes < 0)
+        perror("ERROR restore");
+    remove_all_box_child(userData->screenApp->homeContainer.box_place);
+    home_show(userData);
+
+    gtk_widget_hide(userData->screenApp->homeContainer.window_home);
+    gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
+}
+
 void on_delete_clicked (GtkButton *button ,UserData* userData) {
 
     printf("delete home\n");
     GList *children, *iter;
-    GtkCheckButton a;
 
     children = gtk_container_get_children(GTK_CONTAINER(userData->screenApp->homeContainer.box_place));
     printf("delete home\n");
+    char* cate = (char *) malloc(sizeof (char )*MAX_LEN_BUFF);
     for(iter = children; iter != NULL; iter = g_list_next(iter)){
         GtkWidget *child = iter->data;
         if (GTK_IS_CHECK_BUTTON(child)){
             if (gtk_toggle_button_get_active(child)){
-                char* name = gtk_button_get_label(child);
-                if (remove_place(userData,name)) {
+                char* name = (char *) malloc(sizeof (char )*MAX_LEN_BUFF);
+                convertString(gtk_button_get_label(child), name);
+                printf("Name: %s\n",name);
+                if (remove_place(userData,name, cate)) {
                     printf("haah");
                     gtk_widget_destroy(child);
                 }
+                free(name);
             }
-
+        } else {
+            bzero(cate,MAX_LEN_BUFF);
+            strcpy(cate, gtk_label_get_text(child));
         }
     }
-
+    free(cate);
     return;
 }
+

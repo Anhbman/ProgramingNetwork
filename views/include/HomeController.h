@@ -21,5 +21,7 @@ void on_back_clicked(GtkButton *button, UserData *userData);
 void on_share_clicked(GtkButton *button, UserData *userData);
 void home_show(UserData *userData);
 void on_delete_clicked (GtkButton *button ,UserData* userData);
+void on_backup_clicked (GtkButton *button, UserData* userData);
+void on_restore_clicked (GtkButton *button, UserData* userData);
 
 #endif //NETWORKPROGRAM_HOMECONTROLLER_H
