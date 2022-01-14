@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/phonghoang/ProgramingNetwork/views/src/ShareController.c" "/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.o"
   "/home/phonghoang/ProgramingNetwork/views/src/ShowController.c" "/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.o"
   "/home/phonghoang/ProgramingNetwork/views/src/initScreen.c" "/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.o"
+  "/home/phonghoang/ProgramingNetwork/views/src/styleScreen.c" "/home/phonghoang/ProgramingNetwork/CMakeFiles/SOURCE_FILES.dir/views/src/styleScreen.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -640,6 +640,10 @@ CMakeFiles/SOURCE_FILES.dir/exchange/src/handleClient.c.o: /usr/include/pango-1.
 CMakeFiles/SOURCE_FILES.dir/exchange/src/handleClient.c.o: /usr/include/pango-1.0/pango/pangocairo.h
 CMakeFiles/SOURCE_FILES.dir/exchange/src/handleClient.c.o: /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h
 CMakeFiles/SOURCE_FILES.dir/exchange/src/handleClient.c.o: exchange/include/constant.h
+<<<<<<< HEAD
+=======
+CMakeFiles/SOURCE_FILES.dir/exchange/src/handleClient.c.o: exchange/include/handleClient.h
+>>>>>>> 077850f218510dfde8fca50cc12648161a1100ae
 CMakeFiles/SOURCE_FILES.dir/exchange/src/handleClient.c.o: exchange/include/hepler.h
 CMakeFiles/SOURCE_FILES.dir/exchange/src/handleClient.c.o: views/include/appScreen.h
 

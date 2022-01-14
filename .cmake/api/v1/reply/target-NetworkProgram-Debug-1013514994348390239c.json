@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "SOURCE_FILES"
+			"path" : "NetworkProgram"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
@@ -162,11 +162,13 @@
 				7,
 				8,
 				9,
-				10
+				10,
+				11,
+				12
 			]
 		}
 	],
-	"id" : "SOURCE_FILES::@6890427a1f51a3e7e1df",
+	"id" : "NetworkProgram::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -178,12 +180,60 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lgtk-3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgdk-3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpangocairo-1.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpango-1.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lharfbuzz",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-latk-1.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcairo-gobject",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcairo",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgdk_pixbuf-2.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgio-2.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgobject-2.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lglib-2.0",
+				"role" : "libraries"
 			}
 		],
 		"language" : "C"
 	},
-	"name" : "SOURCE_FILES",
-	"nameOnDisk" : "SOURCE_FILES",
+	"name" : "NetworkProgram",
+	"nameOnDisk" : "NetworkProgram",
 	"paths" : 
 	{
 		"build" : ".",
@@ -205,12 +255,20 @@
 				7,
 				8,
 				9,
-				10
+				10,
+				11,
+				12
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main.c",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
@@ -275,6 +333,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "views/src/initScreen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "views/src/styleScreen.c",
 			"sourceGroupIndex" : 0
 		}
 	],

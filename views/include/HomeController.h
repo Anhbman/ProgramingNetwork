@@ -16,11 +16,12 @@
 #include "ShareController.h"
 #include "AddFriendController.h"
 
-void home_show(UserData *userData);
 void add_message(GtkWidget *message, GtkWidget *addBox,UserData *userData);
 void on_show_clicked(GtkButton *button, UserData *userData);
 void on_back_clicked(GtkButton *button, UserData *userData);
 void on_share_clicked(GtkButton *button, UserData *userData);
 void on_addFriend_home_clicked(GtkButton * button, UserData *userData);
+void home_show(UserData *userData);
+void on_delete_clicked (GtkButton *button ,UserData* userData);
 
 #endif //NETWORKPROGRAM_HOMECONTROLLER_H

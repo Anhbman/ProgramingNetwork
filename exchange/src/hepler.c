@@ -14,6 +14,7 @@ char* dataRecv(UserData *userData) {
     int recvSize = 0;
 
     char* recvData = (char *)malloc(sizeof (char )*MAX_LEN_BUFF);
+//    char* recvData ;
 
     recvSize = recv(userData->sockFd, recvData, MAX_LEN_BUFF, 0); /* echo to the client */
     if (recvSize < 0)
@@ -25,3 +26,19 @@ char* dataRecv(UserData *userData) {
 
     return recvData;
 }
+
+
+void remove_all_box_child (GtkWidget* box) {
+    GList *children, *iter;
+
+    children = gtk_container_get_children(GTK_CONTAINER(box));
+    for(iter = children; iter != NULL; iter = g_list_next(iter))
+        gtk_widget_destroy(GTK_WIDGET(iter->data));
+    g_list_free(children);
+}
+
+GList* get_child_box (UserData *userData) {
+    GList* list = gtk_container_get_children (GTK_CONTAINER (userData->screenApp->homeContainer.box_place));
+    return list;
+}
+

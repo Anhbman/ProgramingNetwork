@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o"
   "CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o"
+  "CMakeFiles/NetworkProgram.dir/views/src/styleScreen.c.o"
   "NetworkProgram"
   "NetworkProgram.pdb"
 )

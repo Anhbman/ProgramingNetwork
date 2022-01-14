@@ -493,6 +493,36 @@ views/src/initScreen.c.s:
 	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.s
 .PHONY : views/src/initScreen.c.s
 
+views/src/styleScreen.o: views/src/styleScreen.c.o
+
+.PHONY : views/src/styleScreen.o
+
+# target to build an object file
+views/src/styleScreen.c.o:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/styleScreen.c.o
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/styleScreen.c.o
+.PHONY : views/src/styleScreen.c.o
+
+views/src/styleScreen.i: views/src/styleScreen.c.i
+
+.PHONY : views/src/styleScreen.i
+
+# target to preprocess a source file
+views/src/styleScreen.c.i:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/styleScreen.c.i
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/styleScreen.c.i
+.PHONY : views/src/styleScreen.c.i
+
+views/src/styleScreen.s: views/src/styleScreen.c.s
+
+.PHONY : views/src/styleScreen.s
+
+# target to generate assembly for a file
+views/src/styleScreen.c.s:
+	$(MAKE) -f CMakeFiles/NetworkProgram.dir/build.make CMakeFiles/NetworkProgram.dir/views/src/styleScreen.c.s
+	$(MAKE) -f CMakeFiles/SOURCE_FILES.dir/build.make CMakeFiles/SOURCE_FILES.dir/views/src/styleScreen.c.s
+.PHONY : views/src/styleScreen.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -539,6 +569,9 @@ help:
 	@echo "... views/src/initScreen.o"
 	@echo "... views/src/initScreen.i"
 	@echo "... views/src/initScreen.s"
+	@echo "... views/src/styleScreen.o"
+	@echo "... views/src/styleScreen.i"
+	@echo "... views/src/styleScreen.s"
 .PHONY : help
 
 

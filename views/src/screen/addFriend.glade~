@@ -122,7 +122,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button_friend_request">
+              <object class="GtkButton" id="btn_friend_request">
                 <property name="label" translatable="yes">AddFriend Request</property>
                 <property name="width_request">110</property>
                 <property name="height_request">45</property>

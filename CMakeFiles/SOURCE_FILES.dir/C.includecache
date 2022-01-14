@@ -6,9 +6,25 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /home/phonghoang/ProgramingNetwork/views/src/FriendRequestController.c
 FriendRequestController.h
 /home/phonghoang/ProgramingNetwork/views/src/FriendRequestController.h
+=======
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.c
+handleClient.h
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.h
+
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.c
+hepler.h
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.h
+
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c
+HomeController.h
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.h
+
+/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.c
+>>>>>>> 077850f218510dfde8fca50cc12648161a1100ae
 handleClient.h
 /home/phonghoang/ProgramingNetwork/views/src/handleClient.h
 appScreen.h
@@ -4697,6 +4713,18 @@ exchange/include/constant.h
 exchange/include/handleClient.h
 appScreen.h
 exchange/include/appScreen.h
+hepler.h
+exchange/include/hepler.h
+constant.h
+exchange/include/constant.h
+stdlib.h
+-
+stdio.h
+-
+sys/socket.h
+-
+string.h
+-
 
 exchange/include/hepler.h
 constant.h
@@ -4753,6 +4781,8 @@ appScreen.h
 views/include/appScreen.h
 handleClient.h
 views/include/handleClient.h
+HomeController.h
+views/include/HomeController.h
 
 views/include/RegisterController.h
 gtk/gtk.h
@@ -4793,14 +4823,20 @@ gtk/gtk.h
 views/include/gtk/gtk.h
 appScreen.h
 views/include/appScreen.h
-sys/socket.h
--
+appScreen.h
+views/include/appScreen.h
 constant.h
 views/include/constant.h
+sys/socket.h
+-
 hepler.h
 views/include/hepler.h
-HomeController.h
-views/include/HomeController.h
+constant.h
+views/include/constant.h
+ShareController.h
+views/include/ShareController.h
+handleClient.h
+views/include/handleClient.h
 
 views/include/appScreen.h
 gtk/gtk.h

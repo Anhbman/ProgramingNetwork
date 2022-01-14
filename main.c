@@ -13,11 +13,12 @@ int main(int argc, char *argv[]) {
     ScreenApp screenApp;
     gtk_init(&argc, &argv);
 
-    if ((userData.sockFd = initSocket("127.0.0.1", 5500, &userData)) <= 0)
+    if ((userData.sockFd = initSocket("127.0.0.1", 5000, &userData)) <= 0)
         return userData.sockFd;
 
     userData.screenApp = &screenApp;
     initApp(&userData);
+    printf("init done\n");
     gtk_widget_show(screenApp.loginContainer.window_login);
 
     gtk_main();

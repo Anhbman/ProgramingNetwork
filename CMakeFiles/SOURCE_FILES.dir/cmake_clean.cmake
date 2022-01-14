@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SOURCE_FILES.dir/views/src/ShareController.c.o"
   "CMakeFiles/SOURCE_FILES.dir/views/src/ShowController.c.o"
   "CMakeFiles/SOURCE_FILES.dir/views/src/initScreen.c.o"
+  "CMakeFiles/SOURCE_FILES.dir/views/src/styleScreen.c.o"
   "SOURCE_FILES"
   "SOURCE_FILES.pdb"
 )

@@ -10,7 +10,8 @@
 #include "RegisterController.h"
 #include "AddFriendController.h"
 #include "FriendRequestController.h"
-//#include <gtk/gtk.h>
+#include "styleScreen.h"
+#include <gtk/gtk.h>
 
 
 void initLoginScreen(UserData* userData) {
@@ -21,10 +22,56 @@ void initLoginScreen(UserData* userData) {
     userData->screenApp->loginContainer.entry_user = (GtkWidget *) gtk_builder_get_object(builder, "entry_user");
     userData->screenApp->loginContainer.entry_pass = (GtkWidget *) gtk_builder_get_object(builder, "entry_pass");
     userData->screenApp->loginContainer.button_register = (GtkWidget *) gtk_builder_get_object(builder, "button_register");
+    GtkCssProvider *provider_login = gtk_css_provider_new();
+
+    gtk_css_provider_load_from_path(provider_login,"/home/phonghoang/ProgramingNetwork/views/src/style/login.css",NULL);
+    css_set(provider_login, (GtkWidget *) userData->screenApp->loginContainer.window_login);
+    css_set(provider_login, (GtkWidget *) userData->screenApp->loginContainer.button_login);
+    css_set(provider_login, (GtkWidget *) userData->screenApp->loginContainer.entry_user);
+    css_set(provider_login, (GtkWidget *) userData->screenApp->loginContainer.entry_pass);
+    css_set(provider_login, (GtkWidget *) userData->screenApp->loginContainer.button_register);
+
 
 //    g_signal_connect(userData->screenApp->loginContainer.window_login, "destroy", G_CALLBACK(gtk_main_quit()));
     g_signal_connect(userData->screenApp->loginContainer.button_login, "clicked",G_CALLBACK(on_login_clicked), userData);
     g_signal_connect(userData->screenApp->loginContainer.button_register, "clicked",G_CALLBACK(on_register_clicked),userData);
+}
+void initRegisterScreen(UserData* userData) {
+    GtkBuilder *builder = gtk_builder_new_from_file("/home/phonghoang/ProgramingNetwork/views/src/screen/register.glade");
+    userData->screenApp->registerContainer.window_register = (GtkWidget *) gtk_builder_get_object(builder, "window_register");
+    userData->screenApp->registerContainer.button_back = (GtkWidget *) gtk_builder_get_object(builder, "button_back");
+    userData->screenApp->registerContainer.button_register = (GtkWidget *) gtk_builder_get_object(builder, "button_register");
+    userData->screenApp->registerContainer.entry_username = (GtkWidget *) gtk_builder_get_object(builder, "entry_username");
+    userData->screenApp->registerContainer.entry_password = (GtkWidget *) gtk_builder_get_object(builder, "entry_password");
+    userData->screenApp->registerContainer.entry_password1 = (GtkWidget *) gtk_builder_get_object(builder, "entry_password1");
+    userData->screenApp->registerContainer.label_status = (GtkWidget *) gtk_builder_get_object(builder, "label_status");
+    GtkCssProvider *provider_register = gtk_css_provider_new();
+    gtk_css_provider_load_from_path(provider_register,"/home/phonghoang/ProgramingNetwork/views/src/style/register.css",NULL);
+    css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.button_register);
+    css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.button_back);
+    css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.window_register);
+    css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.entry_password1);
+    css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.entry_password);
+    css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.label_status);
+    css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.entry_username);
+    g_signal_connect(userData->screenApp->registerContainer.button_register,"clicked",G_CALLBACK(on_register_btn_clicked),userData);
+    g_signal_connect(userData->screenApp->registerContainer.button_back,"clicked",G_CALLBACK(on_back_register_clicked),userData);
+}
+void initShowScreen(UserData* userData) {
+    printf("start inti Show\n");
+    GtkBuilder *builder = gtk_builder_new_from_file("/home/phonghoang/ProgramingNetwork/views/src/screen/show1.glade");
+
+    userData->screenApp->showContainer.window_show = (GtkWidget *) gtk_builder_get_object(builder, "window_show");
+    userData->screenApp->showContainer.box_place = (GtkWidget *) gtk_builder_get_object(builder, "box_place");
+    userData->screenApp->showContainer.entry_place = (GtkWidget *) gtk_builder_get_object(builder, "entry_place");
+    userData->screenApp->showContainer.btn_add_place = (GtkWidget *) gtk_builder_get_object(builder, "btn_add_place");
+    userData->screenApp->showContainer.combo_cate = (GtkWidget *) gtk_builder_get_object(builder, "combo_cate");
+    userData->screenApp->showContainer.message_show = (GtkWidget *) gtk_builder_get_object(builder, "message_show");
+    userData->screenApp->showContainer.btn_show_back = (GtkWidget *) gtk_builder_get_object(builder , "btn_show_back");
+
+    g_signal_connect(userData->screenApp->showContainer.btn_show_back, "clicked", G_CALLBACK(on_back_home_clicked), userData);
+    g_signal_connect(userData->screenApp->showContainer.btn_add_place, "clicked", G_CALLBACK(on_add_clicked), userData);
+    printf("show done\n");
 }
 
 void initHomeScreen(UserData* userData){
@@ -39,29 +86,16 @@ void initHomeScreen(UserData* userData){
     userData->screenApp->homeContainer.btn_back_home = (GtkWidget*) gtk_builder_get_object(builder, "btn_back_home");
     userData->screenApp->homeContainer.label_name_home = (GtkWidget*) gtk_builder_get_object(builder, "label_name_home");
 
+    userData->screenApp->homeContainer.btn_home_delete = (GtkWidget*) gtk_builder_get_object(builder,"btn_home_delete");
 
     g_signal_connect(userData->screenApp->homeContainer.btn_show_home, "clicked", G_CALLBACK(on_show_clicked), userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_back_home, "clicked", G_CALLBACK(on_back_clicked), userData);
-
-}
-
-void initShowScreen(UserData* userData) {
-    GtkBuilder *builder = gtk_builder_new_from_file("/home/phonghoang/ProgramingNetwork/views/src/screen/show.glade");
-
-    userData->screenApp->showContainer.window_show  = (GtkWidget *) gtk_builder_get_object(builder, "window_show");
-    userData->screenApp->showContainer.scroll_show_place = (GtkWidget *) gtk_builder_get_object(builder, "scroll_show_place");
-    userData->screenApp->showContainer.box_show_place = (GtkWidget *) gtk_builder_get_object(builder, "box_show_place");
-    userData->screenApp->showContainer.entry_place = (GtkWidget *) gtk_builder_get_object(builder, "entry_place");
-    userData->screenApp->showContainer.category_show = (GtkWidget *) gtk_builder_get_object(builder, "category_show");
-    userData->screenApp->showContainer.btn_addplace = (GtkWidget *) gtk_builder_get_object(builder, "btn_addplace");
-    userData->screenApp->showContainer.btn_show_back = (GtkWidget *) gtk_builder_get_object(builder, "btn_show_back");
-    userData->screenApp->showContainer.message_add_place = (GtkWidget *) gtk_builder_get_object(builder, "message_add_place");
-
-
-    g_signal_connect(userData->screenApp->showContainer.btn_show_back, "clicked", G_CALLBACK(on_click_back_show), userData);
-    g_signal_connect(userData->screenApp->showContainer.btn_addplace, "clicked", G_CALLBACK(on_click_add_place), userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_share_home, "clicked" , G_CALLBACK(on_share_clicked), userData);
+    g_signal_connect(userData->screenApp->homeContainer.btn_home_delete,"clicked", G_CALLBACK(on_delete_clicked), userData);
+    //g_signal_connect(userData->screenApp->homeContainer.btn_share_home,"clicked", G_CALLBACK(on_delete_clicked), userData);
+
 }
+
 
 void initShareScreen(UserData* userData) {
     GtkBuilder *builder = gtk_builder_new_from_file("/home/phonghoang/ProgramingNetwork/views/src/screen/share_place.glade");
@@ -76,25 +110,18 @@ void initShareScreen(UserData* userData) {
     userData->screenApp->shareContainer.box_place = (GtkWidget *) gtk_builder_get_object(builder, "box_place");
     userData->screenApp->shareContainer.fixed_friend = (GtkWidget *) gtk_builder_get_object(builder, "fixed_friend");
     userData->screenApp->shareContainer.scroll_friend = (GtkWidget *) gtk_builder_get_object(builder, "scroll_friend");
-    userData->screenApp->shareContainer.box_plac = (GtkWidget *) gtk_builder_get_object(builder, "box_plac");
+    userData->screenApp->shareContainer.box_friend = (GtkWidget *) gtk_builder_get_object(builder, "box_friend");
     userData->screenApp->shareContainer.btn_back_share = (GtkWidget *) gtk_builder_get_object(builder, "btn_back_share");
+    userData->screenApp->shareContainer.radio_show_place = (GtkWidget *) gtk_builder_get_object(builder, "radio_show_place");
+    userData->screenApp->shareContainer.btn_request = (GtkWidget *) gtk_builder_get_object(builder, "btn_request");
+
 
     g_signal_connect(userData->screenApp->shareContainer.btn_back_share, "clicked", G_CALLBACK(on_back_share_clicked), userData);
+    g_signal_connect(userData->screenApp->shareContainer.btn_share_place, "clicked", G_CALLBACK(on_share_place_clicked), userData);
+
 
 }
-void initRegisterScreen(UserData* userData) {
-    GtkBuilder *builder = gtk_builder_new_from_file("/home/phonghoang/ProgramingNetwork/views/src/screen/register.glade");
-    userData->screenApp->registerContainer.window_register = (GtkWidget *) gtk_builder_get_object(builder, "window_register");
-    userData->screenApp->registerContainer.button_back = (GtkWidget *) gtk_builder_get_object(builder, "button_back");
-    userData->screenApp->registerContainer.button_register = (GtkWidget *) gtk_builder_get_object(builder, "button_register");
-    userData->screenApp->registerContainer.entry_username = (GtkWidget *) gtk_builder_get_object(builder, "entry_username");
-    userData->screenApp->registerContainer.entry_password = (GtkWidget *) gtk_builder_get_object(builder, "entry_password");
-    userData->screenApp->registerContainer.entry_password1 = (GtkWidget *) gtk_builder_get_object(builder, "entry_password1");
-    userData->screenApp->registerContainer.label_status = (GtkWidget *) gtk_builder_get_object(builder, "label_status");
 
-    g_signal_connect(userData->screenApp->registerContainer.button_register,"clicked",G_CALLBACK(on_register_btn_clicked),userData);
-    g_signal_connect(userData->screenApp->registerContainer.button_back,"clicked",G_CALLBACK(on_back_register_clicked),userData);
-}
 void initAddFriendScreen(UserData* userData) {
     GtkBuilder  *builder = gtk_builder_new_from_file("/home/phonghoang/ProgramingNetwork/views/src/screen/addFriend.glade");
     userData->screenApp->addFriendContainer.window_addFriend = (GtkWidget *) gtk_builder_get_object(builder,"window_addFriend");
@@ -132,14 +159,18 @@ void initFriendRequestScreen(UserData* userData){
     userData->screenApp->friendRequestContainer.box_place = (GtkWidget *) gtk_builder_get_object(builder,"box_place");
 
     g_signal_connect(userData->screenApp->friendRequestContainer.btn_back,"clicked",G_CALLBACK(on_back_friendRequest_clicked),userData);
+    g_signal_connect(userData->screenApp->friendRequestContainer.btn_accept,"clicked",G_CALLBACK(on_accept_friendRequest_clicked),userData);
+    g_signal_connect(userData->screenApp->friendRequestContainer.btn_delete,"clicked",G_CALLBACK(on_delete_friendRequest_clicked),userData);
+
 
 }
 void initApp(UserData *userData){
+    printf("init\n");
     initLoginScreen(userData);
     initHomeScreen(userData);
-    initShowScreen(userData);
     initShareScreen(userData);
     initRegisterScreen(userData);
     initAddFriendScreen(userData);
     initFriendRequestScreen(userData);
+    initShowScreen(userData);
 }

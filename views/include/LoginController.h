@@ -7,6 +7,7 @@
 
 #include "appScreen.h"
 #include "handleClient.h"
+#include "HomeController.h"
 
 void on_login_clicked(GtkButton *button, UserData *userData);
 void on_register_clicked(GtkButton *button,UserData *userData);

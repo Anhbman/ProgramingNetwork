@@ -253,6 +253,10 @@
 			<Option target="NetworkProgram"/>
 			<Option target="SOURCE_FILES"/>
 		</Unit>
+		<Unit filename="/home/phonghoang/ProgramingNetwork/views/src/styleScreen.c">
+			<Option target="NetworkProgram"/>
+			<Option target="SOURCE_FILES"/>
+		</Unit>
 		<Unit filename="/home/phonghoang/ProgramingNetwork/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
