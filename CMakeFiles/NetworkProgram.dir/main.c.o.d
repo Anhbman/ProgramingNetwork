@@ -1,6 +1,6 @@
 CMakeFiles/NetworkProgram.dir/main.c.o: \
- /home/phonghoang/ProgramingNetwork/main.c /usr/include/stdc-predef.h \
- /home/phonghoang/ProgramingNetwork/views/include/initScreen.h \
+ /home/phonghoang/ltm/ProgramingNetwork/main.c /usr/include/stdc-predef.h \
+ /home/phonghoang/ltm/ProgramingNetwork/views/include/initScreen.h \
  /usr/include/gtk-3.0/gtk/gtk.h /usr/include/gtk-3.0/gdk/gdk.h \
  /usr/include/gtk-3.0/gdk/gdkconfig.h /usr/include/glib-2.0/glib.h \
  /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
@@ -693,8 +693,8 @@ CMakeFiles/NetworkProgram.dir/main.c.o: \
  /usr/include/gtk-3.0/gtk/deprecated/gtkvscrollbar.h \
  /usr/include/gtk-3.0/gtk/deprecated/gtkvseparator.h \
  /usr/include/gtk-3.0/gtk/gtk-autocleanups.h \
- /home/phonghoang/ProgramingNetwork/views/include/appScreen.h \
- /home/phonghoang/ProgramingNetwork/exchange/include/initClient.h \
+ /home/phonghoang/ltm/ProgramingNetwork/views/include/appScreen.h \
+ /home/phonghoang/ltm/ProgramingNetwork/exchange/include/initClient.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -712,4 +712,4 @@ CMakeFiles/NetworkProgram.dir/main.c.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
- /home/phonghoang/ProgramingNetwork/views/include/appScreen.h
+ /home/phonghoang/ltm/ProgramingNetwork/views/include/appScreen.h

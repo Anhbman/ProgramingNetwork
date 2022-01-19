@@ -59,6 +59,8 @@ int registerUser (char *user, int sockFd) {
 
     if (strcmp(recvData,LOGIN_SUCCESS) == 0)
         return 1;
+    else if (strcmp(recvData,USER_EXIST) == 0)
+        return 2;
     return 0;
 
 }

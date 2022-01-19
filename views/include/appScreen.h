@@ -15,6 +15,7 @@ typedef struct{
     GtkWidget *entry_user;
     GtkWidget *entry_pass;
     GtkWidget *button_register;
+    GtkWidget *img_avatar;
 
 } LoginContainer;
  typedef  struct {
@@ -25,6 +26,8 @@ typedef struct{
      GtkWidget *entry_password;
      GtkWidget *entry_password1;
      GtkWidget *label_status;
+     GtkWidget *img_avatar;
+
  } RegisterContainer;
 typedef struct {
     GtkWidget *window_home;
@@ -39,6 +42,7 @@ typedef struct {
     GtkWidget *btn_home_delete;
     GtkWidget *btn_restore_home;
     GtkWidget *btn_backup_home;
+    GtkWidget *label_username;
 } HomeContainer;
 
 typedef struct {
@@ -66,7 +70,6 @@ typedef struct  {
     GtkWidget *box_place1;
     GtkWidget *btn_back;
     GtkWidget *btn_add;
-    GtkWidget *entry_friendname;
     GtkWidget *label_result;
     GtkWidget *scroll_place2;
     GtkWidget *fix_place2;
@@ -84,6 +87,8 @@ typedef struct {
     GtkWidget *btn_back;
     GtkWidget *label_name;
     GtkWidget *box_place;
+    GtkWidget *label_username;
+    GtkWidget *box_user;
 } FriendRequestContainer;
 typedef struct {
     GtkWidget *window_show;

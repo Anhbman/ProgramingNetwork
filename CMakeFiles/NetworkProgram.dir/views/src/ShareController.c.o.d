@@ -1,8 +1,8 @@
 CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.o: \
- /home/phonghoang/ProgramingNetwork/views/src/ShareController.c \
+ /home/phonghoang/ltm/ProgramingNetwork/views/src/ShareController.c \
  /usr/include/stdc-predef.h \
- /home/phonghoang/ProgramingNetwork/views/include/ShareController.h \
- /home/phonghoang/ProgramingNetwork/views/include/HomeController.h \
+ /home/phonghoang/ltm/ProgramingNetwork/views/include/ShareController.h \
+ /home/phonghoang/ltm/ProgramingNetwork/views/include/HomeController.h \
  /usr/include/gtk-3.0/gtk/gtk.h /usr/include/gtk-3.0/gdk/gdk.h \
  /usr/include/gtk-3.0/gdk/gdkconfig.h /usr/include/glib-2.0/glib.h \
  /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
@@ -695,8 +695,8 @@ CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.o: \
  /usr/include/gtk-3.0/gtk/deprecated/gtkvscrollbar.h \
  /usr/include/gtk-3.0/gtk/deprecated/gtkvseparator.h \
  /usr/include/gtk-3.0/gtk/gtk-autocleanups.h \
- /home/phonghoang/ProgramingNetwork/views/include/appScreen.h \
- /home/phonghoang/ProgramingNetwork/exchange/include/constant.h \
+ /home/phonghoang/ltm/ProgramingNetwork/views/include/appScreen.h \
+ /home/phonghoang/ltm/ProgramingNetwork/exchange/include/constant.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -713,10 +713,13 @@ CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /home/phonghoang/ProgramingNetwork/exchange/include/hepler.h \
- /home/phonghoang/ProgramingNetwork/exchange/include/constant.h \
+ /home/phonghoang/ltm/ProgramingNetwork/exchange/include/hepler.h \
+ /home/phonghoang/ltm/ProgramingNetwork/exchange/include/constant.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
  /usr/include/arpa/inet.h \
- /home/phonghoang/ProgramingNetwork/views/include/appScreen.h \
- /home/phonghoang/ProgramingNetwork/views/include/ShowController.h \
- /home/phonghoang/ProgramingNetwork/views/include/ShareController.h
+ /home/phonghoang/ltm/ProgramingNetwork/views/include/appScreen.h \
+ /home/phonghoang/ltm/ProgramingNetwork/views/include/ShowController.h \
+ /home/phonghoang/ltm/ProgramingNetwork/views/include/ShareController.h \
+ /home/phonghoang/ltm/ProgramingNetwork/exchange/include/handleClient.h \
+ /home/phonghoang/ltm/ProgramingNetwork/exchange/include/hepler.h \
+ /home/phonghoang/ltm/ProgramingNetwork/views/include/AddFriendController.h

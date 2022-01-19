@@ -1,50 +1,26 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/exchange/src/handleClient.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/initClient.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/main.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/main.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/AddFriendController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/AddFriendController.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/FriendRequestController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/FriendRequestController.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/RegisterController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/RegisterController.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShareController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/initScreen.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o"
-  "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/styleScreen.c" "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeFiles/NetworkProgram.dir/views/src/styleScreen.c.o"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
-  "views/include"
-  "exchange/include"
-  "exchange/constant"
-  "/usr/include/gtk-3.0"
-  "/usr/include/at-spi2-atk/2.0"
-  "/usr/include/at-spi-2.0"
-  "/usr/include/dbus-1.0"
-  "/usr/lib/x86_64-linux-gnu/dbus-1.0/include"
-  "/usr/include/gio-unix-2.0"
-  "/usr/include/cairo"
-  "/usr/include/pango-1.0"
-  "/usr/include/fribidi"
-  "/usr/include/harfbuzz"
-  "/usr/include/atk-1.0"
-  "/usr/include/pixman-1"
-  "/usr/include/uuid"
-  "/usr/include/freetype2"
-  "/usr/include/libpng16"
-  "/usr/include/gdk-pixbuf-2.0"
-  "/usr/include/libmount"
-  "/usr/include/blkid"
-  "/usr/include/glib-2.0"
-  "/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/phonghoang/ltm/ProgramingNetwork/exchange/src/handleClient.c" "CMakeFiles/NetworkProgram.dir/exchange/src/handleClient.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/exchange/src/handleClient.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/exchange/src/hepler.c" "CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/exchange/src/hepler.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/exchange/src/initClient.c" "CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/main.c" "CMakeFiles/NetworkProgram.dir/main.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/main.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/views/src/AddFriendController.c" "CMakeFiles/NetworkProgram.dir/views/src/AddFriendController.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/views/src/AddFriendController.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/views/src/FriendRequestController.c" "CMakeFiles/NetworkProgram.dir/views/src/FriendRequestController.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/views/src/FriendRequestController.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/views/src/HomeController.c" "CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/views/src/HomeController.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/views/src/LoginController.c" "CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/views/src/LoginController.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/views/src/RegisterController.c" "CMakeFiles/NetworkProgram.dir/views/src/RegisterController.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/views/src/RegisterController.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/views/src/ShareController.c" "CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/views/src/ShareController.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/views/src/ShowController.c" "CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/views/src/ShowController.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/views/src/initScreen.c" "CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/views/src/initScreen.c.o.d"
+  "/home/phonghoang/ltm/ProgramingNetwork/views/src/styleScreen.c" "CMakeFiles/NetworkProgram.dir/views/src/styleScreen.c.o" "gcc" "CMakeFiles/NetworkProgram.dir/views/src/styleScreen.c.o.d"
   )
 
 # Targets to which this target links.

@@ -3,8 +3,8 @@
 <interface>
   <requires lib="gtk+" version="3.20"/>
   <object class="GtkWindow" id="window_home">
-    <property name="width_request">600</property>
-    <property name="height_request">400</property>
+    <property name="width_request">800</property>
+    <property name="height_request">500</property>
     <property name="can_focus">False</property>
     <property name="resizable">False</property>
     <property name="icon_name">applications-internet</property>
@@ -17,14 +17,14 @@
         <property name="can_focus">False</property>
         <child>
           <object class="GtkFixed" id="fixed_place">
-            <property name="width_request">400</property>
-            <property name="height_request">400</property>
+            <property name="width_request">600</property>
+            <property name="height_request">500</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
               <object class="GtkScrolledWindow" id="scroll_place">
-                <property name="width_request">400</property>
-                <property name="height_request">400</property>
+                <property name="width_request">600</property>
+                <property name="height_request">500</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="shadow_type">in</property>
@@ -51,21 +51,23 @@
         <child>
           <object class="GtkFixed" id="Fixed_button">
             <property name="width_request">200</property>
-            <property name="height_request">400</property>
+            <property name="height_request">500</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
               <object class="GtkButton" id="btn_show_home">
-                <property name="width_request">110</property>
+                <property name="width_request">140</property>
                 <property name="height_request">45</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
                     <child>
                       <object class="GtkImage">
                         <property name="visible">True</property>
@@ -82,6 +84,8 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
                         <property name="label" translatable="yes">  AddPlace</property>
                       </object>
                       <packing>
@@ -94,22 +98,24 @@
                 </child>
               </object>
               <packing>
-                <property name="x">46</property>
-                <property name="y">23</property>
+                <property name="x">32</property>
+                <property name="y">100</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="btn_addfriend_home">
-                <property name="width_request">110</property>
+                <property name="width_request">140</property>
                 <property name="height_request">45</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="halign">center</property>
                 <property name="always_show_image">True</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
                     <child>
                       <object class="GtkImage">
                         <property name="visible">True</property>
@@ -126,7 +132,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">  addfriend</property>
+                        <property name="label" translatable="yes">  Addfriend</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -138,13 +144,13 @@
                 </child>
               </object>
               <packing>
-                <property name="x">46</property>
-                <property name="y">75</property>
+                <property name="x">32</property>
+                <property name="y">160</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="btn_share_home">
-                <property name="width_request">110</property>
+                <property name="width_request">140</property>
                 <property name="height_request">45</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -153,6 +159,7 @@
                   <object class="GtkBox">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">center</property>
                     <child>
                       <object class="GtkImage">
                         <property name="visible">True</property>
@@ -169,7 +176,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">  share</property>
+                        <property name="label" translatable="yes">  Share</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -181,87 +188,238 @@
                 </child>
               </object>
               <packing>
-                <property name="x">45</property>
-                <property name="y">128</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkLabel" id="label_name_home">
-                <property name="width_request">100</property>
-                <property name="height_request">80</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="no_show_all">True</property>
-                <property name="double_buffered">False</property>
-              </object>
-              <packing>
-                <property name="x">48</property>
-                <property name="y">265</property>
+                <property name="x">32</property>
+                <property name="y">220</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="btn_back_home">
-                <property name="label">gtk-go-back</property>
-                <property name="width_request">110</property>
+                <property name="width_request">140</property>
                 <property name="height_request">45</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_stock">True</property>
+                <property name="halign">center</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="stock">gtk-go-back</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="label" translatable="yes">  Back</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
-                <property name="x">46</property>
-                <property name="y">335</property>
+                <property name="x">32</property>
+                <property name="y">450</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="btn_home_delete">
-                <property name="label">gtk-delete</property>
-                <property name="width_request">110</property>
+                <property name="width_request">140</property>
                 <property name="height_request">45</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_stock">True</property>
                 <property name="always_show_image">True</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="icon_name">dialog-cancel</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">  Delete</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
-                <property name="x">45</property>
-                <property name="y">186</property>
+                <property name="x">32</property>
+                <property name="y">280</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="btn_backup_home">
-                <property name="label" translatable="yes">backup</property>
-                <property name="width_request">83</property>
+                <property name="width_request">140</property>
                 <property name="height_request">45</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="icon_name">edit-redo</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">  Back up</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
-                <property name="x">9</property>
-                <property name="y">243</property>
+                <property name="x">32</property>
+                <property name="y">340</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="btn_restore_home">
-                <property name="label" translatable="yes">restore</property>
-                <property name="width_request">83</property>
+                <property name="width_request">140</property>
                 <property name="height_request">45</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">center</property>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="icon_name">view-refresh</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">  Restore</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
               </object>
               <packing>
-                <property name="x">102</property>
-                <property name="y">244</property>
+                <property name="x">32</property>
+                <property name="y">400</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="width_request">100</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="width_request">30</property>
+                    <property name="height_request">0</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="stock">gtk-home</property>
+                    <property name="icon_size">0</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_username">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <style>
+                      <class name="username"/>
+                    </style>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="x">50</property>
+                <property name="y">6</property>
               </packing>
             </child>
           </object>
           <packing>
-            <property name="x">400</property>
+            <property name="x">600</property>
           </packing>
         </child>
       </object>

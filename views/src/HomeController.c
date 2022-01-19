@@ -41,7 +41,7 @@ void home_show(UserData *userData) {
         perror("\nError: ");
 
     printf(" name = %s\n",userData->username);
-
+    gtk_label_set_text(userData->screenApp->homeContainer.label_username,userData->username);
     while (1) {
         int tmp = 0;
         char* value;
@@ -112,6 +112,7 @@ void on_addFriend_home_clicked(GtkButton * button, UserData *userData) {
     showFriendList(userData);
     printf("hehe\n");
     showUserList(userData);
+    gtk_label_set_text(userData->screenApp->addFriendContainer.label_result," ");
     gtk_label_set_text(userData->screenApp->addFriendContainer.label_name,userData->username);
     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
     gtk_widget_show_all(userData->screenApp->addFriendContainer.window_addFriend);

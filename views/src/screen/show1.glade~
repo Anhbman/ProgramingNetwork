@@ -93,26 +93,6 @@
               </packing>
             </child>
             <child>
-              <object class="GtkComboBoxText" id="combo_cate">
-                <property name="width_request">100</property>
-                <property name="height_request">40</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="active">0</property>
-                <property name="active_id">1</property>
-                <items>
-                  <item id="1" translatable="yes">cafe</item>
-                  <item id="2" translatable="yes">food</item>
-                  <item id="3" translatable="yes">hotel</item>
-                  <item id="4" translatable="yes">sport</item>
-                </items>
-              </object>
-              <packing>
-                <property name="x">228</property>
-                <property name="y">30</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkButton" id="btn_show_back">
                 <property name="label">gtk-go-back</property>
                 <property name="width_request">100</property>
@@ -125,6 +105,26 @@
               </object>
               <packing>
                 <property name="x">464</property>
+                <property name="y">30</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="combo_cate">
+                <property name="width_request">100</property>
+                <property name="height_request">40</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="active">1</property>
+                <property name="active_id">1</property>
+                <items>
+                  <item id="1" translatable="yes">cafe</item>
+                  <item id="2" translatable="yes">food</item>
+                  <item id="3" translatable="yes">hotel</item>
+                  <item id="4" translatable="yes">sport</item>
+                </items>
+              </object>
+              <packing>
+                <property name="x">228</property>
                 <property name="y">30</property>
               </packing>
             </child>

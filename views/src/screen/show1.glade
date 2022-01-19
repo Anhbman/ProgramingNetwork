@@ -3,8 +3,8 @@
 <interface>
   <requires lib="gtk+" version="3.20"/>
   <object class="GtkWindow" id="window_show">
-    <property name="width_request">600</property>
-    <property name="height_request">400</property>
+    <property name="width_request">800</property>
+    <property name="height_request">500</property>
     <property name="can_focus">False</property>
     <child type="titlebar">
       <placeholder/>
@@ -21,8 +21,8 @@
             <property name="can_focus">False</property>
             <child>
               <object class="GtkScrolledWindow">
-                <property name="width_request">600</property>
-                <property name="height_request">300</property>
+                <property name="width_request">800</property>
+                <property name="height_request">400</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="shadow_type">in</property>
@@ -48,7 +48,7 @@
         </child>
         <child>
           <object class="GtkFixed">
-            <property name="width_request">600</property>
+            <property name="width_request">800</property>
             <property name="height_request">100</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
@@ -67,7 +67,7 @@
             <child>
               <object class="GtkButton" id="btn_add_place">
                 <property name="label">gtk-add</property>
-                <property name="width_request">100</property>
+                <property name="width_request">140</property>
                 <property name="height_request">40</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -76,7 +76,7 @@
                 <property name="always_show_image">True</property>
               </object>
               <packing>
-                <property name="x">343</property>
+                <property name="x">400</property>
                 <property name="y">30</property>
               </packing>
             </child>
@@ -95,7 +95,7 @@
             <child>
               <object class="GtkButton" id="btn_show_back">
                 <property name="label">gtk-go-back</property>
-                <property name="width_request">100</property>
+                <property name="width_request">140</property>
                 <property name="height_request">40</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -104,13 +104,13 @@
                 <property name="always_show_image">True</property>
               </object>
               <packing>
-                <property name="x">464</property>
+                <property name="x">560</property>
                 <property name="y">30</property>
               </packing>
             </child>
             <child>
               <object class="GtkComboBoxText" id="combo_cate">
-                <property name="width_request">100</property>
+                <property name="width_request">140</property>
                 <property name="height_request">40</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
@@ -124,13 +124,13 @@
                 </items>
               </object>
               <packing>
-                <property name="x">228</property>
+                <property name="x">240</property>
                 <property name="y">30</property>
               </packing>
             </child>
           </object>
           <packing>
-            <property name="y">300</property>
+            <property name="y">400</property>
           </packing>
         </child>
       </object>

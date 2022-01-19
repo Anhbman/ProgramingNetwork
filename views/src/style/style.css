@@ -1,0 +1,62 @@
+button{
+    background-image: none;
+    background-color: transparent;
+
+    color: aliceblue;
+    border-radius: 25px;
+    border:2px solid aliceblue;
+    font-size: medium;
+}
+button:hover{
+    background-color: #477295;
+}
+.entry{
+    background-image: none;
+    background-color: aliceblue;
+    border:none;
+    border-bottom: 2px solid #f8de00;
+    /*border-radius: 25px;*/
+
+    font-size: medium;
+
+}
+.label{
+    font-size: large;
+    color: aliceblue;
+    background-color: aliceblue;
+}
+window{
+    background-image: url("../screen/image/login-background-image.png");
+    /*background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "JetBrains Mono Light";
+    color: aliceblue;
+    font-size: large;
+}
+.image {
+    background-image: url("../screen/image/avatar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    color: aliceblue;
+}
+.back{
+    border:none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: red;
+    font-weight: bold;
+}
+.back:hover{
+    background-color: #0020f3;
+}
+.username {
+    font-size: large;
+    color: aliceblue;
+    /*font-family: ;*/
+}
+.box_css {
+    border-color: aliceblue;
+    border: 2px;
+}

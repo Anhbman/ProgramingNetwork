@@ -38,6 +38,7 @@ void on_login_clicked(GtkButton *button, UserData *userData) {
     return;
 }
 void on_register_clicked(GtkButton *button,UserData *userData) {
+    gtk_label_set_text(userData->screenApp->registerContainer.label_status,"");
     gtk_widget_hide(userData->screenApp->loginContainer.window_login);
     gtk_widget_show_all(userData->screenApp->registerContainer.window_register);
 }

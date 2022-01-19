@@ -1,7 +1,7 @@
 CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o: \
- /home/phonghoang/ProgramingNetwork/exchange/src/initClient.c \
+ /home/phonghoang/ltm/ProgramingNetwork/exchange/src/initClient.c \
  /usr/include/stdc-predef.h \
- /home/phonghoang/ProgramingNetwork/exchange/include/initClient.h \
+ /home/phonghoang/ltm/ProgramingNetwork/exchange/include/initClient.h \
  /usr/include/netinet/in.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -52,7 +52,7 @@ CMakeFiles/NetworkProgram.dir/exchange/src/initClient.c.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
- /home/phonghoang/ProgramingNetwork/views/include/appScreen.h \
+ /home/phonghoang/ltm/ProgramingNetwork/views/include/appScreen.h \
  /usr/include/gtk-3.0/gtk/gtk.h /usr/include/gtk-3.0/gdk/gdk.h \
  /usr/include/gtk-3.0/gdk/gdkconfig.h /usr/include/glib-2.0/glib.h \
  /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \

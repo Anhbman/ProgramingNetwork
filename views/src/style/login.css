@@ -1,27 +1,41 @@
 button{
     background-image: none;
     background-color: transparent;
-    color: #000000;
+
+    color: aliceblue;
     border-radius: 25px;
-    border:2px solid #ff0000;
+    border:2px solid aliceblue;
 }
 button:hover{
-    background-color: #de0f3f;
+    background-color: #477295;
 }
 .entry{
     background-image: none;
-    background-color: sandybrown;
+    background-color: aliceblue;
     border:none;
     border-bottom: 2px solid #f8de00;
-    border-radius: 25px;
-    color:blue;
+    /*border-radius: 25px;*/
+    color: aliceblue;
     font-size: medium;
+
+}
+.label{
+    font-size: large;
+    color: aliceblue;
+    background-color: aliceblue;
 }
 window{
-    /*background-image: url("../screen/image/login.png");*/
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-image: url("../screen/image/login-background-image.png");
+    /*background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);*/
     background-repeat: no-repeat;
     background-size: cover;
+}
+.image {
+    background-image: url("../screen/image/hehe.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    color: aliceblue;
 }
 .back{
     border:none;

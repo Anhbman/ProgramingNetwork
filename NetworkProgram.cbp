@@ -8,129 +8,25 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM"/>
+				<Option working_dir="/home/phonghoang/ltm/ProgramingNetwork"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="NetworkProgram">
-				<Option output="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/NetworkProgram" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/include"/>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/include"/>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/constant"/>
-					<Add directory="/usr/include/gtk-3.0"/>
-					<Add directory="/usr/include/at-spi2-atk/2.0"/>
-					<Add directory="/usr/include/at-spi-2.0"/>
-					<Add directory="/usr/include/dbus-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
-					<Add directory="/usr/include/gio-unix-2.0"/>
-					<Add directory="/usr/include/cairo"/>
-					<Add directory="/usr/include/pango-1.0"/>
-					<Add directory="/usr/include/fribidi"/>
-					<Add directory="/usr/include/harfbuzz"/>
-					<Add directory="/usr/include/atk-1.0"/>
-					<Add directory="/usr/include/pixman-1"/>
-					<Add directory="/usr/include/uuid"/>
-					<Add directory="/usr/include/freetype2"/>
-					<Add directory="/usr/include/libpng16"/>
-					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
-					<Add directory="/usr/include/libmount"/>
-					<Add directory="/usr/include/blkid"/>
-					<Add directory="/usr/include/glib-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 NetworkProgram"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="NetworkProgram/fast">
-				<Option output="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/NetworkProgram" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/include"/>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/include"/>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/constant"/>
-					<Add directory="/usr/include/gtk-3.0"/>
-					<Add directory="/usr/include/at-spi2-atk/2.0"/>
-					<Add directory="/usr/include/at-spi-2.0"/>
-					<Add directory="/usr/include/dbus-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
-					<Add directory="/usr/include/gio-unix-2.0"/>
-					<Add directory="/usr/include/cairo"/>
-					<Add directory="/usr/include/pango-1.0"/>
-					<Add directory="/usr/include/fribidi"/>
-					<Add directory="/usr/include/harfbuzz"/>
-					<Add directory="/usr/include/atk-1.0"/>
-					<Add directory="/usr/include/pixman-1"/>
-					<Add directory="/usr/include/uuid"/>
-					<Add directory="/usr/include/freetype2"/>
-					<Add directory="/usr/include/libpng16"/>
-					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
-					<Add directory="/usr/include/libmount"/>
-					<Add directory="/usr/include/blkid"/>
-					<Add directory="/usr/include/glib-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 NetworkProgram/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SOURCE_FILES">
-				<Option output="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/SOURCE_FILES" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM"/>
+				<Option output="/home/phonghoang/ltm/ProgramingNetwork/SOURCE_FILES" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/phonghoang/ltm/ProgramingNetwork"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/include"/>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/include"/>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/constant"/>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/views/include"/>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/exchange/include"/>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/exchange/constant"/>
 					<Add directory="/usr/include/gtk-3.0"/>
 					<Add directory="/usr/include/at-spi2-atk/2.0"/>
 					<Add directory="/usr/include/at-spi-2.0"/>
@@ -157,22 +53,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 SOURCE_FILES"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 SOURCE_FILES"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SOURCE_FILES/fast">
-				<Option output="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/SOURCE_FILES" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM"/>
+				<Option output="/home/phonghoang/ltm/ProgramingNetwork/SOURCE_FILES" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/phonghoang/ltm/ProgramingNetwork"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/include"/>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/include"/>
-					<Add directory="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/constant"/>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/views/include"/>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/exchange/include"/>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/exchange/constant"/>
 					<Add directory="/usr/include/gtk-3.0"/>
 					<Add directory="/usr/include/at-spi2-atk/2.0"/>
 					<Add directory="/usr/include/at-spi-2.0"/>
@@ -199,65 +95,169 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 SOURCE_FILES/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 SOURCE_FILES/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NetworkProgram">
+				<Option output="/home/phonghoang/ltm/ProgramingNetwork/NetworkProgram" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/phonghoang/ltm/ProgramingNetwork"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/views/include"/>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/exchange/include"/>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/exchange/constant"/>
+					<Add directory="/usr/include/gtk-3.0"/>
+					<Add directory="/usr/include/at-spi2-atk/2.0"/>
+					<Add directory="/usr/include/at-spi-2.0"/>
+					<Add directory="/usr/include/dbus-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
+					<Add directory="/usr/include/gio-unix-2.0"/>
+					<Add directory="/usr/include/cairo"/>
+					<Add directory="/usr/include/pango-1.0"/>
+					<Add directory="/usr/include/fribidi"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/atk-1.0"/>
+					<Add directory="/usr/include/pixman-1"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
+					<Add directory="/usr/include/libmount"/>
+					<Add directory="/usr/include/blkid"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 NetworkProgram"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NetworkProgram/fast">
+				<Option output="/home/phonghoang/ltm/ProgramingNetwork/NetworkProgram" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/phonghoang/ltm/ProgramingNetwork"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/views/include"/>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/exchange/include"/>
+					<Add directory="/home/phonghoang/ltm/ProgramingNetwork/exchange/constant"/>
+					<Add directory="/usr/include/gtk-3.0"/>
+					<Add directory="/usr/include/at-spi2-atk/2.0"/>
+					<Add directory="/usr/include/at-spi-2.0"/>
+					<Add directory="/usr/include/dbus-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
+					<Add directory="/usr/include/gio-unix-2.0"/>
+					<Add directory="/usr/include/cairo"/>
+					<Add directory="/usr/include/pango-1.0"/>
+					<Add directory="/usr/include/fribidi"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/atk-1.0"/>
+					<Add directory="/usr/include/pixman-1"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
+					<Add directory="/usr/include/libmount"/>
+					<Add directory="/usr/include/blkid"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 NetworkProgram/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/phonghoang/ltm/ProgramingNetwork"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/phonghoang/ltm/ProgramingNetwork"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/phonghoang/ltm/ProgramingNetwork/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/handleClient.c">
-			<Option target="NetworkProgram"/>
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/exchange/src/handleClient.c">
 			<Option target="SOURCE_FILES"/>
-		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/hepler.c">
 			<Option target="NetworkProgram"/>
+		</Unit>
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/exchange/src/hepler.c">
 			<Option target="SOURCE_FILES"/>
-		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/src/initClient.c">
 			<Option target="NetworkProgram"/>
+		</Unit>
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/exchange/src/initClient.c">
 			<Option target="SOURCE_FILES"/>
-		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/main.c">
 			<Option target="NetworkProgram"/>
 		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/AddFriendController.c">
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/main.c">
 			<Option target="NetworkProgram"/>
+		</Unit>
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/views/src/AddFriendController.c">
 			<Option target="SOURCE_FILES"/>
-		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/FriendRequestController.c">
 			<Option target="NetworkProgram"/>
-			<Option target="SOURCE_FILES"/>
 		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/HomeController.c">
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/views/src/FriendRequestController.c">
+			<Option target="SOURCE_FILES"/>
 			<Option target="NetworkProgram"/>
-			<Option target="SOURCE_FILES"/>
 		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/LoginController.c">
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/views/src/HomeController.c">
+			<Option target="SOURCE_FILES"/>
 			<Option target="NetworkProgram"/>
-			<Option target="SOURCE_FILES"/>
 		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/RegisterController.c">
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/views/src/LoginController.c">
+			<Option target="SOURCE_FILES"/>
 			<Option target="NetworkProgram"/>
-			<Option target="SOURCE_FILES"/>
 		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShareController.c">
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/views/src/RegisterController.c">
+			<Option target="SOURCE_FILES"/>
 			<Option target="NetworkProgram"/>
-			<Option target="SOURCE_FILES"/>
 		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/ShowController.c">
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/views/src/ShareController.c">
+			<Option target="SOURCE_FILES"/>
 			<Option target="NetworkProgram"/>
-			<Option target="SOURCE_FILES"/>
 		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/initScreen.c">
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/views/src/ShowController.c">
+			<Option target="SOURCE_FILES"/>
 			<Option target="NetworkProgram"/>
-			<Option target="SOURCE_FILES"/>
 		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/styleScreen.c">
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/views/src/initScreen.c">
+			<Option target="SOURCE_FILES"/>
 			<Option target="NetworkProgram"/>
-			<Option target="SOURCE_FILES"/>
 		</Unit>
-		<Unit filename="/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/CMakeLists.txt">
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/views/src/styleScreen.c">
+			<Option target="SOURCE_FILES"/>
+			<Option target="NetworkProgram"/>
+		</Unit>
+		<Unit filename="/home/phonghoang/ltm/ProgramingNetwork/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

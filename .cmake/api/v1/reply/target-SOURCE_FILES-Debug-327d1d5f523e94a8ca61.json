@@ -58,15 +58,15 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/include"
+					"path" : "/home/phonghoang/ltm/ProgramingNetwork/views/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/include"
+					"path" : "/home/phonghoang/ltm/ProgramingNetwork/exchange/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/exchange/constant"
+					"path" : "/home/phonghoang/ltm/ProgramingNetwork/exchange/constant"
 				},
 				{
 					"backtrace" : 3,
@@ -150,6 +150,14 @@
 				}
 			],
 			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "99"
+			},
 			"sourceIndexes" : 
 			[
 				0,
