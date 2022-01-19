@@ -24,35 +24,43 @@ void share_show(UserData* userData) {
 void share_show_place (UserData* userData) {
 
     printf("Share_show_place: \n");
-    int recvSize = 0;
-    int sendSize = 0;
-    char recvData[MAX_LEN_BUFF];
-    sendSize = send(userData->sockFd,SHARE_SHOW_PLACE,MAX_LEN_BUFF,0);
-    if (sendSize < 0)
-        perror("\nError:");
-    sendSize = send(userData->sockFd,userData->username, MAX_LEN_BUFF, 0);
-    if (sendSize < 0)
+    printf("Show_home: \n");
+
+    int senSize = send(userData->sockFd, HOME_SHOW, MAX_LEN_BUFF, 0);
+    if (senSize < 0)
         perror("\nError: ");
 
-    int tmp = 0;
+    senSize = send(userData->sockFd, userData->username, MAX_LEN_BUFF, 0);
+    if (senSize < 0)
+        perror("\nError: ");
+
+    printf(" name = %s\n",userData->username);
+
     while (1) {
-        char* value = dataRecv(userData);
-        if (strcmp(value,SEND_END) == 0) {
+        int tmp = 0;
+        char* value;
+        value = dataRecv(userData);
+        if (strcmp(value, SEND_END) == 0) {
+            free(value);
             break;
         }
         char *token;
 
         token = strtok(value, "|");
 
+        GtkWidget *radio2;
         while (token != NULL) {
             GtkWidget *check;
 
-            /* --- Get the check button --- */
-            check = gtk_check_button_new_with_label(token);
-            add_message(check, userData->screenApp->shareContainer.box_place, userData);
-            //}
+            if (tmp == 0) {
+                add_message(gtk_label_new(token), userData->screenApp->shareContainer.box_place, userData);
+                tmp++;
+            } else {
+                /* --- Get the check button --- */
+                check = gtk_check_button_new_with_label(token);
+                add_message(check, userData->screenApp->shareContainer.box_place, userData);
+            }
             token = strtok(NULL, "|");
-
         }
     }
 
@@ -90,9 +98,12 @@ void share_show_friend (UserData* userData) {
 
 }
 void on_share_place_clicked(GtkButton* button,UserData* userData) {
+
+    int check = 1;
     printf("Share Click\n");
     GList *children, *iter, *iter2, *children1;
     char name1[MAX_LEN_BUFF];
+    char *cate = (char *) malloc(sizeof (char )*MAX_LEN_BUFF);
     children = gtk_container_get_children(GTK_CONTAINER(userData->screenApp->shareContainer.box_place));
     for(iter = children; iter != NULL; iter = g_list_next(iter)){
         GtkWidget *child = iter->data;
@@ -101,8 +112,12 @@ void on_share_place_clicked(GtkButton* button,UserData* userData) {
                 char* name = gtk_button_get_label(child);
                 printf("%s\n",name);
                 strcpy(name1, name);
+                break;
                 // gtk_widget_destroy(child);
             }
+        } else {
+            bzero(cate,MAX_LEN_BUFF);
+            strcpy(cate, gtk_label_get_text(child));
         }
     }
     printf("name2 %s\n",name1);
@@ -123,7 +138,7 @@ void on_share_place_clicked(GtkButton* button,UserData* userData) {
 
 
     char sendString[MAX_LEN_BUFF];
-    sprintf(sendString,"%s|%s|%s",userData->username,name1,name2);
+    sprintf(sendString,"%s|%s|%s|%s",userData->username,name1,cate,name2);
 //    sprintf(sendString,"%s|%s",userData->username,name1);
 
     printf("%s\n",sendString);

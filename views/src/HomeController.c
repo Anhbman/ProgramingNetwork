@@ -21,7 +21,7 @@ void on_back_clicked(GtkButton *button, UserData *userData) {
 void on_share_clicked(GtkButton *button, UserData *userData) {
 
     share_show_place(userData);
-//    showFriendList(userData);
+    showFriendList(userData);
     share_show_friend(userData);
     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
     gtk_widget_show_all(userData->screenApp->shareContainer.window_share);
@@ -101,11 +101,7 @@ void on_restore_clicked (GtkButton *button, UserData* userData) {
     gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
 }
 
-// void on_share_clicked(GtkButton *button, UserData *userData) {
-//     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
-//     gtk_widget_show_all(userData->screenApp->shareContainer.window_share);
-//     share_show_place(userData);
-// }
+
 void on_addFriend_home_clicked(GtkButton * button, UserData *userData) {
 
     printf("add friend\n");

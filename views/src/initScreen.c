@@ -22,6 +22,7 @@ void initLoginScreen(UserData* userData) {
     userData->screenApp->loginContainer.entry_user = (GtkWidget *) gtk_builder_get_object(builder, "entry_user");
     userData->screenApp->loginContainer.entry_pass = (GtkWidget *) gtk_builder_get_object(builder, "entry_pass");
     userData->screenApp->loginContainer.button_register = (GtkWidget *) gtk_builder_get_object(builder, "button_register");
+
     GtkCssProvider *provider_login = gtk_css_provider_new();
 
     gtk_css_provider_load_from_path(provider_login,"/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/style/login.css",NULL);
