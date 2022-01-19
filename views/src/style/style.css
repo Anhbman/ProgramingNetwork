@@ -5,6 +5,7 @@ button{
     color: aliceblue;
     border-radius: 25px;
     border:2px solid aliceblue;
+    font-size: medium;
 }
 button:hover{
     background-color: #477295;
@@ -15,7 +16,7 @@ button:hover{
     border:none;
     border-bottom: 2px solid #f8de00;
     /*border-radius: 25px;*/
-    color: aliceblue;
+
     font-size: medium;
 
 }
@@ -29,9 +30,12 @@ window{
     /*background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);*/
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "JetBrains Mono Light";
+    color: aliceblue;
+    font-size: large;
 }
 .image {
-    background-image: url("../screen/image/hehe.png");
+    background-image: url("../screen/image/avatar.png");
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -46,4 +50,13 @@ window{
 }
 .back:hover{
     background-color: #0020f3;
+}
+.username {
+    font-size: large;
+    color: aliceblue;
+    /*font-family: ;*/
+}
+.box_css {
+    border-color: aliceblue;
+    border: 2px;
 }

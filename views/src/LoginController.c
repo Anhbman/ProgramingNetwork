@@ -18,7 +18,7 @@ void on_login_clicked(GtkButton *button, UserData *userData) {
     char user[MAX_LEN_BUFF];
     int check = 0;
 
-    sprintf(user, "user_name = '%s' and password = '%s'",username,pass);
+    sprintf(user, "%s|%s",username,pass);
     printf("%s\n",user);
     if (userData->username) {
         check = 1;
@@ -31,13 +31,15 @@ void on_login_clicked(GtkButton *button, UserData *userData) {
         printf("login ok\n");
         gtk_widget_hide(userData->screenApp->loginContainer.window_login);
         gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
-
+        gtk_entry_set_text(userData->screenApp->loginContainer.entry_user,"");
+        gtk_entry_set_text(userData->screenApp->loginContainer.entry_pass,"");
 //        show_error(userData->screenApp->homeContainer.window_home,userData->screenApp->homeContainer.window_home);
     }
 
     return;
 }
 void on_register_clicked(GtkButton *button,UserData *userData) {
+    gtk_label_set_text(userData->screenApp->registerContainer.label_status,"");
     gtk_widget_hide(userData->screenApp->loginContainer.window_login);
     gtk_widget_show_all(userData->screenApp->registerContainer.window_register);
 }

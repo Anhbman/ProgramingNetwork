@@ -21,15 +21,11 @@ void on_add_clicked(GtkButton* button, UserData* userData) {
     char * placeName = (char *) gtk_entry_get_text(GTK_ENTRY(userData->screenApp->showContainer.entry_place));
     char * category = (char *) gtk_combo_box_text_get_active_text(userData->screenApp->showContainer.combo_cate);
 
-    printf("cate: %s\n", category);
-
     if (strlen(placeName) != 0) {
         if (add_place(userData->username,placeName, category, userData->sockFd)) {
-//            gtk_label_set_text(userData->screenApp->showContainer.message_show, "successfully");
             show_info(userData->screenApp->showContainer.window_show,userData->screenApp->showContainer.window_show, "Add place success!");
         } else {
             check = 1;
-//            gtk_label_set_text(userData->screenApp->showContainer.message_show, "error");
             show_error(userData->screenApp->showContainer.window_show,userData->screenApp->showContainer.window_show, "Add place error!");
         }
     }
@@ -51,7 +47,6 @@ void on_add_clicked(GtkButton* button, UserData* userData) {
             if (gtk_toggle_button_get_active(child)){
                 char* name = gtk_button_get_label(child);
                 if (add_place(userData->username,name,cate,userData->sockFd)) {
-                    printf("haah");
                     gtk_widget_destroy(child);
                 } else {
                     check1 = 1;
@@ -61,11 +56,6 @@ void on_add_clicked(GtkButton* button, UserData* userData) {
         }
     }
 
-//    if (check == 1) {
-//        show_error(userData->screenApp->showContainer.window_show,userData->screenApp->showContainer.window_show);
-//    } else {
-//        show_info(userData->screenApp->showContainer.window_show,userData->screenApp->showContainer.window_show);
-//    }
 }
 
 void show_page_data(UserData *userData) {

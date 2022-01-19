@@ -59,6 +59,8 @@ int registerUser (char *user, int sockFd) {
 
     if (strcmp(recvData,LOGIN_SUCCESS) == 0)
         return 1;
+    else if (strcmp(recvData,USER_EXIST) == 0)
+        return 2;
     return 0;
 
 }
@@ -269,9 +271,6 @@ int remove_place (UserData* userData, char *name, char *cate) {
     if (senSize < 0)
         perror("\nError: ");
 
-//    senSize = send(userData->sockFd,userData->username, MAX_LEN_BUFF, 0);
-//    if (senSize < 0)
-//        perror("\nError: ");
 
     char * place = (char *) malloc(sizeof (char )*MAX_LEN_BUFF);
     sprintf(place,"%s|%s|%s",userData->username,name,cate);
