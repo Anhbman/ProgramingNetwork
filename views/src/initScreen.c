@@ -234,7 +234,7 @@ void initFriendRequestScreen(UserData* userData){
 
 }
 void initApp(UserData *userData){
-    printf("init\n");
+    printf("batman\n");
     initLoginScreen(userData);
     initHomeScreen(userData);
     initShareScreen(userData);

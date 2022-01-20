@@ -57,7 +57,6 @@ void convertString (char *nameFrienf, char *namePlace) {
         namePlace[i] = ch;
         k++;
     }
-
     namePlace[k - m] = 0;
 }
 

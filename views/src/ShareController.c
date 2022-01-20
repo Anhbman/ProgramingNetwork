@@ -8,18 +8,12 @@ static int status = 0;
 
 void on_back_share_clicked(GtkButton* button, UserData* userData) {
     gtk_widget_hide(userData->screenApp->shareContainer.window_share);
+    home_show(userData);
     gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
     remove_all_box_child(userData->screenApp->shareContainer.box_friend);
     remove_all_box_child(userData->screenApp->shareContainer.box_place);
 }
 
-void share_show(UserData* userData) {
-    if (status)
-        return;
-    share_show_place(userData);
-    share_show_friend(userData);
-    status = 1;
-}
 
 void share_show_place (UserData* userData) {
 
@@ -99,23 +93,25 @@ void share_show_friend (UserData* userData) {
 }
 void on_share_place_clicked(GtkButton* button,UserData* userData) {
 
-    int check = 1;
+    int check = 0;
+    int check1 = 0;
     printf("Share Click\n");
     GList *children, *iter, *iter2, *children1;
-    char name1[MAX_LEN_BUFF];
+    char* name1 = (char *) malloc(sizeof (char )*MAX_LEN_BUFF);
     char *cate = (char *) malloc(sizeof (char )*MAX_LEN_BUFF);
     children = gtk_container_get_children(GTK_CONTAINER(userData->screenApp->shareContainer.box_place));
     for(iter = children; iter != NULL; iter = g_list_next(iter)){
         GtkWidget *child = iter->data;
         if (GTK_IS_CHECK_BUTTON(child)){
             if (gtk_toggle_button_get_active(child)){
-                char* name = gtk_button_get_label(child);
-                printf("%s\n",name);
-                strcpy(name1, name);
+                convertString(gtk_button_get_label(child),name1);
+                printf("Nameplace: %s\n",name1);
+                check++;
                 break;
                 // gtk_widget_destroy(child);
             }
         } else {
+
             bzero(cate,MAX_LEN_BUFF);
             strcpy(cate, gtk_label_get_text(child));
         }
@@ -128,6 +124,7 @@ void on_share_place_clicked(GtkButton* button,UserData* userData) {
         GtkWidget *child = iter2->data;
         if (GTK_IS_CHECK_BUTTON(child)){
             if (gtk_toggle_button_get_active(child)){
+                check1++;
                 strcpy(name2, gtk_button_get_label(child));
                 // gtk_widget_destroy(child);
             }
@@ -140,16 +137,19 @@ void on_share_place_clicked(GtkButton* button,UserData* userData) {
     char sendString[MAX_LEN_BUFF];
     sprintf(sendString,"%s|%s|%s|%s",userData->username,name1,cate,name2);
 //    sprintf(sendString,"%s|%s",userData->username,name1);
-
-    printf("%s\n",sendString);
-    int status = sharePlace(sendString,userData->sockFd);
-    printf("%d\n",status);
-    if (status == 1) {
-        gtk_label_set_text(userData->screenApp->shareContainer.label_message,"Successfully");
-    } else if (status == 2) {
-        gtk_label_set_text(userData->screenApp->shareContainer.label_message,"Place already exist");
-    } else
-    {
-        gtk_label_set_text(userData->screenApp->shareContainer.label_message,"Failed");
+    free(name1);
+    if (check1 == 1 && check1 == 1) {
+        int status = sharePlace(sendString,userData->sockFd);
+        printf("%d\n",status);
+        if (status == 1) {
+            show_info(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"success!");
+        } else if (status == 2) {
+            show_error(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"Place already exist");
+        } else
+        {
+            show_error(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"Failed");
+        }
+    } else {
+        show_error(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"chose error");
     }
 }

@@ -19,12 +19,12 @@ void on_back_clicked(GtkButton *button, UserData *userData) {
 }
 
 void on_share_clicked(GtkButton *button, UserData *userData) {
-
     share_show_place(userData);
     showFriendList(userData);
     share_show_friend(userData);
     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
     gtk_widget_show_all(userData->screenApp->shareContainer.window_share);
+    remove_all_box_child(userData->screenApp->homeContainer.box_place);
 }
 
 void home_show(UserData *userData) {
