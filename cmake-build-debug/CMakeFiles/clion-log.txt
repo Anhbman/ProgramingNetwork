@@ -1,4 +1,4 @@
-/home/bumman/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/bumman/hoctap/nam4/laptrinhmang/PJLTM
+/home/phonghoang/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/phonghoang/helloworld/ProgramingNetwork
 -- The C compiler identification is GNU 9.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
@@ -7,4 +7,4 @@
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/bumman/hoctap/nam4/laptrinhmang/PJLTM
+-- Build files have been written to: /home/phonghoang/helloworld/ProgramingNetwork

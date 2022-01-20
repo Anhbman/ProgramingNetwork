@@ -15,6 +15,8 @@
 
 
 void initLoginScreen(UserData* userData) {
+    // /home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/add_place
+
     GtkBuilder *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/login.glade");
 
     userData->screenApp->loginContainer.window_login = (GtkWidget *) gtk_builder_get_object(builder, "window_login");
@@ -186,6 +188,7 @@ void initAddFriendScreen(UserData* userData) {
     userData->screenApp->addFriendContainer.box_place2 = (GtkWidget *) gtk_builder_get_object(builder,"box_place2");
     userData->screenApp->addFriendContainer.label_name = (GtkWidget *) gtk_builder_get_object(builder,"label_name");
     userData->screenApp->addFriendContainer.btn_friend_request = (GtkWidget *) gtk_builder_get_object(builder,"btn_friend_request");
+//    userData->screenApp->addFriendContainer.label_friend = (GtkWidget *) gtk_builder_get_object(builder,"label_friend");
 
     GtkCssProvider *provider_addFriend = gtk_css_provider_new();
     gtk_css_provider_load_from_path(provider_addFriend,"/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/style/style.css",NULL);
@@ -237,6 +240,7 @@ void initFriendRequestScreen(UserData* userData){
     g_signal_connect(userData->screenApp->friendRequestContainer.btn_back,"clicked",G_CALLBACK(on_back_friendRequest_clicked),userData);
     g_signal_connect(userData->screenApp->friendRequestContainer.btn_accept,"clicked",G_CALLBACK(on_accept_friendRequest_clicked),userData);
     g_signal_connect(userData->screenApp->friendRequestContainer.btn_delete,"clicked",G_CALLBACK(on_delete_friendRequest_clicked),userData);
+
 
 
 }

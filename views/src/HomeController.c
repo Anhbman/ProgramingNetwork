@@ -56,7 +56,9 @@ void home_show(UserData *userData) {
             GtkWidget *check;
 
             if (tmp == 0) {
-                add_message(gtk_label_new(token), userData->screenApp->homeContainer.box_place, userData);
+                GtkWidget * label = gtk_label_new(token);
+                add_class(label,"label_category");
+                add_message(label, userData->screenApp->homeContainer.box_place, userData);
                 tmp++;
             } else {
                 /* --- Get the check button --- */
@@ -115,6 +117,7 @@ void on_addFriend_home_clicked(GtkButton * button, UserData *userData) {
     showUserList(userData);
     gtk_label_set_text(userData->screenApp->addFriendContainer.label_result," ");
     gtk_label_set_text(userData->screenApp->addFriendContainer.label_name,userData->username);
+//    gtk_label_set_text(userData->screenApp->addFriendContainer.label_friend,"Friend");
     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
     gtk_widget_show_all(userData->screenApp->addFriendContainer.window_addFriend);
 }

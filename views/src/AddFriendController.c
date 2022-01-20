@@ -40,15 +40,15 @@ void  on_add_addFriend_clicked(GtkButton* button,UserData* userData) {
         int status = addFriend(sendString,userData->sockFd);
         printf("%d\n",status);
         if (status == 1) {
-            gtk_label_set_text(userData->screenApp->addFriendContainer.label_result,"Successfully");
+            show_info(userData->screenApp->addFriendContainer.window_addFriend,userData->screenApp->addFriendContainer.window_addFriend,"Add friend successfully!");
         } else if (status == 2){
-            gtk_label_set_text(userData->screenApp->addFriendContainer.label_result,"Waiting acception");
+            show_error(userData->screenApp->addFriendContainer.window_addFriend,userData->screenApp->addFriendContainer.window_addFriend,"Waiting for acception");
         } else
         {
-            gtk_label_set_text(userData->screenApp->addFriendContainer.label_result,"Failed");
+            show_error(userData->screenApp->addFriendContainer.window_addFriend,userData->screenApp->addFriendContainer.window_addFriend,"Add friend failed");
         }
     } else {
-        gtk_label_set_text(userData->screenApp->addFriendContainer.label_result,"Please choose friend");
+        show_info(userData->screenApp->addFriendContainer.window_addFriend,userData->screenApp->addFriendContainer.window_addFriend,"Please choose username");
     }
 
 }

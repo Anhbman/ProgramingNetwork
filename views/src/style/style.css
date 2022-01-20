@@ -20,19 +20,23 @@ button:hover{
     font-size: medium;
 
 }
-.label{
+.label_category{
     font-size: large;
-    color: aliceblue;
+    color: brown;
+    font-family: "JetBrains Mono";
     background-color: aliceblue;
 }
 window{
-    background-image: url("../screen/image/login-background-image.png");
-    /*background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);*/
+    /*background-image: url("../screen/image/login-background-image.png");*/
+    /*background-image: linear-gradient(43deg, seagreen 0%, #C850C0 46%, #FFCC70 100%);*/
+    background-image: linear-gradient(43deg, seagreen 0%, darkslategray 46%, brown
+    100%);
+
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "JetBrains Mono Light";
     color: aliceblue;
-    font-size: large;
+    font-size: medium;
 }
 .image {
     background-image: url("../screen/image/avatar.png");
