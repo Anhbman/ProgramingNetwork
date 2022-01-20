@@ -76,6 +76,7 @@ typedef struct  {
     GtkWidget *box_place2;
     GtkWidget *label_name;
     GtkWidget *btn_friend_request;
+//    GtkWidget *label_friend;
 } AddFriendContainer;
 typedef struct {
     GtkWidget *window_friendRequest;

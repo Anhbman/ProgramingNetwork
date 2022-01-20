@@ -142,14 +142,14 @@ void on_share_place_clicked(GtkButton* button,UserData* userData) {
         int status = sharePlace(sendString,userData->sockFd);
         printf("%d\n",status);
         if (status == 1) {
-            show_info(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"success!");
+            show_info(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"Share successfully!");
         } else if (status == 2) {
             show_error(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"Place already exist");
         } else
         {
-            show_error(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"Failed");
+            show_error(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"Share Failed");
         }
     } else {
-        show_error(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"chose error");
+        show_error(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"Please select place and friend name");
     }
 }

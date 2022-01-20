@@ -15,6 +15,7 @@
 #include "ShowController.h"
 #include "ShareController.h"
 #include "AddFriendController.h"
+#include "styleScreen.h"
 
 void add_message(GtkWidget *message, GtkWidget *addBox,UserData *userData);
 void on_show_clicked(GtkButton *button, UserData *userData);

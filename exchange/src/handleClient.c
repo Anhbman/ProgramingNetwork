@@ -57,7 +57,7 @@ int registerUser (char *user, int sockFd) {
 
     printf("register: %s\n",recvData);
 
-    if (strcmp(recvData,LOGIN_SUCCESS) == 0)
+    if (strcmp(recvData,REGISTER_SUCCESS) == 0)
         return 1;
     else if (strcmp(recvData,USER_EXIST) == 0)
         return 2;
@@ -217,6 +217,30 @@ int acceptFriend(char* user, int sockFd) {
     printf("Accept Friend: %s\n",recvData);
 
     if (strcmp(recvData,ACCEPT_FRIEND_SUCCESS) == 0)
+        return 1;
+    return 0;
+
+}
+int deleteRequest(char* user,int sockFd) {
+    int recvSize = 0;
+    int sendSize = 0;
+    char recvData[MAX_LEN_BUFF];
+    sendSize = send(sockFd,DELETE_REQUEST,MAX_LEN_BUFF,0);
+    if (sendSize < 0)
+        perror("\nError:");
+    sendSize = send(sockFd,user, MAX_LEN_BUFF, 0);
+    if (sendSize < 0)
+        perror("\nError: ");
+    recvSize = recv(sockFd, recvData, MAX_LEN_BUFF, 0);
+    if (recvSize < 0)
+        perror("\nError: ");
+    else if (recvSize == 0)
+        printf("Connection closed.\n");
+    recvData[recvSize] = '\0';
+
+    printf("Delete request: %s\n",recvData);
+
+    if (strcmp(recvData,DELETE_REQUEST_SUCCESS) == 0)
         return 1;
     return 0;
 

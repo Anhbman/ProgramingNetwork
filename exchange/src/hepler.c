@@ -3,10 +3,11 @@
 //
 
 #include "hepler.h"
-
+#include "styleScreen.h"
 void add_message(GtkWidget *message, GtkWidget *addBox, UserData *userData) {
     GtkWidget *box = addBox;
     gtk_box_pack_start(GTK_BOX(box), message, FALSE, FALSE, 0);
+
 }
 
 char* dataRecv(UserData *userData) {

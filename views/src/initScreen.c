@@ -15,7 +15,9 @@
 
 
 void initLoginScreen(UserData* userData) {
-    GtkBuilder *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/login.glade");
+
+    // /home/phonghoang/helloworld/ProgramingNetwork/views/src/screen/add_place
+    GtkBuilder *builder = gtk_builder_new_from_file("/home/phonghoang/helloworld/ProgramingNetwork/views/src/screen/login.glade");
 
     userData->screenApp->loginContainer.window_login = (GtkWidget *) gtk_builder_get_object(builder, "window_login");
     userData->screenApp->loginContainer.button_login = (GtkWidget *) gtk_builder_get_object(builder, "button_login");
@@ -26,7 +28,7 @@ void initLoginScreen(UserData* userData) {
     userData->screenApp->loginContainer.img_avatar = (GtkWidget *) gtk_builder_get_object(builder,"img_avatar");
     GtkCssProvider *provider_login = gtk_css_provider_new();
 
-    gtk_css_provider_load_from_path(provider_login,"/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/style/style.css",NULL);
+    gtk_css_provider_load_from_path(provider_login,"/home/phonghoang/helloworld/ProgramingNetwork/views/src/style/style.css",NULL);
     css_set(provider_login, (GtkWidget *) userData->screenApp->loginContainer.window_login);
     css_set(provider_login, (GtkWidget *) userData->screenApp->loginContainer.button_login);
     css_set(provider_login, (GtkWidget *) userData->screenApp->loginContainer.entry_user);
@@ -41,7 +43,7 @@ void initLoginScreen(UserData* userData) {
     g_signal_connect(userData->screenApp->loginContainer.button_register, "clicked",G_CALLBACK(on_register_clicked),userData);
 }
 void initRegisterScreen(UserData* userData) {
-    GtkBuilder *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/register.glade");
+    GtkBuilder *builder = gtk_builder_new_from_file("/home/phonghoang/helloworld/ProgramingNetwork/views/src/screen/register.glade");
     userData->screenApp->registerContainer.window_register = (GtkWidget *) gtk_builder_get_object(builder, "window_register");
     userData->screenApp->registerContainer.button_back = (GtkWidget *) gtk_builder_get_object(builder, "button_back");
     userData->screenApp->registerContainer.button_register = (GtkWidget *) gtk_builder_get_object(builder, "button_register");
@@ -51,7 +53,7 @@ void initRegisterScreen(UserData* userData) {
     userData->screenApp->registerContainer.label_status = (GtkWidget *) gtk_builder_get_object(builder, "label_status");
     userData->screenApp->registerContainer.img_avatar = (GtkWidget *) gtk_builder_get_object(builder, "img_avatar");
     GtkCssProvider *provider_register = gtk_css_provider_new();
-    gtk_css_provider_load_from_path(provider_register,"/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/style/style.css",NULL);
+    gtk_css_provider_load_from_path(provider_register,"/home/phonghoang/helloworld/ProgramingNetwork/views/src/style/style.css",NULL);
     css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.button_register);
     css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.button_back);
     css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.window_register);
@@ -65,7 +67,7 @@ void initRegisterScreen(UserData* userData) {
 }
 void initShowScreen(UserData* userData) {
     printf("start inti Show\n");
-    GtkBuilder *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/show1.glade");
+    GtkBuilder *builder = gtk_builder_new_from_file("/home/phonghoang/helloworld/ProgramingNetwork/views/src/screen/show1.glade");
 
     userData->screenApp->showContainer.window_show = (GtkWidget *) gtk_builder_get_object(builder, "window_show");
     userData->screenApp->showContainer.box_place = (GtkWidget *) gtk_builder_get_object(builder, "box_place");
@@ -76,7 +78,7 @@ void initShowScreen(UserData* userData) {
     userData->screenApp->showContainer.btn_show_back = (GtkWidget *) gtk_builder_get_object(builder , "btn_show_back");
 
     GtkCssProvider *provider_show = gtk_css_provider_new();
-    gtk_css_provider_load_from_path(provider_show,"/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/style/style.css",NULL);
+    gtk_css_provider_load_from_path(provider_show,"/home/phonghoang/helloworld/ProgramingNetwork/views/src/style/style.css",NULL);
     css_set(provider_show,(GtkWidget *) userData->screenApp->showContainer.btn_add_place);
     css_set(provider_show,(GtkWidget *) userData->screenApp->showContainer.btn_show_back);
     css_set(provider_show,(GtkWidget *) userData->screenApp->showContainer.box_place);
@@ -89,7 +91,7 @@ void initShowScreen(UserData* userData) {
 }
 
 void initHomeScreen(UserData* userData){
-    GtkBuilder *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/home.glade");
+    GtkBuilder *builder = gtk_builder_new_from_file("/home/phonghoang/helloworld/ProgramingNetwork/views/src/screen/home.glade");
 
     userData->screenApp->homeContainer.window_home = (GtkWidget *) gtk_builder_get_object(builder, "window_home");
     userData->screenApp->homeContainer.scroll_place = (GtkWidget *) gtk_builder_get_object(builder, "scroll_place");
@@ -105,7 +107,7 @@ void initHomeScreen(UserData* userData){
     userData->screenApp->homeContainer.btn_restore_home = (GtkWidget*) gtk_builder_get_object(builder,"btn_restore_home");
 
     GtkCssProvider *provider_home = gtk_css_provider_new();
-    gtk_css_provider_load_from_path(provider_home,"/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/style/style.css",NULL);
+    gtk_css_provider_load_from_path(provider_home,"/home/phonghoang/helloworld/ProgramingNetwork/views/src/style/style.css",NULL);
     css_set(provider_home,(GtkWidget *) userData->screenApp->homeContainer.btn_share_home);
     css_set(provider_home,(GtkWidget *) userData->screenApp->homeContainer.btn_addfriend_home);
     css_set(provider_home,(GtkWidget *) userData->screenApp->homeContainer.btn_back_home);
@@ -130,7 +132,7 @@ void initHomeScreen(UserData* userData){
 
 
 void initShareScreen(UserData* userData) {
-    GtkBuilder *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/share_place.glade");
+    GtkBuilder *builder = gtk_builder_new_from_file("/home/phonghoang/helloworld/ProgramingNetwork/views/src/screen/share_place.glade");
 
     userData->screenApp->shareContainer.window_share = (GtkWidget *) gtk_builder_get_object(builder, "window_share");
     userData->screenApp->shareContainer.fixed_main = (GtkWidget *) gtk_builder_get_object(builder, "fixed_main");
@@ -148,7 +150,7 @@ void initShareScreen(UserData* userData) {
     userData->screenApp->shareContainer.btn_request = (GtkWidget *) gtk_builder_get_object(builder, "btn_request");
 
     GtkCssProvider *provider_share = gtk_css_provider_new();
-    gtk_css_provider_load_from_path(provider_share,"/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/style/style.css",NULL);
+    gtk_css_provider_load_from_path(provider_share,"/home/phonghoang/helloworld/ProgramingNetwork/views/src/style/style.css",NULL);
 
     css_set(provider_share,(GtkWidget *) userData->screenApp->shareContainer.btn_share_place);
     css_set(provider_share,(GtkWidget *) userData->screenApp->shareContainer.btn_back_share);
@@ -165,7 +167,7 @@ void initShareScreen(UserData* userData) {
 }
 
 void initAddFriendScreen(UserData* userData) {
-    GtkBuilder  *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/addFriend.glade");
+    GtkBuilder  *builder = gtk_builder_new_from_file("/home/phonghoang/helloworld/ProgramingNetwork/views/src/screen/addFriend.glade");
     userData->screenApp->addFriendContainer.window_addFriend = (GtkWidget *) gtk_builder_get_object(builder,"window_addFriend");
     userData->screenApp->addFriendContainer.fix_main = (GtkWidget *) gtk_builder_get_object(builder,"fix_main");
     userData->screenApp->addFriendContainer.fix_btn = (GtkWidget *) gtk_builder_get_object(builder,"fix_btn");
@@ -180,9 +182,10 @@ void initAddFriendScreen(UserData* userData) {
     userData->screenApp->addFriendContainer.box_place2 = (GtkWidget *) gtk_builder_get_object(builder,"box_place2");
     userData->screenApp->addFriendContainer.label_name = (GtkWidget *) gtk_builder_get_object(builder,"label_name");
     userData->screenApp->addFriendContainer.btn_friend_request = (GtkWidget *) gtk_builder_get_object(builder,"btn_friend_request");
+//    userData->screenApp->addFriendContainer.label_friend = (GtkWidget *) gtk_builder_get_object(builder,"label_friend");
 
     GtkCssProvider *provider_addFriend = gtk_css_provider_new();
-    gtk_css_provider_load_from_path(provider_addFriend,"/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/style/style.css",NULL);
+    gtk_css_provider_load_from_path(provider_addFriend,"/home/phonghoang/helloworld/ProgramingNetwork/views/src/style/style.css",NULL);
 
     css_set(provider_addFriend,(GtkWidget *) userData->screenApp->addFriendContainer.window_addFriend);
     css_set(provider_addFriend,(GtkWidget *) userData->screenApp->addFriendContainer.btn_back);
@@ -202,7 +205,7 @@ void initAddFriendScreen(UserData* userData) {
 
 }
 void initFriendRequestScreen(UserData* userData){
-    GtkBuilder  *builder = gtk_builder_new_from_file("/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/screen/friendRequest.glade");
+    GtkBuilder  *builder = gtk_builder_new_from_file("/home/phonghoang/helloworld/ProgramingNetwork/views/src/screen/friendRequest.glade");
     userData->screenApp->friendRequestContainer.window_friendRequest = (GtkWidget *) gtk_builder_get_object(builder,"window_friendRequest");
     userData->screenApp->friendRequestContainer.label_name = (GtkWidget *) gtk_builder_get_object(builder,"label_name");
     userData->screenApp->friendRequestContainer.btn_back = (GtkWidget *) gtk_builder_get_object(builder,"btn_back");
@@ -216,7 +219,7 @@ void initFriendRequestScreen(UserData* userData){
     userData->screenApp->friendRequestContainer.box_user = (GtkWidget *) gtk_builder_get_object(builder,"box_user");
 
     GtkCssProvider *provider_friendRequest = gtk_css_provider_new();
-    gtk_css_provider_load_from_path(provider_friendRequest,"/home/bumman/hoctap/nam4/laptrinhmang/PJLTM/views/src/style/style.css",NULL);
+    gtk_css_provider_load_from_path(provider_friendRequest,"/home/phonghoang/helloworld/ProgramingNetwork/views/src/style/style.css",NULL);
 
     css_set(provider_friendRequest,(GtkWidget *) userData->screenApp->friendRequestContainer.btn_back);
     css_set(provider_friendRequest,(GtkWidget *) userData->screenApp->friendRequestContainer.btn_accept);
@@ -230,6 +233,7 @@ void initFriendRequestScreen(UserData* userData){
     g_signal_connect(userData->screenApp->friendRequestContainer.btn_back,"clicked",G_CALLBACK(on_back_friendRequest_clicked),userData);
     g_signal_connect(userData->screenApp->friendRequestContainer.btn_accept,"clicked",G_CALLBACK(on_accept_friendRequest_clicked),userData);
     g_signal_connect(userData->screenApp->friendRequestContainer.btn_delete,"clicked",G_CALLBACK(on_delete_friendRequest_clicked),userData);
+
 
 
 }

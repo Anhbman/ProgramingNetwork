@@ -20,6 +20,7 @@ void showFriendList(UserData *userData);
 void showUserList(UserData *userData);
 void showFriendRequest(UserData *userData);
 int acceptFriend(char* user, int sockFd);
+int deleteRequest(char* user, int sockFd);
 int sharePlace(char* user,int sockFd);
 
 

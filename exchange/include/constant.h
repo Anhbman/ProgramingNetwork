@@ -29,6 +29,8 @@
 #define SHARE_PLACE "20"
 #define SHAREPLACE_SUCCESS "200"
 #define PLACE_EXIST "202"
+#define DELETE_REQUEST "21"
+#define DELETE_REQUEST_SUCCESS "210"
 #define ADD_PLACE "8"
 #define ADD_PLACE_OK "81"
 #define ADD_PLACE_ERR "80"
