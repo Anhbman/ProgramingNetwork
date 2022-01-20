@@ -7,6 +7,7 @@
     <property name="height_request">500</property>
     <property name="can_focus">False</property>
     <property name="resizable">False</property>
+    <property name="icon">../../../img/marketing-mix-place.jpg</property>
     <child type="titlebar">
       <placeholder/>
     </child>
@@ -274,6 +275,9 @@
                   <object class="GtkLabel" id="label_name">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <style>
+                      <class name="username"/>
+                    </style>
                   </object>
                   <packing>
                     <property name="expand">False</property>

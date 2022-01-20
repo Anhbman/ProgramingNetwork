@@ -18,7 +18,6 @@ void on_back_share_clicked(GtkButton* button, UserData* userData) {
 void share_show_place (UserData* userData) {
 
     printf("Share_show_place: \n");
-    printf("Show_home: \n");
 
     int senSize = send(userData->sockFd, HOME_SHOW, MAX_LEN_BUFF, 0);
     if (senSize < 0)
@@ -27,8 +26,6 @@ void share_show_place (UserData* userData) {
     senSize = send(userData->sockFd, userData->username, MAX_LEN_BUFF, 0);
     if (senSize < 0)
         perror("\nError: ");
-
-    printf(" name = %s\n",userData->username);
 
     while (1) {
         int tmp = 0;
@@ -56,6 +53,7 @@ void share_show_place (UserData* userData) {
             }
             token = strtok(NULL, "|");
         }
+        free(value);
     }
 
 }
@@ -89,6 +87,7 @@ void share_show_friend (UserData* userData) {
         token = strtok(NULL, "|");
 
     }
+    free(value);
 
 }
 void on_share_place_clicked(GtkButton* button,UserData* userData) {
@@ -108,16 +107,12 @@ void on_share_place_clicked(GtkButton* button,UserData* userData) {
                 printf("Nameplace: %s\n",name1);
                 check++;
                 break;
-                // gtk_widget_destroy(child);
             }
         } else {
-
             bzero(cate,MAX_LEN_BUFF);
             strcpy(cate, gtk_label_get_text(child));
         }
     }
-    printf("name2 %s\n",name1);
-
     char name2[MAX_LEN_BUFF];
     children1 = gtk_container_get_children(GTK_CONTAINER(userData->screenApp->shareContainer.box_friend));
     for(iter2 = children1; iter2 != NULL; iter2 = g_list_next(iter2)){
@@ -136,11 +131,9 @@ void on_share_place_clicked(GtkButton* button,UserData* userData) {
 
     char sendString[MAX_LEN_BUFF];
     sprintf(sendString,"%s|%s|%s|%s",userData->username,name1,cate,name2);
-//    sprintf(sendString,"%s|%s",userData->username,name1);
     free(name1);
     if (check1 == 1 && check1 == 1) {
         int status = sharePlace(sendString,userData->sockFd);
-        printf("%d\n",status);
         if (status == 1) {
             show_info(userData->screenApp->shareContainer.window_share,userData->screenApp->shareContainer.window_share,"success!");
         } else if (status == 2) {

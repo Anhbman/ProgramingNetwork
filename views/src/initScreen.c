@@ -36,7 +36,7 @@ void initLoginScreen(UserData* userData) {
 
 
 
-//    g_signal_connect(userData->screenApp->loginContainer.window_login, "destroy", G_CALLBACK(gtk_main_quit()));
+    g_signal_connect(userData->screenApp->loginContainer.window_login, "destroy", G_CALLBACK(quitApp),userData);
     g_signal_connect(userData->screenApp->loginContainer.button_login, "clicked",G_CALLBACK(on_login_clicked), userData);
     g_signal_connect(userData->screenApp->loginContainer.button_register, "clicked",G_CALLBACK(on_register_clicked),userData);
 }
@@ -60,6 +60,8 @@ void initRegisterScreen(UserData* userData) {
     css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.label_status);
     css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.entry_username);
     css_set(provider_register,(GtkWidget *) userData->screenApp->registerContainer.img_avatar);
+
+    g_signal_connect(userData->screenApp->registerContainer.window_register, "destroy", G_CALLBACK(quitApp),userData);
     g_signal_connect(userData->screenApp->registerContainer.button_register,"clicked",G_CALLBACK(on_register_btn_clicked),userData);
     g_signal_connect(userData->screenApp->registerContainer.button_back,"clicked",G_CALLBACK(on_back_register_clicked),userData);
 }
@@ -83,6 +85,8 @@ void initShowScreen(UserData* userData) {
     css_set(provider_show,(GtkWidget *) userData->screenApp->showContainer.combo_cate);
     css_set(provider_show,(GtkWidget *) userData->screenApp->showContainer.entry_place);
     css_set(provider_show,(GtkWidget *) userData->screenApp->showContainer.window_show);
+
+    g_signal_connect(userData->screenApp->showContainer.window_show, "destroy", G_CALLBACK(quitApp),userData);
     g_signal_connect(userData->screenApp->showContainer.btn_show_back, "clicked", G_CALLBACK(on_back_home_clicked), userData);
     g_signal_connect(userData->screenApp->showContainer.btn_add_place, "clicked", G_CALLBACK(on_add_clicked), userData);
     printf("show done\n");
@@ -118,6 +122,7 @@ void initHomeScreen(UserData* userData){
     css_set(provider_home,(GtkWidget *) userData->screenApp->homeContainer.label_username);
 
 
+    g_signal_connect(userData->screenApp->homeContainer.window_home, "destroy", G_CALLBACK(quitApp),userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_show_home, "clicked", G_CALLBACK(on_show_clicked), userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_back_home, "clicked", G_CALLBACK(on_back_clicked), userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_share_home, "clicked" , G_CALLBACK(on_share_clicked), userData);
@@ -158,6 +163,7 @@ void initShareScreen(UserData* userData) {
     css_set(provider_share,(GtkWidget *) userData->screenApp->shareContainer.btn_request);
     css_set(provider_share,(GtkWidget *) userData->screenApp->shareContainer.window_share);
 
+    g_signal_connect(userData->screenApp->shareContainer.window_share, "destroy", G_CALLBACK(quitApp),userData);
     g_signal_connect(userData->screenApp->shareContainer.btn_back_share, "clicked", G_CALLBACK(on_back_share_clicked), userData);
     g_signal_connect(userData->screenApp->shareContainer.btn_share_place, "clicked", G_CALLBACK(on_share_place_clicked), userData);
 
@@ -195,6 +201,7 @@ void initAddFriendScreen(UserData* userData) {
     css_set(provider_addFriend,(GtkWidget *) userData->screenApp->addFriendContainer.fix_main);
 
 
+    g_signal_connect(userData->screenApp->addFriendContainer.window_addFriend, "destroy", G_CALLBACK(quitApp),userData);
     g_signal_connect(userData->screenApp->addFriendContainer.btn_back,"clicked",G_CALLBACK(on_back_addFriend_clicked),userData);
     g_signal_connect(userData->screenApp->homeContainer.btn_addfriend_home,"clicked",G_CALLBACK(on_addFriend_home_clicked),userData);
     g_signal_connect(userData->screenApp->addFriendContainer.btn_add,"clicked",G_CALLBACK(on_add_addFriend_clicked),userData);

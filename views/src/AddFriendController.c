@@ -19,7 +19,6 @@ void  on_add_addFriend_clicked(GtkButton* button,UserData* userData) {
     printf("Add friend\n");
     for(iter = children; iter != NULL; iter = g_list_next(iter)){
         GtkWidget *child = iter->data;
-      //  printf("%s\n", gtk_button_get_label(child));
         if (GTK_IS_CHECK_BUTTON(child)){
             if (gtk_toggle_button_get_active(child)){
                 check = 1;

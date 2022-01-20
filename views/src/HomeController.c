@@ -29,7 +29,6 @@ void on_share_clicked(GtkButton *button, UserData *userData) {
 
 void home_show(UserData *userData) {
 
-//    test dung
     printf("Show_home: \n");
 
     int senSize = send(userData->sockFd, HOME_SHOW, MAX_LEN_BUFF, 0);
@@ -53,7 +52,6 @@ void home_show(UserData *userData) {
 
         token = strtok(value, "|");
 
-        GtkWidget *radio2;
         while (token != NULL) {
             GtkWidget *check;
 
@@ -80,6 +78,14 @@ void on_backup_clicked (GtkButton *button, UserData* userData) {
     sendbytes = send(userData->sockFd,userData->username,MAX_LEN_BUFF,0);
     if (sendbytes < 0)
         perror("ERROR backup");
+
+    char *dataRev = dataRecv(userData);
+
+    if (strcmp(dataRev,BACKUP_OK) == 0){
+        show_info(userData->screenApp->homeContainer.window_home,userData->screenApp->homeContainer.window_home, "BackUp successfully!");
+    } else {
+        show_error(userData->screenApp->homeContainer.window_home,userData->screenApp->homeContainer.window_home, "BackUp ERROR!");
+    }
 
 }
 
@@ -111,7 +117,6 @@ void on_addFriend_home_clicked(GtkButton * button, UserData *userData) {
     gtk_label_set_text(userData->screenApp->addFriendContainer.label_name,userData->username);
     gtk_widget_hide(userData->screenApp->homeContainer.window_home);
     gtk_widget_show_all(userData->screenApp->addFriendContainer.window_addFriend);
-    //remove_all_box_child(userData->screenApp->homeContainer.box_place);
 }
 void on_delete_clicked (GtkButton *button ,UserData* userData) {
 
@@ -127,9 +132,7 @@ void on_delete_clicked (GtkButton *button ,UserData* userData) {
             if (gtk_toggle_button_get_active(child)){
                 char* name = (char *) malloc(sizeof (char )*MAX_LEN_BUFF);
                 convertString(gtk_button_get_label(child), name);
-                printf("Name: %s\n",name);
                 if (remove_place(userData,name, cate)) {
-                    printf("haah");
                     gtk_widget_destroy(child);
                 }
                 free(name);

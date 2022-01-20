@@ -16,7 +16,6 @@ void on_accept_friendRequest_clicked(GtkButton *button,UserData *userData) {
     GtkCheckButton a;
 
     children = gtk_container_get_children(GTK_CONTAINER(userData->screenApp->friendRequestContainer.box_place));
-    //printf("delete home\n");
     for(iter = children; iter != NULL; iter = g_list_next(iter)){
         GtkWidget *child = iter->data;
         if (GTK_IS_CHECK_BUTTON(child)){
@@ -24,18 +23,18 @@ void on_accept_friendRequest_clicked(GtkButton *button,UserData *userData) {
                 char* name = gtk_button_get_label(child);
                 char String[MAX_LEN_BUFF];
                 sprintf(String,"%s|%s",userData->username,name);
-                printf("%s\n",String);
                 if (acceptFriend(String,userData->sockFd)) {
-                    gtk_label_set_text(userData->screenApp->friendRequestContainer.label_name,"Successfully");
+                    show_info(userData->screenApp->friendRequestContainer.window_friendRequest,userData->screenApp->friendRequestContainer.window_friendRequest,"Successfully!");
                     gtk_widget_destroy(child);
                 } else {
-                    gtk_label_set_text(userData->screenApp->friendRequestContainer.label_name,"Failed");
+                    show_info(userData->screenApp->friendRequestContainer.window_friendRequest,userData->screenApp->friendRequestContainer.window_friendRequest,"Failed!");
                 }
             }
 
         }
     }
 }
+
 void on_delete_friendRequest_clicked(GtkButton *button,UserData *userData) {
 
 }

@@ -36,6 +36,8 @@
 #define REMOVE_PLACE_OK "91"
 #define REMOVE_PLACE_ERROR "90"
 #define BACKUP "10"
+#define BACKUP_ERROR "100"
+#define BACKUP_OK "101"
 #define RESTORE "11"
 #define SEND_END "-1"
 

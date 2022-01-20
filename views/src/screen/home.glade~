@@ -7,7 +7,7 @@
     <property name="height_request">500</property>
     <property name="can_focus">False</property>
     <property name="resizable">False</property>
-    <property name="icon_name">applications-internet</property>
+    <property name="icon">../../../img/marketing-mix-place.jpg</property>
     <child type="titlebar">
       <placeholder/>
     </child>
@@ -384,8 +384,8 @@
                 <property name="can_focus">False</property>
                 <child>
                   <object class="GtkImage">
-                    <property name="width_request">100</property>
-                    <property name="height_request">90</property>
+                    <property name="width_request">30</property>
+                    <property name="height_request">0</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="stock">gtk-home</property>

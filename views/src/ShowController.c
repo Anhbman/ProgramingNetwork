@@ -16,8 +16,6 @@ void on_back_home_clicked (GtkButton* button, UserData* userData) {
 void on_add_clicked(GtkButton* button, UserData* userData) {
 
     printf("clicked button add\n");
-    int check = 0;
-    int check1 = 0;
 
     char * placeName = (char *) gtk_entry_get_text(GTK_ENTRY(userData->screenApp->showContainer.entry_place));
     char * category = (char *) gtk_combo_box_text_get_active_text(userData->screenApp->showContainer.combo_cate);
@@ -26,12 +24,9 @@ void on_add_clicked(GtkButton* button, UserData* userData) {
         if (add_place(userData->username,placeName, category, userData->sockFd)) {
             show_info(userData->screenApp->showContainer.window_show,userData->screenApp->showContainer.window_show, "Add place success!");
         } else {
-            check = 1;
             show_error(userData->screenApp->showContainer.window_show,userData->screenApp->showContainer.window_show, "Add place error!");
         }
     }
-
-
 
     GList *children, *iter;
 
@@ -49,8 +44,6 @@ void on_add_clicked(GtkButton* button, UserData* userData) {
                 char* name = gtk_button_get_label(child);
                 if (add_place(userData->username,name,cate,userData->sockFd)) {
                     gtk_widget_destroy(child);
-                } else {
-                    check1 = 1;
                 }
             }
 
@@ -96,5 +89,6 @@ void show_page_data(UserData *userData) {
             }
             token = strtok(NULL, "|");
         }
+        free(value);
     }
 }

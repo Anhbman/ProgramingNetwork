@@ -84,3 +84,9 @@ void show_info(GtkWidget *widget, gpointer window, char* message) {
     gtk_dialog_run(GTK_DIALOG(dialog));
     gtk_widget_destroy(dialog);
 }
+
+void quitApp (GtkButton *button, UserData* userData) {
+    send(userData->sockFd,999,MAX_LEN_BUFF,0);
+    close(userData->sockFd);
+    gtk_main_quit();
+}

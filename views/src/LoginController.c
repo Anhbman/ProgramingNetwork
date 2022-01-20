@@ -33,7 +33,6 @@ void on_login_clicked(GtkButton *button, UserData *userData) {
         gtk_widget_show_all(userData->screenApp->homeContainer.window_home);
         gtk_entry_set_text(userData->screenApp->loginContainer.entry_user,"");
         gtk_entry_set_text(userData->screenApp->loginContainer.entry_pass,"");
-//        show_error(userData->screenApp->homeContainer.window_home,userData->screenApp->homeContainer.window_home);
     }
 
     return;

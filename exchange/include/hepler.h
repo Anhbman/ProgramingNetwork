@@ -18,5 +18,6 @@ GList* get_child_box (UserData *userData);
 void convertString (char *nameFrienf, char *namePlace);
 void show_error(GtkWidget *widget, gpointer window, char* message);
 void show_info(GtkWidget *widget, gpointer window, char* message);
+void quitApp (GtkButton *button, UserData* userData);
 
 #endif //NETWORKPROGRAM_HEPLER_H
